@@ -1,11 +1,15 @@
 import getTableFromPdf
-from getTableFromPdf import getTable, clean_table
+from getTableFromPdf import getTable, Mapping
 
 
 
-path = 'ESG-Frameworks/Mapping-Standars/sdg-gri.pdf'
+path = 'ESG-Frameworks/Mapping-Standards/sdg-gri.pdf'
 page = 3
 
-getTable(path, page)
+output_path = 'ESG-Frameworks/Mapping-Standards/SDG-GRI-DF.csv'
 
+# getTableSDG_GRI(path, page, output_path)
 
+excelFile = 'ESG-Frameworks/Outputs/ESG Alignment Product Outputs.xlsx'
+
+Mapping(excelFile, output_path)
