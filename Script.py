@@ -9,9 +9,11 @@ import openpyxl
 
 class ExtractPDFTables:
 
-	def __init__(self, file_path, firstTablePage):
+	def __init__(self, file_path, page_range=False, firstTablePage=False, area=False):
 		self.file_path = file_path
+		self.page_range = page_range
 		self.firstTablePage = firstTablePage
+		self.area = area
 
 	def getTables1(self):
 		
@@ -32,8 +34,31 @@ class ExtractPDFTables:
 
 		return df
 
-	# def getTables2(self):
-	# 	pdf = read_pdf(self.file_path)
+	def getTables2(self):
+		# pdf = read_pdf(self.file_path, pages=self.page_range, area = self.area, multiple_tables=True)
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+
+		'''Ojo con esto: Code below is based on just one page
+		   A soon as I manage to extract the desired data
+		   I gotta test with last pages.
+		'''
+		page = pdf.pages[0]
+		table = page.debug_tablefinder()
+		req_table = table.tables[0] 
+
+		cells = req_table.cells
+
+		for cell in cells[0:len(cells)]:
+		    page.crop(cell).extract_words() 
+
+		data = page.extract_table()
+
+		df = pd.DataFrame(data[2:],columns=data[1])
+
+		df.iloc[:, 0] = df.iloc[:, 0].str.replace('\n' , ' ')
+		df.iloc[:, 0] = df.iloc[:, 0].str.replace('Governance' , '')
+		df.iloc[:, 1] = df.iloc[:, 1].str.replace('\n' , ' ')
+		return df
 		
 
 	def setHeaders(self, df, rowIndex):
