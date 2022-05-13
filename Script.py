@@ -56,6 +56,9 @@ class ExtractPDFTables:
 				df = df.drop(['Available Business Disclosures'], axis=1)
 				df = df.dropna()
 
+			else:
+				print("WARNINH: please run, the script again and choose 'yes' or 'no' ") 
+
 			return df
 
 	# Getting tables from PDF GRI Linked to COH4B
