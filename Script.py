@@ -57,7 +57,7 @@ class ExtractPDFTables:
 				df = df.dropna()
 
 			else:
-				print("WARNINH: please run, the script again and choose 'yes' or 'no' ") 
+				print("WARNINH: please run the script again and choose 'yes' or 'no' ") 
 
 			return df
 
