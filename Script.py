@@ -81,6 +81,24 @@ class ExtractPDFTables:
 
 		return df
 
+	def extractDisclosures(self, df, column, newColumn):
+		
+		values = []
+
+		for i in range(0, len(df[column])):
+
+			try:
+				match = re.search(r'[0-9]{3}-[0-9]{2}|[0-9]{3}-[0-9]{1}', df[column][i])
+				values.append(df[column][i][match.start():match.end()])
+
+			except:
+				values.append('No value :(')
+				pass
+		df[newColumn] = values
+
+		return df
+
+
 	# Getting tables from PDF TCFD Linked to GRI
 	def getTablesTCFD_GRI(self):
 		# pdf = read_pdf(self.file_path, pages=self.page_range, area = self.area, multiple_tables=True)
@@ -104,7 +122,7 @@ class ExtractPDFTables:
 			df = pd.DataFrame(data[2:],columns=data[1])
 			df.iloc[:, 0] = df.iloc[:, 0].str.replace('\n' , ' ')
 			# df.iloc[:, 0] = df.iloc[:, 0].str.replace('Governance' , '')
-			df.iloc[:, 1] = df.iloc[:, 1].str.replace('\n' , '')
+			df.iloc[:, 1] = df.iloc[:, 1].str.replace('\n' , ' ')
 			frames.append(df)
 
 
@@ -144,6 +162,134 @@ class ExtractPDFTables:
 		return df
 
 
-# class MapLinks2Excel:
+class MapLinks2Excel:
 
-# 	def __init__(self, )
+	def __init__(self, df, sheet, path_file):
+		self.df = df
+		self.sheet = sheet
+		self.path_file = path_file
+	
+	def MapSDG_GRI(self):
+		regex = '[+-]?[0-9]+\.-?[0-9a-zA-Z_]+'
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		rows = ws.max_row
+
+		for i in range(1, rows):
+			if ws.cell(row=i, column=1).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=1).value
+
+				if (re.search(regex, target_cell)):
+					target = re.search(regex, target_cell).group()
+
+					try:
+						value_to_add = self.df.loc[self.df['Target'] == target]['Disclosure'].item()
+						ws.cell(row=i, column=3, value=str(value_to_add))	
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped'
+	
+	def MapGRI_SDG(self):
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		rows = ws.max_row
+
+		for i in range(1, rows):
+
+			if ws.cell(row=i, column=2).value != None:
+				target_cell = ws.cell(row=i+1, column=2).value
+
+				if target_cell != None:
+					try:
+						if len(self.df[self.df['Disclosure'] == target_cell]) != 0:
+							value_to_add = self.df[self.df.Disclosure==target_cell].squeeze()['Target'].values
+							ws.cell(row=i+1, column=4, value=', '.join(value_to_add))
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped'
+
+	def MapCOH4B_GRI(self):
+		regex = "[+-]?[0-9]+\."
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		''' In case of loading df from csv file, the commented code below
+			will fixe and issue with the id column, since the df it's being taking
+			from instance tableGRI_COH4B, it is no needed to excute that code.
+		'''
+
+		# pdf_tables = pd.read_csv(pdf_tables)
+		# pdf_tables['id'] = pdf_tables['id'].astype(str).apply(lambda x: x.replace('.0','.'))
+
+		for i in range(1, rows):
+			if ws.cell(row=i, column=1).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=1).value
+
+				if (re.search(regex, target_cell)):
+					target = re.search(regex, target_cell).group()
+
+					try:
+						value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].item(),
+										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].item()]
+						
+						ws.cell(row=i, column=3, value=str(value_to_add[0]))
+						ws.cell(row=i, column=4, value=str(value_to_add[1]))
+
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped'
+
+	def MapGRI_COH4B(self):
+
+		regex = '^[0-9\.\-\/]+$'
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(1, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+				if(re.search(regex, target_cell)):
+					target = re.search(regex, target_cell).group()
+
+					try:
+						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].item()
+						ws.cell(row=i, column=6, value=value_to_add[0])
+
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped' 
+
+	def mapTCFD_GRI(self):
+		pass
+
+	def mapGRI_TCFD(self):
+		pass
