@@ -81,14 +81,14 @@ class ExtractPDFTables:
 
 		return df
 
-	def extractDisclosures(self, df, column, newColumn):
+	def extractDisclosures(self, df, column, newColumn, regex, method):
 		
 		values = []
 
 		for i in range(0, len(df[column])):
 
 			try:
-				match = re.search(r'[0-9]{3}-[0-9]{2}|[0-9]{3}-[0-9]{1}', df[column][i])
+				match = method(regex, df[column][i])
 				values.append(df[column][i][match.start():match.end()])
 
 			except:
@@ -98,6 +98,26 @@ class ExtractPDFTables:
 
 		return df
 
+	def extractDisclosures2(self, df, column, newColumn, regex, method_):
+		
+		values = []
+
+		for i in range(0, len(df[column])):
+
+			try:
+				match = method_(regex, df[column].values[i])
+
+				if len(match) > 2:
+					values.append(' '.join(match))
+				else:
+					values.append(''.join(match[0]))
+
+			except:
+				values.append('No value :(')
+				pass
+		df[newColumn] = values
+
+		return df
 
 	# Getting tables from PDF TCFD Linked to GRI
 	def getTablesTCFD_GRI(self):
