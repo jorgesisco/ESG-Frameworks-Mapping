@@ -3,8 +3,8 @@ Disclosures
 (TCFD Framework)","Related 
 code/
 paragraph",Description,Omissions and/or content difference(s),"Level of 
-alignment",GRI Standards,id
-0,Governance a.  Describe the  board’s oversight of  climate-related risks  and opportunities.,GRI 102-18   GRI 102-19   GRI 102-20   GRI 102-26 GRI 102-27   GRI 102-29     GRI 102-31   GRI 102-32,"Disclosure 102-18 – Governance structure
+alignment"
+0,Governance a.  Describe the  board’s oversight of  climate-related risks  and opportunities.,GRI 102-18 GRI 102-19 GRI 102-20 GRI 102-26GRI 102-27 GRI 102-29  GRI 102-31 GRI 102-32,"Disclosure 102-18 – Governance structure
 a. Governance structure of the organisation, including committees of the highest governance body. 
 b. Committees responsible for decision-making on economic, environmental, and social topics.
 Disclosure 102-19 – Delegating authority
@@ -56,8 +56,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-18 102-19 102-20 102-26 102-27 102-29 102-31 102-32,a.
-0,Governance b. Describe  management’s  role in assessing  and managing  climate-related risks  and opportunities.,GRI 102-20 GRI 102-29 GRI 102-31 GRI 102-32 GRI 103-2  with  GRI 201-2  and  GRI 305,"Disclosure 102-20 – Executive-level responsibility for economic, environmental, and social topics
+target groups of investors and other financial sector users.",Reasonable
+0,Governance b. Describe  management’s  role in assessing  and managing  climate-related risks  and opportunities.,GRI 102-20GRI 102-29GRI 102-31GRI 102-32GRI 103-2 with GRI 201-2 and GRI 305,"Disclosure 102-20 – Executive-level responsibility for economic, environmental, and social topics
 a. Whether the organisation has appointed an executive-level position or positions with responsibility for 
 economic, environmental, and social topics.
 b. Whether post holders report directly to the highest governance body.
@@ -103,8 +103,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-20 102-29 102-31 102-32 103-2 201-2,b.
-0,"Strategy a.  Describe the  climate-related risks  and opportunities  the organisation has  identified over the  short, medium, and  long term.",GRI 102-14 GRI 102-15 GRI 103  with  GRI 201-2,"Disclosure 102-14 – Statement from senior decision-maker
+target groups of investors and other financial sector users.",Reasonable
+0,"Strategy a.  Describe the  climate-related risks  and opportunities  the organisation has  identified over the  short, medium, and  long term.",GRI 102-14GRI 102-15GRI 103 with GRI 201-2,"Disclosure 102-14 – Statement from senior decision-maker
 a. A statement from the most senior decision-maker of the organisation (such as CEO, chair, or equivalent senior 
 position) about the relevance of sustainability to the organisation and its strategy for addressing sustainability, 
 plus reporting recommendations:
@@ -154,8 +154,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-14 102-15 201-2,a.
-0,"Strategy b. Describe the impact  of climate-related  risks and  opportunities on  the organisation’s  businesses, strategy,  and financial  planning.",GRI 102-15 GRI 103 with GRI 201-2,"Disclosure 102-15 – Key impacts, risks, and opportunities
+target groups of investors and other financial sector users.",Reasonable
+0,"Strategy b. Describe the impact  of climate-related  risks and  opportunities on  the organisation’s  businesses, strategy,  and financial  planning.",GRI 102-15GRI 103withGRI 201-2,"Disclosure 102-15 – Key impacts, risks, and opportunities
 a. A description of key impacts, risks, and opportunities, plus reporting recommendation 2.2.6: 
 the impact of sustainability trends, risks, and opportunities on the long-term prospects and financial performance 
 of the organisation. 
@@ -192,12 +192,12 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-15,b.
+target groups of investors and other financial sector users.",Reasonable
 1,"Strategy c.  Describe the  resilience of the  organisation’s  strategy, taking  into consideration  different  climate-related  scenarios, including  a 2°C or lower  scenario.",,,"Omissions
 Scenario analysis and resilience could be reported as part of 
 the management approach (using GRI 103) for climate-related 
-topics, but are not explicitly covered by the GRI Standards.",None,No value :(,c.
-0,Risk Management a.  Describe the  organisation’s  processes for  identifying  and assessing  climate-related  risks.,GRI 102-15 GRI 102-29 GRI 102-30 GRI 102-31 GRI 103-1  and  GRI 103-2   with  GRI 201-2  and GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities 
+topics, but are not explicitly covered by the GRI Standards.",None
+0,Risk Management a.  Describe the  organisation’s  processes for  identifying  and assessing  climate-related  risks.,GRI 102-15GRI 102-29GRI 102-30GRI 102-31GRI 103-1 and GRI 103-2  with GRI 201-2 and GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities 
 a. A description of key impacts, risks, and opportunities, plus reporting recommendations:
 2.2.6: the impact of sustainability trends, risks, and opportunities on the long-term prospects and financial 
 performance of the organisation;
@@ -246,8 +246,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-15 102-29 102-30 102-31 103-1 103-2 201-2,a.
-0,Risk Management b. Describe the  organisation’s  processes  for managing  climate-related  risks.,GRI 102-15 GRI 102-29 GRI 103-2  with   GRI 201-2  and   GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities
+target groups of investors and other financial sector users.",Reasonable
+0,Risk Management b. Describe the  organisation’s  processes  for managing  climate-related  risks.,GRI 102-15GRI 102-29GRI 103-2 with  GRI 201-2 and  GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities
 a. A description of key impacts, risks, and opportunities, plus reporting recommendations:
 2.2.3: an explanation of the approach to prioritising these challenges and opportunities; 
 2.2.9: prioritisation of key economic, environmental, and social topics as risks and opportunities according to  
@@ -289,8 +289,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-15 102-29 103-2 201-2,b.
-0,"Risk Management c.  Describe how  processes for  identifying,  assessing,  and managing  climate-related risks  are integrated into  the organisation’s  overall risk  management.",GRI 102-15 GRI 103  with  GRI 201-2  and   GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities
+target groups of investors and other financial sector users.",Reasonable
+0,"Risk Management c.  Describe how  processes for  identifying,  assessing,  and managing  climate-related risks  are integrated into  the organisation’s  overall risk  management.",GRI 102-15GRI 103 with GRI 201-2 and  GRI 305,"Disclosure 102-15 – Key impacts, risks, and opportunities
 a. A description of key impacts, risks, and opportunities, plus reporting recommendation 2.2.12:
 A description of governance mechanisms in place specifically to manage these risks and opportunities, and 
 identification of other related risks and opportunities.
@@ -325,8 +325,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Moderate,102-15,c.
-0,Metrics and Targets a.  Describe the  metrics used by  the organisation  to assess  climate-related risks  and opportunities  in line with its  strategy and risk  management  process.,GRI 102-30 GRI 103  with   GRI 201-2 GRI 302 GRI 303 GRI 305  and   GRI 306,"Disclosure 102-30 – Effectiveness of risk management processes
+target groups of investors and other financial sector users.",Moderate
+0,Metrics and Targets a.  Describe the  metrics used by  the organisation  to assess  climate-related risks  and opportunities  in line with its  strategy and risk  management  process.,GRI 102-30GRI 103 with  GRI 201-2GRI 302GRI 303GRI 305 and  GRI 306,"Disclosure 102-30 – Effectiveness of risk management processes
 a. Highest governance body’s role in reviewing the effectiveness of the organisation’s risk management processes 
 for economic, environmental, and social topics.
 GRI 103: Management Approach, when used with GRI 201: Economic Performance,  
@@ -357,8 +357,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Reasonable,102-30,a.
-0,"Metrics and Targets b. Disclose  Scope 1, Scope 2,  and, if appropriate,  Scope 3 greenhouse  gas (GHG)  emissions, and the  related risks.",GRI 103  with  GRI 305 GRI 103  with  GRI 201-2,"GRI 103: Management Approach used with GRI 305: Emissions
+target groups of investors and other financial sector users.",Reasonable
+0,"Metrics and Targets b. Disclose  Scope 1, Scope 2,  and, if appropriate,  Scope 3 greenhouse  gas (GHG)  emissions, and the  related risks.",GRI 103 with GRI 305GRI 103 with GRI 201-2,"GRI 103: Management Approach used with GRI 305: Emissions
 Disclosure 305-1 – Direct (Scope 1) GHG emissions
 Disclosure 305-2 – Energy indirect (Scope 2) GHG emissions
 Disclosure 305-3 – Other indirect (Scope 3) GHG emissions
@@ -389,8 +389,8 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Full,201-2,b.
-0,Metrics and Targets c.  Describe the  targets used by  the organisation  to manage  climate-related risks  and opportunities  and performance  against targets.,"GRI 101,  2.7.1 GRI 102-15 GRI 103-2  with  GRI 201-2,  GRI 302,  GRI 303,  GRI 305  and  GRI 306","Disclosure 102-15 – Key impacts, risks, and opportunities
+target groups of investors and other financial sector users.",Full
+0,Metrics and Targets c.  Describe the  targets used by  the organisation  to manage  climate-related risks  and opportunities  and performance  against targets.,"GRI 101, 2.7.1GRI 102-15GRI 103-2 with GRI 201-2, GRI 302, GRI 303, GRI 305 and GRI 306","Disclosure 102-15 – Key impacts, risks, and opportunities
 a. A description of key impacts, risks, and opportunities, plus reporting recommendations:
 2.2.10 table(s) summarising targets, performance against targets, and lessons learned for the current  
 reporting period;
@@ -431,4 +431,4 @@ However, users must be aware that reporting with the GRI
 Standards may not necessarily capture all of the information 
 sought by the TCFD recommended disclosure.
 In the GRI Standards, ‘stakeholders’ is wider than the TCFD’s 
-target groups of investors and other financial sector users.",Moderate,102-15 103-2 201-2,c.
+target groups of investors and other financial sector users.",Moderate

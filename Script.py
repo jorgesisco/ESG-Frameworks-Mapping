@@ -80,45 +80,7 @@ class ExtractPDFTables:
 		df = df.drop_duplicates()
 
 		return df
-
-	def extractDisclosures(self, df, column, newColumn, regex, method):
-		
-		values = []
-
-		for i in range(0, len(df[column])):
-
-			try:
-				match = method(regex, df[column][i])
-				values.append(df[column][i][match.start():match.end()])
-
-			except:
-				values.append('No value :(')
-				pass
-		df[newColumn] = values
-
-		return df
-
-	def extractDisclosures2(self, df, column, newColumn, regex, method_):
-		
-		values = []
-
-		for i in range(0, len(df[column])):
-
-			try:
-				match = method_(regex, df[column].values[i])
-
-				if len(match) > 2:
-					values.append(' '.join(match))
-				else:
-					values.append(''.join(match[0]))
-
-			except:
-				values.append('No value :(')
-				pass
-		df[newColumn] = values
-
-		return df
-
+	
 	# Getting tables from PDF TCFD Linked to GRI
 	def getTablesTCFD_GRI(self):
 		# pdf = read_pdf(self.file_path, pages=self.page_range, area = self.area, multiple_tables=True)
@@ -148,6 +110,54 @@ class ExtractPDFTables:
 
 		df =  pd.concat(frames)
 		df = df.drop_duplicates()
+
+		return df
+
+	# Funtions needed in some of the extracted dataframes
+	def extractDisclosures(self, df, column, newColumn, regex, method):
+		
+		values = []
+
+		for i in range(0, len(df[column])):
+
+			try:
+				match = method(regex, df[column][i])
+				values.append(df[column][i][match.start():match.end()])
+
+			except:
+				values.append('No value :(')
+				pass
+		df[newColumn] = values
+
+		return df
+
+	def extractDisclosures2(self, df, column, newColumn, regex, method_):
+		
+		values = []
+
+		for i in range(0, len(df[column])):
+
+			try:
+				match = method_(regex, df[column].values[i])
+
+				if len(match) > 2:
+					values.append(', '.join(match))
+				else:
+					values.append(''.join(match[0]))
+
+			except:
+				values.append('No value :(')
+				pass
+		df[newColumn] = values
+
+		return df
+
+	def df_gri_tcdf(self, df):
+
+		df = df[['GRI Standards', 'id']]
+		df.rename(columns = {'GRI Standards':'GRI_Standards'}, inplace = True)
+		df['GRI_Standards'].str.split(', ')
+		df = df.assign(GRI_Standards=df['GRI_Standards'].str.split(', ')).explode('GRI_Standards')
 
 		return df
 
@@ -309,7 +319,33 @@ class MapLinks2Excel:
 		return f'{self.sheet} sheet from Excel file have bee mapped' 
 
 	def mapTCFD_GRI(self):
-		pass
+
+		regex = '[a-zA-Z]+\)'
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		count = 0
+
+		for i in range(1, rows):
+			if ws.cell(row=i, column=2).value != None and count <= len(self.df):
+				target_cell = ws.cell(row=i, column=2).value
+
+				if re.search(regex, target_cell):
+
+					target = re.search(regex, target_cell).group()
+					target = re.sub('[abc]\)', self.df['id'].values[count], target)
+
+					value_to_add = self.df.loc[self.df['id'] == target]['Related \ncode/\nparagraph'].item()
+					value_to_add = re.sub(', ', ' ', value_to_add)
+					value_to_add = re.sub('\s\s+', ' ', value_to_add)
+					value_to_add = re.sub(' and| with', '', value_to_add)
+
+					ws.cell(row=i, column=4, value=value_to_add)
+					count += 1
+
+		wb.save(self.path_file)
+
 
 	def mapGRI_TCFD(self):
 		pass
