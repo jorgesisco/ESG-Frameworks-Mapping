@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+# import numpy as np
 import re
 
 import pdfplumber
@@ -346,6 +346,21 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)
 
-
 	def mapGRI_TCFD(self):
-		pass
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(1, rows+1):
+			if ws.cell(row=i, column=2).value != None:
+				target_cell = ws.cell(row=i, column=2).value
+
+				if target_cell != None:
+					value = self.df.loc[self.df['GRI_Standards'] == target_cell]['id'].values
+					if len(value):
+						value_to_add = ' '.join(value)
+						ws.cell(row=i, column=5, value=value_to_add)
+
+		wb.save(self.path_file)		
+
