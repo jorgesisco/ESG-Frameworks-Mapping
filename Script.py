@@ -161,7 +161,6 @@ class ExtractPDFTables:
 
 		return df
 
-
 	'''This methods are usefull in case the gathered table
 	   does now shows the columns as headers, but columns
 	   are shown as values, we run the method with the
