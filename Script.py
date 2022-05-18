@@ -43,23 +43,92 @@ class ExtractPDFTables:
 			df = pdf[0]
 			df = df[df.Target != 'Target']
 
-			structuringApproach = input('Are you going to map SDG to GRI? (yes or no): ')
+			structuringApproach = input('Are you going to map GRI on SDG sheet? (yes or no): ')
 
 			if structuringApproach == 'yes':
-				print('Structured SDG to GRI, this data can be mapped on SDG excel sheet with the GRI Disclosures')
+				print('Structured GRI for SDG sheet, this data can be mapped on SDG excel sheet with the GRI Disclosures')
 				df = df.dropna()
-				df = df.drop(['Available Business Disclosures'], axis=1)
+				# df = df.drop(['Available Business Disclosures'], axis=1)
 				df = df.drop(labels = 'Target',axis = 1).groupby(df['Target'].mask(df['Target']==' ').ffill()).agg(', '.join).reset_index()
 
 			elif structuringApproach == 'no':
-				print('Structured GRI to SDG, this data can be mapped on GRI excel sheet with the SDG Tagets')
+				print('Structured SDG to GRI, this data can be mapped on GRI excel sheet with the SDG Targets')
 				df = df.drop(['Available Business Disclosures'], axis=1)
 				df = df.dropna()
 
 			else:
-				print("WARNINH: please run the script again and choose 'yes' or 'no' ") 
+				print("WARNING: please run the script again and choose 'yes' or 'no' ") 
 
 			return df
+
+	def getTablesSDG_GRI_2(self, sdg=None):
+
+		if sdg != None:
+					sdg_df = pd.read_csv(sdg)
+		
+		'''This method requires to add a nested list with 2 page ranges,
+		   with this approach, we avoid scanning a non table on page 73
+		'''
+		if any(isinstance(i, list) for i in self.page_range) == False:
+			return print("WARNING: page_range should be a nested list\n eg: page_range = [list(range(3, 73)), list(range(74, 99))]\n Why? the SDG-GRI pdf file has a page in the middle that is\n not a table, getTablesSDG_GRI method iterates the first\n range of pages an then the other one.")
+
+		else:
+			# Gets all the tables from first page range
+			pdf = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
+						   area = self.area, multiple_tables=False)
+
+			#renaming "sources" column to "source" (same column name in the reamining tables)
+			pdf[0].rename(columns = {'Sources':'Source'}, inplace = True)
+			
+			# Getting the remaining tables
+			pdf_ = read_pdf(self.file_path, stream=True, pages = self.page_range[1],
+							area = self.area, multiple_tables=False )
+
+			#Merging all the tables in one pandas dataframe
+			pdf[0] = pdf[0].append(pdf_[0])
+
+			# Renaming variable name
+			df = pdf[0]
+			df = df[df.Target != 'Target']
+
+			
+			array_agg = lambda x: '\n'.join(x.astype(str))
+
+			df = df.fillna(method='ffill')
+			df = df.groupby(['Target', 'Disclosure'], as_index=False).agg({'Available Business Disclosures': array_agg})
+
+			structuringApproach = input('Are you going to map GRI on SDG sheet? (yes or no): ')
+
+			if structuringApproach == 'yes':
+				print('Structured GRI for SDG sheet, this data can be mapped on SDG excel sheet with the GRI Disclosures')
+
+				df = df.groupby(['Target'], as_index=False).agg({'Available Business Disclosures': array_agg, 'Disclosure':array_agg})
+				# df = df.drop(labels = 'Target',axis = 1).groupby(df['Target'].mask(df['Target']==' ').ffill()).agg(', '.join).reset_index()
+
+				df.rename(columns = {'Target':'SDG_Target', 'Available Business Disclosures': 'GRI Available Business Disclosures', 
+									 'Disclosure': 'GRI_Disclosure'}, inplace = True)
+			
+				if sdg != None:
+					df = pd.merge(df, sdg_df, on=['SDG_Target'], how='right')
+					df = df[['SDG_Target', 'SDG Description','GRI_Disclosure', 'GRI Available Business Disclosures']]
+				
+				# df = df.dropna()
+
+			elif structuringApproach == 'no':
+
+				df.rename(columns = {'Target':'SDG_Target', 'Available Business Disclosures': 'GRI Available Business Disclosures', 
+									 'Disclosure': 'GRI_Disclosure'}, inplace = True)
+				
+				if sdg != None:
+					df = pd.merge(df, sdg_df, on=['SDG_Target'], how='right')
+					df = df[['SDG_Target', 'SDG Description','GRI_Disclosure', 'GRI Available Business Disclosures']]
+				
+
+			else:
+				print("WARNING: please run the script again and choose 'yes' or 'no' ") 
+
+			return df
+
 
 	# Getting tables from PDF GRI Linked to COH4B
 	def getTablesGRI_COH4B(self):
@@ -97,8 +166,8 @@ class ExtractPDFTables:
 			cells = req_table.cells
 
 			for cell in cells[0:len(cells)]:
-			    page.crop(cell).extract_words() 
-
+			    page.crop(cell).extract_words()
+			
 			data = page.extract_table()
 			df = pd.DataFrame(data)
 			df = pd.DataFrame(data[2:],columns=data[1])
@@ -217,8 +286,10 @@ class MapLinks2Excel:
 					target = re.search(regex, target_cell).group()
 
 					try:
-						value_to_add = self.df.loc[self.df['Target'] == target]['Disclosure'].item()
-						ws.cell(row=i, column=3, value=str(value_to_add))	
+						disclosure_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI_Disclosure'].item()
+						description_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI Available Business Disclosures'].item()
+						ws.cell(row=i, column=3, value=str(disclosure_to_add))	
+						ws.cell(row=i, column=4, value=str(description_to_add))
 					except:
 						pass
 
@@ -240,13 +311,53 @@ class MapLinks2Excel:
 
 				if target_cell != None:
 					try:
-						if len(self.df[self.df['Disclosure'] == target_cell]) != 0:
-							value_to_add = self.df[self.df.Disclosure==target_cell].squeeze()['Target'].values
-							ws.cell(row=i+1, column=4, value=', '.join(value_to_add))
+						if len(self.df[self.df['GRI_Disclosure'] == target_cell]) != 0:
+							target_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG_Target'].values
+						
+							ws.cell(row=i+1, column=4, value='\n '.join(target_to_add))
+
+							disclosure_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG Description'].values
+							ws.cell(row=i+1, column=5, value='\n '.join(disclosure_to_add))
 					except:
 						pass
 
 		wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped'
+
+	def MapGRI_SDG_2(self, df=None):
+
+		if df == None:
+			return 'Include SDG Daframe path to be able to also add the description for each SDG target'
+		
+		sdg_df = pd.read_csv(df)
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		rows = ws.max_row
+
+		for i in range(1, rows):
+
+			if ws.cell(row=i, column=2).value != None:
+				target_cell = ws.cell(row=i+1, column=2).value
+
+				if target_cell != None:
+					try:
+						if len(self.df[self.df['Disclosure'] == target_cell]) != 0:
+							value_to_add = self.df[self.df.Disclosure==target_cell].squeeze()['Target'].values
+							value_to_add_1 = self.df[self.df.Disclosure==target_cell]['Target'].values
+					
+							# ws.cell(row=i+1, column=4, value='\n'.join(value_to_add))
+
+							print(target_cell)
+							print(value_to_add_1)
+
+
+							
+					except:
+						pass
+
+		# wb.save(self.path_file)
 
 		return f'{self.sheet} sheet from Excel file have bee mapped'
 
@@ -308,7 +419,7 @@ class MapLinks2Excel:
 
 					try:
 						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].item()
-						ws.cell(row=i, column=6, value=value_to_add[0])
+						ws.cell(row=i, column=7, value=value_to_add[0])
 
 					except:
 						pass
