@@ -16,52 +16,52 @@ class ExtractPDFTables:
 		self.area = area # Table area
 
 	# Getting tables from PDF SDG Linked to GRI
-	def getTablesSDG_GRI(self):
+	def getTablesSDG_GRI_0_Deprecated(self):
 
-		'''This method requires to add a nested list with 2 page ranges,
-		   with this approach, we avoid scanning a non table on page 73
-		'''
-		if any(isinstance(i, list) for i in self.page_range) == False:
-			return print("WARNING: page_range should be a nested list\n eg: page_range = [list(range(3, 73)), list(range(74, 99))]\n Why? the SDG-GRI pdf file has a page in the middle that is\n not a table, getTablesSDG_GRI method iterates the first\n range of pages an then the other one.")
+	# 	'''This method requires to add a nested list with 2 page ranges,
+	# 	   with this approach, we avoid scanning a non table on page 73
+	# 	'''
+	# 	if any(isinstance(i, list) for i in self.page_range) == False:
+	# 		return print("WARNING: page_range should be a nested list\n eg: page_range = [list(range(3, 73)), list(range(74, 99))]\n Why? the SDG-GRI pdf file has a page in the middle that is\n not a table, getTablesSDG_GRI method iterates the first\n range of pages an then the other one.")
 
-		else:
-			# Gets all the tables from first page range
-			pdf = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
-						   area = self.area, multiple_tables=False)
+	# 	else:
+	# 		# Gets all the tables from first page range
+	# 		pdf = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
+	# 					   area = self.area, multiple_tables=False)
 
-			#renaming "sources" column to "source" (same column name in the reamining tables)
-			pdf[0].rename(columns = {'Sources':'Source'}, inplace = True)
+	# 		#renaming "sources" column to "source" (same column name in the reamining tables)
+	# 		pdf[0].rename(columns = {'Sources':'Source'}, inplace = True)
 			
-			# Getting the remaining tables
-			pdf_ = read_pdf(self.file_path, stream=True, pages = self.page_range[1],
-							area = self.area, multiple_tables=False )
+	# 		# Getting the remaining tables
+	# 		pdf_ = read_pdf(self.file_path, stream=True, pages = self.page_range[1],
+	# 						area = self.area, multiple_tables=False )
 
-			#Merging all the tables in one pandas dataframe
-			pdf[0] = pdf[0].append(pdf_[0])
+	# 		#Merging all the tables in one pandas dataframe
+	# 		pdf[0] = pdf[0].append(pdf_[0])
 
-			# Renaming variable name
-			df = pdf[0]
-			df = df[df.Target != 'Target']
+	# 		# Renaming variable name
+	# 		df = pdf[0]
+	# 		df = df[df.Target != 'Target']
 
-			structuringApproach = input('Are you going to map GRI on SDG sheet? (yes or no): ')
+	# 		structuringApproach = input('Are you going to map GRI on SDG sheet? (yes or no): ')
 
-			if structuringApproach == 'yes':
-				print('Structured GRI for SDG sheet, this data can be mapped on SDG excel sheet with the GRI Disclosures')
-				df = df.dropna()
-				# df = df.drop(['Available Business Disclosures'], axis=1)
-				df = df.drop(labels = 'Target',axis = 1).groupby(df['Target'].mask(df['Target']==' ').ffill()).agg(', '.join).reset_index()
+	# 		if structuringApproach == 'yes':
+	# 			print('Structured GRI for SDG sheet, this data can be mapped on SDG excel sheet with the GRI Disclosures')
+	# 			df = df.dropna()
+	# 			# df = df.drop(['Available Business Disclosures'], axis=1)
+	# 			df = df.drop(labels = 'Target',axis = 1).groupby(df['Target'].mask(df['Target']==' ').ffill()).agg(', '.join).reset_index()
 
-			elif structuringApproach == 'no':
-				print('Structured SDG to GRI, this data can be mapped on GRI excel sheet with the SDG Targets')
-				df = df.drop(['Available Business Disclosures'], axis=1)
-				df = df.dropna()
+	# 		elif structuringApproach == 'no':
+	# 			print('Structured SDG to GRI, this data can be mapped on GRI excel sheet with the SDG Targets')
+	# 			df = df.drop(['Available Business Disclosures'], axis=1)
+	# 			df = df.dropna()
 
-			else:
-				print("WARNING: please run the script again and choose 'yes' or 'no' ") 
+	# 		else:
+	# 			print("WARNING: please run the script again and choose 'yes' or 'no' ") 
 
 			return df
 
-	def getTablesSDG_GRI_2(self, sdg=None):
+	def getTablesSDG_GRI(self, sdg=None):
 
 		if sdg != None:
 					sdg_df = pd.read_csv(sdg)
@@ -223,12 +223,12 @@ class ExtractPDFTables:
 
 	def df_gri_tcdf(self, df):
 
-		df = df[['GRI Standards', 'id']]
-		df.rename(columns = {'GRI Standards':'GRI_Standards'}, inplace = True)
-		df['GRI_Standards'].str.split(', ')
-		df = df.assign(GRI_Standards=df['GRI_Standards'].str.split(', ')).explode('GRI_Standards')
+		df_GRI_TCDF = df[['GRI Standards', 'id', 'Recommended \nDisclosures \n(TCFD Framework)']]
+		df_GRI_TCDF.rename(columns = {'GRI Standards':'GRI_Standards'}, inplace = True)
+		df_GRI_TCDF['GRI_Standards'].str.split(', ')
+		df_GRI_TCDF = df_GRI_TCDF.assign(GRI_Standards=df_GRI_TCDF['GRI_Standards'].str.split(', ')).explode('GRI_Standards')
 
-		return df
+		return df_GRI_TCDF
 
 	'''This methods are usefull in case the gathered table
 	   does now shows the columns as headers, but columns
@@ -313,7 +313,6 @@ class MapLinks2Excel:
 					try:
 						if len(self.df[self.df['GRI_Disclosure'] == target_cell]) != 0:
 							target_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG_Target'].values
-						
 							ws.cell(row=i+1, column=4, value='\n '.join(target_to_add))
 
 							disclosure_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG Description'].values
@@ -322,42 +321,6 @@ class MapLinks2Excel:
 						pass
 
 		wb.save(self.path_file)
-
-		return f'{self.sheet} sheet from Excel file have bee mapped'
-
-	def MapGRI_SDG_2(self, df=None):
-
-		if df == None:
-			return 'Include SDG Daframe path to be able to also add the description for each SDG target'
-		
-		sdg_df = pd.read_csv(df)
-		wb = openpyxl.load_workbook(self.path_file)
-		ws = wb[self.sheet]
-
-		rows = ws.max_row
-
-		for i in range(1, rows):
-
-			if ws.cell(row=i, column=2).value != None:
-				target_cell = ws.cell(row=i+1, column=2).value
-
-				if target_cell != None:
-					try:
-						if len(self.df[self.df['Disclosure'] == target_cell]) != 0:
-							value_to_add = self.df[self.df.Disclosure==target_cell].squeeze()['Target'].values
-							value_to_add_1 = self.df[self.df.Disclosure==target_cell]['Target'].values
-					
-							# ws.cell(row=i+1, column=4, value='\n'.join(value_to_add))
-
-							print(target_cell)
-							print(value_to_add_1)
-
-
-							
-					except:
-						pass
-
-		# wb.save(self.path_file)
 
 		return f'{self.sheet} sheet from Excel file have bee mapped'
 
@@ -419,8 +382,11 @@ class MapLinks2Excel:
 
 					try:
 						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].item()
-						ws.cell(row=i, column=7, value=value_to_add[0])
+						# print(value_to_add)
+						ws.cell(row=i, column=8, value=value_to_add)
 
+						value_to_add_2 = self.df.loc[self.df['GRI Standards'] == target]['A. COHBP & \ndefinition'].item()
+						ws.cell(row=i, column=9, value=value_to_add_2)
 					except:
 						pass
 
@@ -451,7 +417,12 @@ class MapLinks2Excel:
 					value_to_add = re.sub('\s\s+', ' ', value_to_add)
 					value_to_add = re.sub(' and| with', '', value_to_add)
 
+					value_to_add_2 = self.df.loc[self.df['id'] == target]['Description'].item()
+
 					ws.cell(row=i, column=4, value=value_to_add)
+
+					ws.cell(row=i, column=5, value=value_to_add_2)
+					
 					count += 1
 
 		wb.save(self.path_file)
@@ -468,9 +439,22 @@ class MapLinks2Excel:
 
 				if target_cell != None:
 					value = self.df.loc[self.df['GRI_Standards'] == target_cell]['id'].values
+					value_2 =self.df.loc[self.df['GRI_Standards'] == target_cell]['Recommended \nDisclosures \n(TCFD Framework)'].values
 					if len(value):
 						value_to_add = ' '.join(value)
-						ws.cell(row=i, column=5, value=value_to_add)
+						ws.cell(row=i, column=6, value=value_to_add)
+						# print(value_to_add)
+
+				
+					if len(value_2):
+						value_to_add_2 = ' \n'.join(value_2)
+
+						ws.cell(row=i, column=7, value=value_to_add_2)
+
+						# print(value_to_add_2)
+						# print('--------------------------------')
+
+		
 
 		wb.save(self.path_file)		
 
