@@ -183,7 +183,7 @@ class ExtractPDFTables:
 		return df
 
 	# Funtions needed in some of the extracted dataframes
-	def extractDisclosures(self, df, column, newColumn, regex, method):
+	def extractDisclosures_deprecated(self, df, column, newColumn, regex, method):
 		
 		values = []
 
@@ -200,7 +200,7 @@ class ExtractPDFTables:
 
 		return df
 
-	def extractDisclosures2(self, df, column, newColumn, regex, method_):
+	def extractDisclosures(self, df, column, newColumn, regex, method_):
 		
 		values = []
 
