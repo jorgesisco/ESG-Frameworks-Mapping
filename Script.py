@@ -183,7 +183,7 @@ class ExtractPDFTables:
 		return df
 
 	# Funtions needed in some of the extracted dataframes
-	def extractDisclosures_deprecated(self, df, column, newColumn, regex, method):
+	def extractDisclosures(self, df, column, newColumn, regex, method):
 		
 		values = []
 
@@ -200,7 +200,7 @@ class ExtractPDFTables:
 
 		return df
 
-	def extractDisclosures(self, df, column, newColumn, regex, method_):
+	def extractDisclosures_DEPRECATERED(self, df, column, newColumn, regex, method_):
 		
 		values = []
 
@@ -259,6 +259,7 @@ class ExtractPDFTables:
 
 		return df
 
+		
 
 class MapLinks2Excel:
 
@@ -276,11 +277,9 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(1, rows):
-			if ws.cell(row=i, column=1).value == None:
-				pass
-
-			else:
+			if ws.cell(row=i, column=1).value != None:
 				target_cell = ws.cell(row=i, column=1).value
+				
 
 				if (re.search(regex, target_cell)):
 					target = re.search(regex, target_cell).group()
@@ -288,6 +287,7 @@ class MapLinks2Excel:
 					try:
 						disclosure_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI_Disclosure'].item()
 						description_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI Available Business Disclosures'].item()
+						
 						ws.cell(row=i, column=3, value=str(disclosure_to_add))	
 						ws.cell(row=i, column=4, value=str(description_to_add))
 					except:
@@ -313,10 +313,10 @@ class MapLinks2Excel:
 					try:
 						if len(self.df[self.df['GRI_Disclosure'] == target_cell]) != 0:
 							target_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG_Target'].values
-							ws.cell(row=i+1, column=4, value='\n '.join(target_to_add))
+							ws.cell(row=i+1, column=6, value='\n '.join(target_to_add))
 
 							disclosure_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG Description'].values
-							ws.cell(row=i+1, column=5, value='\n '.join(disclosure_to_add))
+							ws.cell(row=i+1, column=7, value='\n '.join(disclosure_to_add))
 					except:
 						pass
 
@@ -383,10 +383,10 @@ class MapLinks2Excel:
 					try:
 						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].item()
 						# print(value_to_add)
-						ws.cell(row=i, column=8, value=value_to_add)
+						ws.cell(row=i, column=10, value=value_to_add)
 
 						value_to_add_2 = self.df.loc[self.df['GRI Standards'] == target]['A. COHBP & \ndefinition'].item()
-						ws.cell(row=i, column=9, value=value_to_add_2)
+						ws.cell(row=i, column=11, value=value_to_add_2)
 					except:
 						pass
 
@@ -442,14 +442,14 @@ class MapLinks2Excel:
 					value_2 =self.df.loc[self.df['GRI_Standards'] == target_cell]['Recommended \nDisclosures \n(TCFD Framework)'].values
 					if len(value):
 						value_to_add = ' '.join(value)
-						ws.cell(row=i, column=6, value=value_to_add)
+						ws.cell(row=i, column=8, value=value_to_add)
 						# print(value_to_add)
 
 				
 					if len(value_2):
 						value_to_add_2 = ' \n'.join(value_2)
 
-						ws.cell(row=i, column=7, value=value_to_add_2)
+						ws.cell(row=i, column=9, value=value_to_add_2)
 
 						# print(value_to_add_2)
 						# print('--------------------------------')
@@ -458,3 +458,29 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)		
 
+	def mapGRI2016_2021(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value != None:
+				target_cell = ws.cell(row=i, column=2).value
+        
+        
+				if target_cell != None:
+					try:
+						disclosure_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Disclosure Number 2021'].item()
+						ws.cell(row=i, column=4, value=disclosure_to_add)
+						section_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Section 2021'].item()
+						ws.cell(row=i, column=5, value=section_to_add)	
+
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
+
+	def mapGRI2021_2016(self):
+		pass
