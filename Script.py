@@ -521,3 +521,5 @@ class MapLinks2Excel:
 
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
 
+	def mapGRI16_CASS(self):
+		pass
