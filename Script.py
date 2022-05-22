@@ -1,3 +1,4 @@
+from cmath import nan
 import pandas as pd
 # import numpy as np
 import re
@@ -183,7 +184,7 @@ class ExtractPDFTables:
 		return df
 
 	# Funtions needed in some of the extracted dataframes
-	def extractDisclosures(self, df, column, newColumn, regex, method):
+	def extractDisclosures1(self, df, column, newColumn, regex, method):
 		
 		values = []
 
@@ -200,7 +201,7 @@ class ExtractPDFTables:
 
 		return df
 
-	def extractDisclosures_DEPRECATERED(self, df, column, newColumn, regex, method_):
+	def extractDisclosures2(self, df, column, newColumn, regex, method_):
 		
 		values = []
 
@@ -259,7 +260,7 @@ class ExtractPDFTables:
 
 		return df
 
-		
+	
 
 class MapLinks2Excel:
 
@@ -285,11 +286,12 @@ class MapLinks2Excel:
 					target = re.search(regex, target_cell).group()
 
 					try:
-						disclosure_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI_Disclosure'].item()
-						description_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI Available Business Disclosures'].item()
+						disclosure_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI_Disclosure'].values
+						description_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI Available Business Disclosures'].values
 						
-						ws.cell(row=i, column=3, value=str(disclosure_to_add))	
-						ws.cell(row=i, column=4, value=str(description_to_add))
+						if str(disclosure_to_add[0]) != 'nan':
+							ws.cell(row=i, column=3, value='\n'.join(disclosure_to_add))	
+							ws.cell(row=i, column=4, value='\n'.join(description_to_add))
 					except:
 						pass
 
@@ -313,10 +315,14 @@ class MapLinks2Excel:
 					try:
 						if len(self.df[self.df['GRI_Disclosure'] == target_cell]) != 0:
 							target_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG_Target'].values
-							ws.cell(row=i+1, column=6, value='\n '.join(target_to_add))
+							# ws.cell(row=i+1, column=6, value='\n '.join(target_to_add))
 
 							disclosure_to_add = self.df[self.df.GRI_Disclosure==target_cell].squeeze()['SDG Description'].values
-							ws.cell(row=i+1, column=7, value='\n '.join(disclosure_to_add))
+							# ws.cell(row=i+1, column=7, value='\n '.join(disclosure_to_add))
+
+							if str(target_to_add[0]) != 'nan' and str(disclosure_to_add[0]) != 'nan':
+								ws.cell(row=i+1, column=6, value='\n '.join(target_to_add))
+								ws.cell(row=i+1, column=7, value='\n '.join(disclosure_to_add))
 					except:
 						pass
 
@@ -350,11 +356,11 @@ class MapLinks2Excel:
 					target = re.search(regex, target_cell).group()
 
 					try:
-						value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].item(),
-										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].item()]
+						value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].values,
+										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].values]
 						
-						ws.cell(row=i, column=3, value=str(value_to_add[0]))
-						ws.cell(row=i, column=4, value=str(value_to_add[1]))
+						ws.cell(row=i, column=3, value=' '.join(value_to_add[0]))
+						ws.cell(row=i, column=4, value=' '.join(value_to_add[1]))
 
 					except:
 						pass
@@ -381,12 +387,12 @@ class MapLinks2Excel:
 					target = re.search(regex, target_cell).group()
 
 					try:
-						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].item()
+						value_to_add = self.df.loc[self.df['GRI Standards'] == target]['id'].values
 						# print(value_to_add)
-						ws.cell(row=i, column=10, value=value_to_add)
+						ws.cell(row=i, column=10, value=' '.join(value_to_add))
 
-						value_to_add_2 = self.df.loc[self.df['GRI Standards'] == target]['A. COHBP & \ndefinition'].item()
-						ws.cell(row=i, column=11, value=value_to_add_2)
+						value_to_add_2 = self.df.loc[self.df['GRI Standards'] == target]['A. COHBP & \ndefinition'].values
+						ws.cell(row=i, column=11, value=' '.join(value_to_add_2))
 					except:
 						pass
 
@@ -464,17 +470,23 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value != None:
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
 				target_cell = ws.cell(row=i, column=2).value
         
         
 				if target_cell != None:
-					try:
-						disclosure_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Disclosure Number 2021'].item()
-						ws.cell(row=i, column=4, value=disclosure_to_add)
-						section_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Section 2021'].item()
-						ws.cell(row=i, column=5, value=section_to_add)	
-
+					try:	
+						
+						disclosure_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Disclosure Number 2021'].values
+						section_to_add = self.df.loc[self.df['Disclosure Number 2016'] == target_cell]['Section 2021'].values
+					
+						if disclosure_to_add != False:
+							if str(disclosure_to_add[0]) != 'nan':
+								ws.cell(row=i, column=4, value=''.join(disclosure_to_add))
+								ws.cell(row=i, column=5, value=' '.join(section_to_add))
 					except:
 						pass
 
@@ -483,4 +495,29 @@ class MapLinks2Excel:
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
 
 	def mapGRI2021_2016(self):
-		pass
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+
+        
+				if target_cell != None:
+					try:
+						disclosure_to_add = self.df.loc[self.df['Disclosure Number 2021'] == target_cell]['Disclosure Number 2016'].values
+						ws.cell(row=i, column=4, value='\n'.join(disclosure_to_add))
+						section_to_add = self.df.loc[self.df['Disclosure Number 2021'] == target_cell]['Section 2016'].values
+						ws.cell(row=i, column=5, value=section_to_add[0])	
+
+					except:
+						pass
+
+		wb.save(self.path_file)
+
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
+
