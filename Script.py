@@ -551,4 +551,41 @@ class MapLinks2Excel:
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
 
 	def mapCASS_GRI1016(self):
-		pass
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+		regex = '\w[+-]?[0-9]+\.+\d+'
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+				# print(target_cell)
+
+				
+				if target_cell != None:
+					
+					try:
+						disclosure_to_add = self.df.loc[self.df['ID_GRI'] == target_cell]['ID_CASS_CSR'].values
+						
+						
+						if len(disclosure_to_add) > 0:
+							disclosure_to_add_ = [i[re.search(regex, i).start():re.search(regex, i).end()] for i in disclosure_to_add]
+							# print(disclosure_to_add_)
+							ws.cell(row=i, column=12, value='\n'.join(disclosure_to_add_))
+							
+						section_to_add = self.df.loc[self.df['ID_GRI'] == target_cell]['KPI \n(CASSCSR-4.0)'].values
+						
+						
+						if len(section_to_add)>0:
+							
+							# print(section_to_add)
+							ws.cell(row=i, column=13, value='\n'.join(section_to_add))	
+
+					except:
+						pass
+		wb.save(self.path_file)
+
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CASS CSR 4.0 equivalent")
