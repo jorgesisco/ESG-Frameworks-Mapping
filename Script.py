@@ -183,6 +183,35 @@ class ExtractPDFTables:
 
 		return df
 
+	# Getting tables from PDF CASS CSR 4.0 - GRI 2016
+
+	def getTablesCASS_GRI(self):
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+		frames = []
+
+		for i in range(0, len(self.page_range)):
+			try:
+				page = pdf.pages[i]
+				table = page.extract_table()
+				frames.append(pd.DataFrame(table))
+				
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df.columns = df.iloc[0]
+		df = df[1:]
+		# find_duplicate = df['KPI \n(CASSCSR-4.0)'].isin(['KPI \n(CASSCSR-4.0)'])
+
+		# df = df[~find_duplicate]
+		# Inserting above values on NaN (None) cells
+		df = df.fillna(method='ffill')
+		df.columns.values[0] = "ID_CASS_CSR"
+		df.columns.values[2] = "ID_GRI"
+
+		return df
+
+
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
 		
@@ -521,5 +550,5 @@ class MapLinks2Excel:
 
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2021 equivalent")
 
-	def mapGRI16_CASS(self):
+	def mapCASS_GRI1016(self):
 		pass
