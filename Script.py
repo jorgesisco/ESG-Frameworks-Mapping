@@ -589,3 +589,25 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CASS CSR 4.0 equivalent")
+
+	def mapGRI2016_CASS(self):
+		array_agg = lambda x: '\n '.join(x.astype(str))
+		array_agg_ = lambda x: ''.join(x.astype(str))
+		
+		df = self.df.groupby(['ID_CASS_CSR'], 
+			 as_index=False).agg({'ID_GRI': array_agg, 
+								  'Disclosure title (GRI)': array_agg, 
+								  'KPI \n(CASSCSR-4.0)': array_agg_})
+
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		for i in range(3, len(df['ID_CASS_CSR'])):
+			ws.cell(row=i, column=1, value=df['ID_CASS_CSR'][i])
+			ws.cell(row=i, column=2, value=df['KPI \n(CASSCSR-4.0)'][i])
+			ws.cell(row=i, column=3, value=df['ID_GRI'][i])
+			ws.cell(row=i, column=4, value=df['Disclosure title (GRI)'][i])
+	
+		wb.save(self.path_file)
+
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2016 equivalent") 
