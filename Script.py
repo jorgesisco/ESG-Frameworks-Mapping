@@ -211,6 +211,41 @@ class ExtractPDFTables:
 
 		return df
 
+	def getTablesCDP17_GRI(self):
+		regex = r'(\d\d\d-\d\d)'
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+		frames = []
+
+		for i in range(0, len(self.page_range)):
+			try:
+				page = pdf.pages[i]
+				table = page.extract_table()
+				frames.append(pd.DataFrame(table))
+					
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df.columns = df.iloc[0]
+		df = df[1:]
+
+		structuringApproach = input('Do you want to map CDP on GRI sheet (yes or no)? - if no, then the dataframe will be optimal for mapping GRI on CDP sheet:')
+
+		if structuringApproach == 'yes':
+			df['GRI ID'] = df['GRI'].str.findall(regex).str.join(' ') # will be needed for mapping gri on csp sheet :D
+			df['GRI ID'] = df['GRI ID'].str.split()
+			df = df.explode('GRI ID')
+			return df
+
+		elif structuringApproach == 'no':
+			df['GRI ID'] = df['GRI'].str.findall(regex).str.join(',\n')
+			return df
+
+		else:
+			return print("WARNING: Answer 'yes' or 'no' without any typos")
+			
+
+		
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
@@ -611,3 +646,6 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2016 equivalent") 
+
+	def mapCDP17_GRI(self):
+		pass

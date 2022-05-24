@@ -1,717 +1,2275 @@
-,ID_CASS_CSR,ID_GRI,Disclosure title (GRI)
-0,,Series),
-1,(A1),,
-2,(A2),,
-3,(A3),,
-4,(A4),,
-5,(A5),102-55,GRI content index
-6,(A6),102-53,Contact point for questions regarding the report
-7,(E1) Green Management,ce (E-Series),
-8,(E2) Green Production,,
-9,(E3) Green Operation,305-5,Reduction of GHG emissions
-10,(G1) Vision,ID,Disclosure title (GRI)
-11,(G3) Organization,,
-12,(G4) System,102-32,Highest governance body's role in sustainability reporting
-13,(G5) Capability,102-28,Evaluating the highest governance body's performance
-14,(G6) Engagement,"102-13
-(clause 1.5)","Membership of associations
-1.5 When compiling the information specified in Disclosure 
-102-13, the reporting organization should include 
-memberships maintained at the organizational level in 
-associations or organizations in which it holds a position on 
-the governance body, participates in projects or committees,
-provides substantive funding beyond routine membership 
-dues, or views its membership as strategic."
-15,(M1) Responsibilities for Shareholders,102-13,Membership of associations
-16,(M2) Responsibilities for Customers,,
-17,(M3) Responsibilities for Partners,ID,Disclosure title (GRI)
-18,(P1) Reporting Specifications,Series),
-19,(P2) Message from the Management,102-52,Reporting cycle
-20,(P3) Responsibility Focus,"102-15
-(clause 2.2.10)","Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.10 table(s) summarizing targets, performance 
-against targets, and lessons learned for the current 
-reporting period."
-21,(P4) Corporate Profile,"102-15
-(clause 2.2.10)","Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.10 table(s) summarizing targets, performance against 
-targets, and lessons learned for the current reporting 
-period."
-22,(S1) Responsibilities for Government,Series),
-23,(S2) Responsibilities for Employees,401-1-a,"New employee hires and employee turnover
-The reporting organization shall report the following 
-information:
-a. Total number and rate of new employee hires during 
-the reporting period, by age group, gender and region."
-24,(S3) Work Safety,ID,Disclosure title (GRI)
-25,(S4) Responsibilities for Community,403-10,Work-related ill health
-26,"Corporate social 
-G1.2 responsibility ideas 
-or slogans
-(G2) Strategy 
-Identifying and managing economic, environmental, and 
-102-29 GRI 102: General Disclosures 2016
-social impacts 
-Identification and 
-102-46 Defining report content and topic Boundaries GRI 102: General Disclosures 2016
-management of 
-material issues in 
-G2.1 102-47 List of material topics GRI 102: General Disclosures 2016
-corporate social 
-responsibility
-GRI 103: Management Approach 
-103-2 The management approach and its components 2016 (for each material topic 
-identified)","102-16
- 102-46
- 102-47
- 103-2","Values, principles, standards, and norms of behavior
- Defining report content and topic Boundaries
- List of material topics
- The management approach and its components"
-27,E1.1,103-2,The management approach and its components
-28,E1.10,,
-29,E1.2,,
-30,E1.3,,
-31,E1.4,,
-32,E1.5,,
-33,E1.6,,
-34,E1.7,,
-35,E1.8,103-2-c-v,"The management approach and its components
-For each material topic, the reporting organization shall 
-report the following information:
-c. A description of the following, if the management 
-approach includes that component:
-v. Resources"
-36,E1.9,103-2,The management approach and its components
-37,E2.1,,
-38,E2.10,,
-39,E2.11,,
-40,E2.12,,
-41,E2.13,,
-42,E2.14,103-2,The management approach and its components
-43,E2.15,303-4,Water discharge
-44,E2.16,103-2,The management approach and its components
-45,E2.17,306-2,Waste by type and disposal method
-46,E2.18,,
-47,E2.19,,
-48,E2.2,"301-1-a-ii
- 301-2","Materials used by weight or volume
-The reporting organization shall report the 
-following information:
-a. Total weight or volume of materials that are 
-used to produce and package the organization's 
-primary products and services during the 
-reporting period, by:
-ii. renewable materials used.
- Recycled input materials used"
-49,E2.20,,
-50,E2.21,301-1,Materials used by weight or volume
-51,E2.22,,
-52,E2.23,,
-53,E2.24,103-2,The management approach and its components
-54,E2.25,"305-1
- 305-2
- 305-3
- 305-5","Direct (Scope 1) GHG emissions
- Energy indirect (Scope 2) GHG emissions
- Other indirect (Scope 3) GHG emissions
- Reduction of GHG emissions"
-55,E2.3,103-2,The management approach and its components
-56,E2.4,"103-2
- 302-3
- 302-5","The management approach and its components
- Energy intensity
- Reductions in energy requirements of products 
-and services"
-57,E2.5,"302-1
- 302-2
- 302-4","Energy consumption within the organization
- Energy consumption outside of the organization
- Reduction of energy consumption"
-58,E2.6,302-3,Energy intensity
-59,E2.7,103-2,The management approach and its components
-60,E2.8,302-1-b,"Energy consumption within the organization
-The reporting organization shall report the following 
-information:
-b. Total fuel consumption within the organization from 
-renewable sources, in joules or multiples, and including 
-fuel types used."
-61,E2.9,103-2,The management approach and its components
-62,E3.1,,
-63,E3.2,,
-64,E3.3,304-3,Habitats protected or restored
-65,E3.4,103-2,The management approach and its components
-66,E3.5,,
-67,E3.6,,
-68,G1.1,102-16,"Values, principles, standards, and norms of behavior"
-69,G2.2,"102-14
-(clause 2.1.1)
- 102-14
-(clause 2.1.2)","Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.1 the overall vision and strategy for the short-
-term, medium-term, and long-term, with respect to 
-managing the significant economic, environmental, and 
-social impacts that the organization causes, contributes 
-to, or that are directly linked to its activities, products 
-or services as a result of relationships with others 
-(such as suppliers and persons or organizations in local 
-communities).
- Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.2 strategic priorities and key topics for the short and 
-medium-term with respect to sustainability, including 
-observance of internationally-recognized standards and 
-how such standards relate to long-term organizational 
-strategy and success."
-70,G2.3,,
-71,G3.1,102-20-a,"Executive-level responsibility for economic, 
-environmental, and social topics
-The reporting organization shall report the following 
-information:
-a. Whether the organization has appointed an executive-
-level position or positions with responsibility for 
-economic, environmental, and social topics."
-72,G3.2,"102-18-b
- 102-19
- 102-20","Governance structure
-The reporting organization shall report the following 
-information:
-b. Committees responsible for decision-making on 
-economic, environmental, and social topics.
- Delegating authority
- Executive-level responsibility for economic, 
-environmental, and social topics"
-73,G3.3,"102-18-b
- 102-19
- 102-20
- 102-26
- 102-29-a
- 102-30
- 102-31
- 102-32","Governance structure
-The reporting organization shall report the following 
-information:
-b. Committees responsible for decision-making on 
-economic, environmental, and social topics.
- Delegating authority
- Executive-level responsibility for economic, 
-environmental, and social topics
- Role of highest governance body in setting purpose, 
-values, and strategy
- Identifying and managing economic, environmental, and 
-social impacts
-The reporting organization shall report the following 
-information:
-a. Highest governance body's role in identifying and 
-managing economic, environmental, and social topics and 
-their impacts, risks, and opportunities – including its role 
-in the implementation of due diligence processes.
- Effectiveness of risk management processes
- Review of economic, environmental, and social topics
- Highest governance body's role in sustainability reporting"
-74,G4.1,,
-75,G4.2,"Clause 3.3
- 102-54","Using selected Standards with a GRI-referenced claim
- Claims of reporting in accordance with the GRI Standards"
-76,G4.3,102-28,Evaluating the highest governance body's performance
-77,G5.1,102-27,Collective knowledge of highest governance body
-78,G5.2,,
-79,G5.3,"102-13
-(clause 1.5)","Membership of associations
-1.5 When compiling the information specified in Disclosure 
-102-13, the reporting organization should include 
-memberships maintained at the organizational level in 
-associations or organizations in which it holds a position on 
-the governance body, participates in projects or committees,
-provides substantive funding beyond routine membership 
-dues, or views its membership as strategic."
-80,G6.1,"102-40
- 102-42
- 102-44","List of stakeholder groups
- Identifying and selecting stakeholders
- Key topics and concerns raised"
-81,G6.2,"102-21
- 102-43","Consulting stakeholders on economic, environmental, 
-and social topics
- Approach to stakeholder engagement"
-82,G6.3,"102-12
- 102-13","External initiatives
- Membership of associations"
-83,ID,"ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID
- ID","Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)
- Disclosure title (GRI)"
-84,M1.1,,
-85,M1.2,102-24,Nominating and selecting the highest governance body
-86,M1.3,"103-2
- 205-2
- 205-3","The management approach and its components
- Communication and training about anti-corruption 
-policies and procedures
- Confirmed incidents of corruption and actions taken"
-87,M1.4,,
-88,M1.5,,
-89,M1.6,,
-90,M1.7,"102-7-a-iii
- 201-1-a-i","Scale of the organization
-The reporting organization shall report the following 
-information:
-a. Scale of the organization, including:
-iii. net sales (for private sector organizations) or net 
-revenues (for public sector organizations).
- Direct economic value generated and distributed
-The reporting organization shall report the following 
-information:
-a. Direct economic value generated and distributed 
-(EVG&D) on an accruals basis, including the basic 
-components for the organization's global operations as 
-listed below. If data are presented on a cash basis, report 
-the justification for this decision in addition to reporting the 
-following basic components:
-i. Direct economic value generated: revenues."
-91,M1.8,,
-92,M2.1,,
-93,M2.10,,
-94,M2.11,,
-95,M2.12,,
-96,M2.13,"103-2
- 418-1","The management approach and its components
- Substantiated complaints concerning breaches of 
-customer privacy and losses of customer data"
-97,M2.14,,
-98,M2.15,,
-99,M2.16,,
-100,M2.17,,
-101,M2.18,,
-102,M2.2,"103-2
- 416-1
- 416-2","The management approach and its components
- Assessment of the health and safety impacts of 
-product and service categories
- Incidents of non-compliance concerning the health 
-and safety impacts of products and services"
-103,M2.3,,
-104,M2.4,,
-105,M2.5,,
-106,M2.6,,
-107,M2.7,,
-108,M2.8,"417-2
- 417-3","Incidents of non-compliance concerning product and 
-service information and labeling
- Incidents of non-compliance concerning marketing 
-communications"
-109,M2.9,,
-110,M3.1,102-16,"Values, principles, standards, and norms of behavior"
-111,M3.10,,
-112,M3.11,"103-2
- 308-2
- 414-2","The management approach and its components
- Negative environmental impacts in the supply chain 
-and actions taken
- Negative social impacts in the supply chain and 
-actions taken"
-113,M3.12,"308-1
- 308-2-a
- 414-1
- 414-2-a","New suppliers that were screened using 
-environmental criteria
- Negative environmental impacts in the supply 
-chain and actions taken
-The reporting organization shall report the 
-following information:
-a. Number of suppliers assessed for 
-environmental impacts.
- New suppliers that were screened using social 
-criteria
- Negative social impacts in the supply chain and 
-actions taken
-The reporting organization shall report the following 
-information:
-a. Number of suppliers assessed for social impacts."
-114,M3.13,"308-2-e
- 414-2-e","Negative environmental impacts in the supply chain 
-and actions taken
-The reporting organization shall report the following 
-information:
-e. Percentage of suppliers identified as having 
-significant actual and potential negative 
-environmental impacts with which relationships 
-were terminated as a result of assessment, and why.
- Negative social impacts in the supply chain and 
-actions taken
-The reporting organization shall report the following 
-information:
-e. Percentage of suppliers identified as having 
-significant actual and potential negative social impacts 
-with which relationships were terminated as a result 
-of assessment, and why."
-115,M3.14,,
-116,M3.15,,
-117,M3.16,,
-118,M3.2,,
-119,M3.3,"103-2
- 206-1","The management approach and its components
- Legal actions for anti-competitive behavior, anti-trust, 
-and monopoly practices"
-120,M3.4,,
-121,M3.5,,
-122,M3.6,203-2,Significant indirect economic impacts
-123,M3.7,,
-124,M3.8,103-2-c-i/vii,"The management approach and its components
-For each material topic, the reporting organization shall 
-report the following information:
-c. A description of the following, if the management 
-approach includes that component:
-i. Policies
-vii. Specific actions, such as processes, projects, programs and
-initiatives"
-125,M3.9,,
-126,P1.1,102-56,External assurance
-127,P1.2,"102-45
- 102-46
- 102-48
- 102-49
- 102-50
- 102-51
- 102-52
- 102-53
- 102-54","Entities included in the consolidated financial statements
- Defining report content and topic Boundaries
- Restatements of information
- Changes in reporting
- Reporting period
- Date of most recent report
- Reporting cycle
- Contact point for questions regarding the report
- Claims of reporting in accordance with the GRI Standards"
-128,P1.3,102-52,Reporting cycle
-129,P2.1,"102-14
- 102-15","Statement from senior decision-maker
- Key impacts, risks, and opportunities"
-130,P2.2,"102-14
-(clause 2.1.4)
- 102-14
-(clause 2.1.5)
- 102-15
-(clause 2.2.4)
- 102-15
-(clause 2.2.10)","Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.4 key events, achievements, and failures during the 
-reporting period.
- Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.5 views on performance with respect to targets.
- Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.4 key conclusions about progress in addressing these 
-topics and related performance in the reporting
-period, including an assessment of reasons for 
-underperformance or overperformance.
- Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.10 table(s) summarizing targets, performance 
-against targets, and lessons learned for the current 
-reporting period."
-131,P3.1,"102-14
-(clause 2.1.4)","Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.4 key events, achievements, and failures during the 
-reporting period."
-132,P3.2,"102-14
-(clause 2.1.4)
- 102-14
-(clause 2.1.5)
- 102-15
-(clause 2.2.4)
- 102-15
-(clause 2.2.10)","Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.4 key events, achievements, and failures during the 
-reporting period.
- Statement from senior decision-maker
-When compiling the information specified in Disclosure 
-102-14, the reporting organization should include:
-2.1.5 views on performance with respect to targets.
- Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.4 key conclusions about progress in addressing these 
-topics and related performance in the reporting
-period, including an assessment of reasons for 
-underperformance or overperformance.
- Key impacts, risks, and opportunities
-When compiling the information specified in Disclosure 
-102-15, the reporting organization should include:
-2.2.10 table(s) summarizing targets, performance against 
-targets, and lessons learned for the current reporting 
-period."
-133,P4.1,"102-1
- 102-3
- 102-4
- 102-5
- 102-6-a-i
- 102-18
- 102-22","Name of the organization
- Location of headquarters
- Location of operations
- Ownership and legal form
- Markets served
-The reporting organization shall report the following 
-information:
-a. Markets served, including:
-i. geographic locations where products and services are 
-offered.
- Governance structure
- Composition of the highest governance body and its 
-committees"
-134,P4.2,"102-2
- 102-6-a-ii/iii","Activities, brands, products, and services
- Markets served
-The reporting organization shall report the following 
-information:
-a. Markets served, including:
-ii. sectors served;
-iii. types of customers and beneficiaries."
-135,P4.3,102-7,Scale of the organization
-136,P4.4,102-10,Significant changes to the organization and its supply chain
-137,Part I: P,Series),
-138,Part II: Responsibility Management (G-Series),ID,Disclosure title (GRI)
-139,Part III: Market Performance (M-Series),102-13,Membership of associations
-140,Part IV:,Series),
-141,Part V:,ce (E-Series),
-142,Part VI:,-Series),
-143,S1.1,,
-144,S1.2,,
-145,S1.3,201-1-a-ii,"Direct economic value generated and distributed
-The reporting organization shall report the following 
-information:
-a. Direct economic value generated and distributed 
-(EVG&D) on an accruals basis, including the basic 
-components for the organization's global operations 
-as listed below. If data are presented on a cash basis, 
-report the justification for this decision in addition to 
-reporting the following basic components:
-ii. Economic value distributed: operating costs, 
-employee wages and benefits, payments to providers 
-of capital, payments to government by country, and 
-community investments."
-146,S1.4,,
-147,S1.5,,
-148,S1.6,"203-2
- 401-1-a","Significant indirect economic impacts
- New employee hires and employee turnover
-The reporting organization shall report the following 
-information:
-a. Total number and rate of new employee hires during 
-the reporting period, by age group, gender and region."
-149,S2.1,102-8,Information on employees and other workers
-150,S2.10,"201-1-a-ii
- 401-2-a","Direct economic value generated and distributed
-The reporting organization shall report the following 
-information: 
-a. Direct economic value generated and distributed (EVG&D) 
-on an accruals basis, including the basic components for 
-the organization's global operations as listed below. If data 
-are presented on a cash basis, report the justification for 
-this decision in addition to reporting the following basic 
-components: 
-ii. Economic value distributed: operating costs, employee 
-wages and benefits, payments to providers of capital, payments
-to government by country, and community investments.
- Benefits provided to full-time employees that are not 
-provided to temporary or part-time employees
-The reporting organization shall report the following 
-information:
-a. Benefits which are standard for full-time employees of 
-the organization but are not provided to temporary or 
-part-time employees, by significant locations of operation. 
-These include, as a minimum:
-i. life insurance;
-ii. health care;
-iii. disability and invalidity coverage;
-iv. parental leave;
-v. retirement provision;
-vi. stock ownership;
-vii. others."
-151,S2.11,"103-2
- 403-1
- 403-8","The management approach and its components
- Occupational health and safety management system
- Workers covered by an occupational health and safety 
-management system"
-152,S2.12,,
-153,S2.13,,
-154,S2.14,"103-2
- 404-2-a","The management approach and its components
- Programs for upgrading employee skills and transition 
-assistance programs
-The reporting organization shall report the following 
-information:
-a. Type and scope of programs implemented and 
-assistance provided to upgrade employee skills."
-155,S2.15,404-1,Average hours of training per year per employee
-156,S2.16,,
-157,S2.17,,
-158,S2.18,,
-159,S2.19,,
-160,S2.2,"103-2
- 405-1
- 405-2
- 406-1","The management approach and its components
- Diversity of governance bodies and employees
- Ratio of basic salary and remuneration of 
-women to men
- Incidents of discrimination and corrective 
-actions taken"
-161,S2.20,401-1-b,"New employee hires and employee turnover
-The reporting organization shall report the 
-following information:
-b. Total number and rate of employee turnover 
-during the reporting period, by age group, gender 
-and region."
-162,S2.3,102-41,Collective bargaining agreements
-163,S2.4,407-1,"Operations and suppliers in which the right to 
-freedom of association and collective bargaining 
-may be at risk"
-164,S2.5,405-1-b-i,"Diversity of governance bodies and employees
-The reporting organization shall report the following 
-information:
-b. Percentage of employees per employee category 
-in each of the following diversity categories:
-i. Gender."
-165,S2.6,,
-166,S2.7,"103-2
- 409-1","The management approach and its components
- Operations and suppliers at significant risk for incidents 
-of forced or compulsory labor"
-167,S2.8,"103-2
- 405-1
- 405-2","The management approach and its components
- Diversity of governance bodies and 
-employees
- Ratio of basic salary and remuneration of women 
-to men"
-168,S2.9,,
-169,S3.1,"103-2
- 403-1
- 403-8","The management approach and its components
- Occupational health and safety management system
- Workers covered by an occupational health and safety 
-management system"
-170,S3.2,,
-171,S3.3,403-5,Worker training on occupational health and safety
-172,S3.4,,
-173,S3.5,103-2-c-v,"The management approach and its components
-For each material topic, the reporting organization 
-shall report the following information:
-c. A description of the following, if the management 
-approach includes that component:
-v. Resources"
-174,S3.6,"403-9
- 403-10","Work-related injuries
- Work-related ill health"
-175,S3.7,"403-9
- 403-10","Work-related injuries
- Work-related ill health"
-176,S4.1,"103-2
- 413-1","The management approach and its components
- Operations with local community engagement, 
-impact assessments, and development programs"
-177,S4.10,,
-178,S4.11,,
-179,S4.12,,
-180,S4.13,,
-181,S4.14,,
-182,S4.2,,
-183,S4.3,"102-8-b
- 202-2","Information on employees and other workers
-The reporting organization shall report the 
-following information:
-b. Total number of employees by employment 
-contract (permanent and temporary), by region.
- Proportion of senior management hired from the 
-local community"
-184,S4.4,"103-2-c-i
- 204-1","The management approach and its components
-For each material topic, the reporting organization shall 
-report the following information:
-c. A description of the following, if the management 
-approach includes that component:
-i. Policies
- Proportion of spending on local suppliers"
-185,S4.5,"103-2
- 203-1
- 413-1","The management approach and its components
- Infrastructure investments and services 
-supported
- Operations with local community engagement, 
-impact assessments, and development programs"
-186,S4.6,,
-187,S4.7,,
-188,S4.8,201-1-a-ii,"Direct economic value generated and distributed
-The reporting organization shall report the following 
-information:
-a. Direct economic value generated and distributed 
-(EVG&D) on an accruals basis, including the basic 
-components for the organization's global operations as 
-listed below. If data are presented on a cash basis, report 
-the justification for this decision in addition to reporting 
-the following basic components:
-ii. Economic value distributed: operating costs, employee 
-wages and benefits, payments to providers of capital, 
-payments to government by country, and community 
-investments."
-189,S4.9,,
+,CDP,GRI,,GRI ID
+1,CC1. Governance,"GRI 102: General Disclosures: Disclosures 102-18, 102-20, and 102-35 (b) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103-2 (c-iv) (and reporting recommendations in clauses 1.6.1 and 1.6.2)",,102-18
+1,CC1. Governance,"GRI 102: General Disclosures: Disclosures 102-18, 102-20, and 102-35 (b) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103-2 (c-iv) (and reporting recommendations in clauses 1.6.1 and 1.6.2)",,102-20
+1,CC1. Governance,"GRI 102: General Disclosures: Disclosures 102-18, 102-20, and 102-35 (b) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103-2 (c-iv) (and reporting recommendations in clauses 1.6.1 and 1.6.2)",,102-35
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-12
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-13
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-14
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-15
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-29
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-30
+2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
+recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
+clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): General 
+requirements for reporting the management approach in clause 1.2, Disclosures 103-1 
+(a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
+and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 415: Public Policy: Management approach disclosures (reporting 
+recommendations in clauses 1.2.1 and 1.2.2)",,102-31
+3,CC3. Targets and Initiatives,"GRI 102: General Disclosures: Disclosures 102-14 (and reporting recommendations 
+in clauses 2.1.5 and 2.1.6) and 102-15 (and reporting recommendations in clauses 
+2.2.10 and 2.2.11) 
+GRI 103: Management Approach (applied together with GRI 302: Energy and/or GRI 
+305: Emissions): Disclosure 103-2 (c-iii) (and reporting recommendations in clauses 
+1.5.1, 1.5.3, 1.5.4 and 1.5.5) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 305: Emissions: Disclosures 305-3 (e) and 305-5 (a, d)",,102-14
+3,CC3. Targets and Initiatives,"GRI 102: General Disclosures: Disclosures 102-14 (and reporting recommendations 
+in clauses 2.1.5 and 2.1.6) and 102-15 (and reporting recommendations in clauses 
+2.2.10 and 2.2.11) 
+GRI 103: Management Approach (applied together with GRI 302: Energy and/or GRI 
+305: Emissions): Disclosure 103-2 (c-iii) (and reporting recommendations in clauses 
+1.5.1, 1.5.3, 1.5.4 and 1.5.5) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103 (c-vii) (and reporting recommendations in clause 1.9) 
+GRI 305: Emissions: Disclosures 305-3 (e) and 305-5 (a, d)",,102-15
+4,CC5. Climate Change Risk,"GRI 102: General Disclosures: Disclosure 102-15 (and reporting recommendations 
+in clauses 2.2.1 and 2.2.8) 
+GRI 201: Economic Performance: Disclosure 201-2",,102-15
+5,CC6. Climate Change Opportunities,"GRI 102: General Disclosures: Disclosure 102-15 (and reporting recommendations 
+in clauses 2.2.1 and 2.2.8) 
+GRI 201: Economic Performance: Disclosure 201-2",,102-15
+6,CC7. Emissions Methodology,"GRI 305: Emissions: Disclosures 305-1 (b, d, e, g), 305-2 (c, d, e, g), and 305-5 (b, e)",,
+7,CC8. Emissions Data,"GRI 102: General Disclosures: Disclosure 102-56 (a, b-i) 
+GRI 103: Management Approach (applied together with GRI 305: Emissions): 
+Disclosure 103-1 (b, c) 
+GRI 305: Emissions: Disclosures 305-1 (a, c, f), 305-2 (a, b, f, g), and 305-3 (c)",,102-56
+8,CC9. Scope 1 Emissions Breakdown,"GRI 305: Emissions: Disclosure 305-1 (b) (and reporting recommendations in clause 
+2.2.5)",,
+0,CDP,GRI,,
+1,CC10. Scope 2 Emissions Breakdown,"GRI 302: Energy: Disclosure 302-1 (reporting recommendations in clause 2.2.6) 
+GRI 305: Emissions: Disclosure 305-2 (reporting recommendations in clause 2.4.5)",,
+2,CC11. Energy,"GRI 302: Energy: Disclosure 302-1 (a, b, c, e, g)",,
+3,CC12. Emissions Performance,"GRI 305: Emissions: Disclosures 305-4 (a, b, c) and 305-5 (a, c, d) (and related 
+‘Guidance’)",,
+4,CC13. Emissions Trading,"GRI 305: Emissions: Management approach disclosures (reporting requirements in 
+clause 1.2)",,
+5,CC14. Scope 3 Emissions,"GRI 102: General Disclosures: Disclosure 102-56 (a, b-i) 
+GRI 305: Emissions: Disclosures 305-3 (a, d, f, g) (and related ‘Guidance’) and 305-5 
+(a, c, d) (and related ‘Guidance’)",,102-56
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,Management,,,
+3,CC1. Governance,,,
+4,Group and Individual Responsibility,,,
+5,"CC1.1 
+Where is the highest level of direct 
+responsibility for climate change within 
+your organization? 
+[drop down menu selection] 
+CC1.1a 
+Please identify the position of the 
+individual or name of the committee 
+with this responsibility 
+[free text question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-18 
+Governance structure 
+a.  Governance structure of the 
+organization, including committees 
+of the highest governance body. 
+b.  Committees responsible for 
+decision-making on economic, 
+environmental, and social topics. 
+Disclosure 102-20 
+Executive-level responsibility for 
+economic, environmental, and social 
+topics 
+a.  Whether the organization has 
+appointed an executive-level position 
+or positions with responsibility for 
+economic, environmental, and social 
+topics. 
+b.  Whether post holders report 
+directly to the highest governance 
+body. 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-2 (c-iv) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-iv) [on 
+responsibilities] and related reporting 
+recommendations in clause 1.6.1 
+[on who is assigned responsibility for 
+managing the topic].","The information requested by CC1.1 
+and CC1.1a can be reported with 
+Disclosures 102-18 and 102-20, 
+and Disclosure 103-2 (c-iv) together 
+with GRI 305: Emissions. However, 
+Disclosures 102-18 and 102-20 have a 
+broader scope than the corresponding 
+CDP questions, referring to economic, 
+environmental and social topics more 
+generally.",102-18
+5,"CC1.1 
+Where is the highest level of direct 
+responsibility for climate change within 
+your organization? 
+[drop down menu selection] 
+CC1.1a 
+Please identify the position of the 
+individual or name of the committee 
+with this responsibility 
+[free text question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-18 
+Governance structure 
+a.  Governance structure of the 
+organization, including committees 
+of the highest governance body. 
+b.  Committees responsible for 
+decision-making on economic, 
+environmental, and social topics. 
+Disclosure 102-20 
+Executive-level responsibility for 
+economic, environmental, and social 
+topics 
+a.  Whether the organization has 
+appointed an executive-level position 
+or positions with responsibility for 
+economic, environmental, and social 
+topics. 
+b.  Whether post holders report 
+directly to the highest governance 
+body. 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-2 (c-iv) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-iv) [on 
+responsibilities] and related reporting 
+recommendations in clause 1.6.1 
+[on who is assigned responsibility for 
+managing the topic].","The information requested by CC1.1 
+and CC1.1a can be reported with 
+Disclosures 102-18 and 102-20, 
+and Disclosure 103-2 (c-iv) together 
+with GRI 305: Emissions. However, 
+Disclosures 102-18 and 102-20 have a 
+broader scope than the corresponding 
+CDP questions, referring to economic, 
+environmental and social topics more 
+generally.",102-20
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,Individual Performance,,,
+3,"CC1.2 
+Do you provide incentives for the 
+management of climate change issues, 
+including the attainment of targets? 
+[drop down menu selection] 
+CC1.2a 
+Please provide further details on the 
+incentives provided for the management 
+of climate change issues 
+[table question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-35 (b) 
+Remuneration policies 
+b. How performance criteria in the 
+remuneration policies relate to the 
+highest governance body’s and senior 
+executives’ objectives for economic, 
+environmental, and social topics. 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-2 (c-iv) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-iv) [on 
+responsibilities] and related reporting 
+recommendations in clauses: 
+•  1.6.1 [on who is assigned 
+responsibility for managing the topic] 
+•  1.6.2 [on whether the responsibility 
+is linked to performance assessments 
+or incentive mechanisms]","The information requested by CC1.2 
+and CC1.2a can be reported with 
+Disclosure 102-35 (b), and Disclosure 
+103-2 (c-iv) together with GRI 305: 
+Emissions. However, Disclosure 102- 
+35 (b) has a broader scope than the 
+corresponding CDP questions, referring 
+to economic, environmental and social 
+topics more generally.",102-35
+4,CC2. Strategy,,,
+5,Risk Management Approach,,,
+6,"CC2.1 
+Please select the option that best 
+describes your risk management 
+procedures with regard to climate 
+change risks and opportunities 
+[drop down menu selection] 
+CC2.1a 
+Please provide further details on your 
+risk management procedures with 
+regard to climate change risks and 
+opportunities 
+[table question] 
+CC2.1b 
+Please describe how your risk and 
+opportunity identification processes are 
+applied at both company and asset level 
+[free text question] 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-15 
+Key impacts, risks, and 
+opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.3 [on the approach to 
+prioritizing  challenges  and 
+opportunities] 
+•  2.2.9 [on prioritization of key 
+economic, environmental, and social 
+topics as risks and opportunities] 
+•  2.2.12 [on governance mechanisms 
+to manage risks and opportunities] 
+ 
+ 
+ 
+Continues on next page »","The information requested by CC2.1 
+– CC2.1c can be reported with 
+Disclosures 102-15, 102-29, 102-30 
+and 102-31, and Disclosures 103-1 (a) 
+and 103-2 (c-vii) together with GRI 305: 
+Emissions. However, Disclosures 102- 
+15, 102-29, 102-30 and 102-31 have a 
+broader scope than the corresponding 
+CDP questions, referring to economic, 
+environmental and social topics and 
+their impacts more generally.",102-15
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC2.1c 
+How do you prioritize the risks and 
+opportunities identified? 
+[free text question]","» Continues from previous page 
+Disclosure 102-29 
+Identifying and managing economic, 
+environmental, and social impacts 
+a.  Highest governance body’s role in 
+identifying and managing economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities – including its role in 
+the implementation of due diligence 
+processes. 
+b.  Whether stakeholder consultation 
+is used to support the highest 
+governance body’s identification 
+and management of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+Disclosure 102-30 
+Effectiveness of risk management 
+processes 
+a. Highest governance body’s role in 
+reviewing the effectiveness of the 
+organization’s risk management 
+processes for economic, 
+environmental, and social topics. 
+ 
+Disclosure 102-31 
+Review of economic, environmental, 
+and social topics 
+a. Frequency of the highest governance 
+body’s review of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+ 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-1 (a) 
+Explanation of the material topic 
+and its Boundary 
+a. An explanation of why the topic is 
+material. 
+Continues on next page »",,102-29
+2,"» Continues from previous page 
+CC2.1c 
+How do you prioritize the risks and 
+opportunities identified? 
+[free text question]","» Continues from previous page 
+Disclosure 102-29 
+Identifying and managing economic, 
+environmental, and social impacts 
+a.  Highest governance body’s role in 
+identifying and managing economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities – including its role in 
+the implementation of due diligence 
+processes. 
+b.  Whether stakeholder consultation 
+is used to support the highest 
+governance body’s identification 
+and management of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+Disclosure 102-30 
+Effectiveness of risk management 
+processes 
+a. Highest governance body’s role in 
+reviewing the effectiveness of the 
+organization’s risk management 
+processes for economic, 
+environmental, and social topics. 
+ 
+Disclosure 102-31 
+Review of economic, environmental, 
+and social topics 
+a. Frequency of the highest governance 
+body’s review of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+ 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-1 (a) 
+Explanation of the material topic 
+and its Boundary 
+a. An explanation of why the topic is 
+material. 
+Continues on next page »",,102-30
+2,"» Continues from previous page 
+CC2.1c 
+How do you prioritize the risks and 
+opportunities identified? 
+[free text question]","» Continues from previous page 
+Disclosure 102-29 
+Identifying and managing economic, 
+environmental, and social impacts 
+a.  Highest governance body’s role in 
+identifying and managing economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities – including its role in 
+the implementation of due diligence 
+processes. 
+b.  Whether stakeholder consultation 
+is used to support the highest 
+governance body’s identification 
+and management of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+Disclosure 102-30 
+Effectiveness of risk management 
+processes 
+a. Highest governance body’s role in 
+reviewing the effectiveness of the 
+organization’s risk management 
+processes for economic, 
+environmental, and social topics. 
+ 
+Disclosure 102-31 
+Review of economic, environmental, 
+and social topics 
+a. Frequency of the highest governance 
+body’s review of economic, 
+environmental, and social topics 
+and their impacts, risks, and 
+opportunities. 
+ 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-1 (a) 
+Explanation of the material topic 
+and its Boundary 
+a. An explanation of why the topic is 
+material. 
+Continues on next page »",,102-31
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,,"» Continues from previous page 
+See also ‘Guidance for Disclosure 103-1-a’ 
+Extract: The explanation of why the 
+topic is material can include: 
+•  a description of the process, such as 
+due diligence, that the organization 
+used to identify the impacts related 
+to the topic. 
+Disclosure 103-2 (c-vii) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-vii) [on specific 
+actions] and related reporting 
+recommendations in clause 1.9.",,
+3,"CC2.1d 
+Please explain why you do not have a 
+process in place for assessing and 
+managing risks and opportunities from 
+climate change, and whether you plan to 
+introduce such a process in the future 
+[table question]","GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+General requirements for reporting 
+the management approach 
+Reporting requirements in clause 1.2 [if 
+there is no management approach for a 
+material topic].",,
+4,Business Strategy,,,
+5,"CC2.2 
+Is climate change integrated into your 
+business strategy? 
+[drop down menu selection] 
+CC2.2a 
+Please describe the process of how 
+climate change is integrated into your 
+business strategy and any outcomes of 
+this process 
+[free text question] 
+CC2.2c 
+Does your company use an internal 
+price on carbon? 
+[drop down menu selection] 
+CC2.2d 
+Please provide details and examples 
+of how your company uses an internal 
+price on carbon 
+[free text question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-14 
+Statement from senior decision- 
+maker 
+a. A statement from the most senior 
+decision-maker of the organization 
+(such as CEO, chair, or equivalent 
+senior position) about the relevance 
+of sustainability to the organization 
+and its strategy for addressing 
+sustainability. 
+Disclosure 102-15 
+Key impacts, risks, and 
+opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.3 [on the approach to 
+prioritizing  challenges and 
+opportunities] 
+•  2.2.4 [on conclusions about progress 
+and performance] 
+Continues on next page »","The information requested by CC2.2 
+and CC2.2a can be reported with 
+Disclosures 102-14 and 102-15. 
+However, Disclosures 102-14 and 
+102-15 have a broader scope than the 
+corresponding CDP questions, referring 
+to economic, environmental and social 
+topics more generally. 
+GRI does not include specific 
+requirements on the disclosure of an 
+internal price on carbon. However, 
+organizations can report this as part of 
+their management approach disclosures 
+for emissions (see GRI 305: Emissions 
+and GRI 103: Management Approach).",102-14
+5,"CC2.2 
+Is climate change integrated into your 
+business strategy? 
+[drop down menu selection] 
+CC2.2a 
+Please describe the process of how 
+climate change is integrated into your 
+business strategy and any outcomes of 
+this process 
+[free text question] 
+CC2.2c 
+Does your company use an internal 
+price on carbon? 
+[drop down menu selection] 
+CC2.2d 
+Please provide details and examples 
+of how your company uses an internal 
+price on carbon 
+[free text question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-14 
+Statement from senior decision- 
+maker 
+a. A statement from the most senior 
+decision-maker of the organization 
+(such as CEO, chair, or equivalent 
+senior position) about the relevance 
+of sustainability to the organization 
+and its strategy for addressing 
+sustainability. 
+Disclosure 102-15 
+Key impacts, risks, and 
+opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.3 [on the approach to 
+prioritizing  challenges and 
+opportunities] 
+•  2.2.4 [on conclusions about progress 
+and performance] 
+Continues on next page »","The information requested by CC2.2 
+and CC2.2a can be reported with 
+Disclosures 102-14 and 102-15. 
+However, Disclosures 102-14 and 
+102-15 have a broader scope than the 
+corresponding CDP questions, referring 
+to economic, environmental and social 
+topics more generally. 
+GRI does not include specific 
+requirements on the disclosure of an 
+internal price on carbon. However, 
+organizations can report this as part of 
+their management approach disclosures 
+for emissions (see GRI 305: Emissions 
+and GRI 103: Management Approach).",102-15
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,,"» Continues from previous page 
+ 
+•  2.2.9 [on prioritization of key 
+economic, environmental, and social 
+topics as risks and opportunities] 
+•  2.2.10 [on targets, performance 
+against targets, and lessons learned] 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-2 (c-i, c-vii) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-i) [on policies] and 
+related reporting recommendations in 
+clause 1.3. 
+ 
+Disclosure 103-2 (c-vii) [on specific 
+actions] and related reporting 
+recommendations in clause 1.9.",,
+3,"CC2.2b 
+Please explain why climate change is not 
+integrated into your business strategy 
+[free text question]","GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+General requirements for reporting 
+the management approach 
+Reporting requirements in clause 1.2 [if 
+there is no management approach for a 
+material topic].","GRI reporters that have identified 
+Emissions as a material topic, but who 
+do not have an approach to manage 
+the impact(s) of emissions, are required 
+to describe any plans to implement a 
+management approach or the reasons 
+for not having a management approach.",
+4,Engagement with Policy Makers,,,
+5,"CC2.3 
+Do you engage in activities that could 
+either directly or indirectly influence 
+public policy on climate change through 
+any of the following? 
+[tick-box selection] 
+CC2.3a 
+On what issues have you been engaging 
+directly with policy makers? 
+[table question] 
+CC2.3b 
+Are you on the Board of any trade 
+associations or provide funding beyond 
+membership? 
+[drop down menu selection] 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-12 
+External initiatives 
+a. A list of externally-developed 
+economic, environmental and 
+social charters, principles, or other 
+initiatives to which the organization 
+subscribes, or which it endorses. 
+Disclosure 102-13 
+Membership of associations 
+a. A list of the main memberships of 
+industry or other associations, and 
+national or international advocacy 
+organizations. 
+Reporting recommendations in clause 
+1.5 [on which memberships to include]. 
+Continues on next page »","The information requested by CC2.3 
+– CC2.3g can be reported with 
+Disclosures 102-12, 102-13 and the 
+management approach disclosures 
+from GRI 415: Public Policy. However, 
+Disclosures 102-12, 102-13 and the 
+management approach disclosures have 
+a broader scope than the corresponding 
+CDP questions, referring to economic, 
+environmental and social topics more 
+generally.",102-12
+5,"CC2.3 
+Do you engage in activities that could 
+either directly or indirectly influence 
+public policy on climate change through 
+any of the following? 
+[tick-box selection] 
+CC2.3a 
+On what issues have you been engaging 
+directly with policy makers? 
+[table question] 
+CC2.3b 
+Are you on the Board of any trade 
+associations or provide funding beyond 
+membership? 
+[drop down menu selection] 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-12 
+External initiatives 
+a. A list of externally-developed 
+economic, environmental and 
+social charters, principles, or other 
+initiatives to which the organization 
+subscribes, or which it endorses. 
+Disclosure 102-13 
+Membership of associations 
+a. A list of the main memberships of 
+industry or other associations, and 
+national or international advocacy 
+organizations. 
+Reporting recommendations in clause 
+1.5 [on which memberships to include]. 
+Continues on next page »","The information requested by CC2.3 
+– CC2.3g can be reported with 
+Disclosures 102-12, 102-13 and the 
+management approach disclosures 
+from GRI 415: Public Policy. However, 
+Disclosures 102-12, 102-13 and the 
+management approach disclosures have 
+a broader scope than the corresponding 
+CDP questions, referring to economic, 
+environmental and social topics more 
+generally.",102-13
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC2.3c 
+Please enter the details of those trade 
+associations that are likely to take a 
+position on climate change legislation 
+[table question] 
+CC2.3d 
+Do you publicly disclose a list of all the 
+research organizations that you fund? 
+[drop down menu selection] 
+C2.3e 
+Please provide details of the other 
+engagement activities that you 
+undertake 
+[free text question] 
+CC2.3f 
+What processes do you have in place 
+to ensure that all of your direct and 
+indirect activities that influence policy 
+are consistent with your overall climate 
+change strategy? 
+ 
+[free text question] 
+CC2.3g 
+Please explain why you do not engage 
+with policy makers 
+[free text question]","» Continues from previous page 
+GRI 415: PUBLIC POLICY 
+1. Management approach disclosures 
+(from GRI 415: Public Policy) 
+Reporting recommendations in clauses: 
+•  1.2.1 [on significant issues related 
+to public policy development and 
+lobbying] 
+•  1.2.2 [on its stance on these issues]",,
+3,CC3. Targets and Initiatives,,,
+4,Targets,,,
+5,"CC3.1 
+Did you have an emissions reduction 
+or renewable energy consumption 
+or production target that was active 
+(ongoing or reached completion) in the 
+reporting year? 
+[drop down menu selection] 
+CC3.1a 
+Please provide details of your absolute 
+target 
+[table question] 
+ 
+ 
+ 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-14 
+Statement from senior decision- 
+maker 
+a. A statement from the most senior 
+decision-maker of the organization 
+(such as CEO, chair, or equivalent 
+senior position) about the relevance 
+of sustainability to the organization 
+and its strategy for addressing 
+sustainability. 
+ 
+ 
+ 
+ 
+Continues on next page »","The information requested by CC3.1- 
+CC3.1c, CC3.1e and CC3.1f can be 
+reported with Disclosures 102-14, 102- 
+15 and Disclosure 103-2 (c-iii) together 
+with GRI 305: Emissions. However, these 
+disclosures have a broader scope than 
+the corresponding CDP questions, 
+referring to economic, environmental 
+and social topics more generally. 
+ 
+Some CDP questions are more specific: 
+e.g., CC3.1 asks responders to provide 
+details on intensity targets. In other 
+cases, the GRI Standards recommend 
+organizations to provide further 
+contextual information: e.g., the range of 
+entities included in the goals and targets, 
+and their location. 
+ 
+Continues on next page »",102-14
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC3.1b 
+Please provide details of your intensity 
+target 
+[table question] 
+CC3.1c 
+Please also indicate what change in 
+absolute emissions this intensity target 
+reflects 
+[table question] 
+CC3.1d 
+Please provide details of your renewable 
+energy consumption and/or production 
+target in your direct operations 
+[table question] 
+CC3.1e 
+For all of your targets, please provide 
+details on the progress made in the 
+reporting year 
+[table question] 
+CC3.1f 
+Please explain: (i) why you do not have 
+a target; and (ii) forecast how your 
+emissions will change over the next five 
+years 
+[free text question]","» Continues from previous page 
+Reporting recommendations in clauses: 
+•  2.1.5 [on views on performance 
+with respect to targets] 
+•  2.1.6 [on the organization’s main 
+challenges, targets, and goals] 
+Disclosure 102-15 
+Key impacts, risks, and opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.10 [on targets, performance 
+against targets, and lessons learned] 
+•  2.2.11 [on targets, medium-term 
+objectives and goals related to key 
+risks and opportunities] 
+ 
+GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 302: Energy and GRI 305: Emissions) 
+Disclosure 103-2 (c-iii) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-iii) [on goals 
+and targets] and related reporting 
+recommendations in clauses: 
+•  1.5.1 [on the baseline and context 
+for goals and targets] 
+•  1.5.3 [on the expected result] 
+•  1.5.4 [on the expected timeline for 
+achieving each goal and target] 
+•  1.5.5 [on whether goals and targets 
+are mandatory or voluntary] 
+ 
+GRI 305: EMISSIONS 
+Disclosure 305-3 (e) 
+Other indirect (Scope 3) GHG 
+emissions 
+e.  Base year for the calculation, if 
+applicable, including: 
+i.  the rationale for choosing it; 
+ii.  emissions in the base year; 
+iii.  the context for any significant 
+changes in emissions that 
+triggered recalculations of base 
+year emissions.","» Continues from previous page 
+The GRI Standards do not specifically 
+require an explanation of why an 
+organization does not have a target or 
+a forecast of emissions for the next five 
+years (as in CC3.1f).",102-15
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,Emissions Reduction Initiatives,,,
+3,"CC3.2 
+Do you classify any of your existing 
+goods and/or services as low carbon 
+products or do they enable a third party 
+to avoid GHG emissions? 
+[drop down menu selection] 
+CC3.2a 
+Please provide details of your products 
+and/or services that you classify as low 
+carbon products or that enable a third 
+party to avoid GHG emissions 
+[table question]",No direct linkage.,"The GRI Standards do not require 
+specific information on low carbon 
+products. However, this can be related 
+to Disclosure 302-5, which focuses on 
+the reductions in energy requirements 
+of products and services.",
+4,"CC3.3 
+Did you have emissions reduction 
+initiatives that were active within the 
+reporting year (this can include those 
+in the planning and/or implementation 
+phases) 
+[drop down menu selection] 
+CC3.3a 
+Please identify the total number of 
+projects at each stage of development, 
+and for those in the implementation 
+stages, the estimated CO2e savings 
+[table question] 
+CC3.3b 
+For those initiatives implemented in the 
+reporting year, please provide details in 
+the table below 
+[table question] 
+CC3.3c 
+What methods do you use to drive 
+investment in emissions reduction 
+activities? 
+[table question] 
+CC3.3d 
+If you do not have any emissions 
+reduction initiatives, please explain why 
+not 
+[free text question]","GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-2 (c-vii) 
+The management approach and its 
+components 
+Disclosure 103-2 (c-vii) [on specific 
+actions] and related reporting 
+recommendations in clause 1.9. 
+GRI 305: EMISSIONS 
+Disclosure 305-5 (a, d) 
+Reduction of GHG emissions 
+a. GHG emissions reduced as a direct 
+result of reduction initiatives, in 
+metric tons of CO2 equivalent. 
+d. Scopes in which reductions took 
+place; whether direct (Scope 1), 
+energy indirect (Scope 2), and/or 
+other indirect (Scope 3).","Some CDP questions are more specific 
+than the corresponding disclosures 
+in the GRI Standards: e.g., CC3.3a 
+asks responders to identify the total 
+number of projects at each stage of 
+development, and, for those in the 
+implementation stages, the estimated 
+CO2e savings.",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,CC5. Climate Change Risk,,,
+3,"CC5.1 
+Have you identified any inherent climate 
+change risks that have the potential 
+to generate a substantive change in 
+your business operations, revenue or 
+expenditure? 
+[tick-box selection] 
+CC5.1a 
+Please describe your inherent risks 
+driven by changes in regulation 
+[table question] 
+CC5.1b 
+Please describe your inherent risks that 
+are driven by change in physical climate 
+parameters 
+[table question] 
+CC5.1c 
+Please describe your inherent risks that 
+are driven by changes in other climate- 
+related developments 
+[table question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-15 
+Key impacts, risks, and 
+opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.1 [on its significant economic, 
+environmental and social impacts, 
+and associated challenges and 
+opportunities] 
+•  2.2.8 [on the most important 
+risks and opportunities for 
+the organization arising from 
+sustainability trends] 
+GRI 201: ECONOMIC 
+PERFORMANCE 
+Disclosure 201-2 
+Financial implications and other risks 
+and opportunities due to climate 
+change 
+a.  Risks and opportunities posed 
+by climate change that have the 
+potential to generate substantive 
+changes in operations, revenue, or 
+expenditure, including: 
+i.  a description of the risk or 
+opportunity and its classification 
+as either physical, regulatory, or 
+other; 
+ii.  a description of the impact 
+associated with the risk or 
+opportunity; 
+iii.  the financial implications of the 
+risk or opportunity before action 
+is taken; 
+iv.  the methods used to manage the 
+risk or opportunity; 
+v.  the costs of actions taken to 
+manage the risk or opportunity.","The information requested by CC5.1 – 
+CC5.1c can be reported with 
+Disclosures 102-15 and 201-2. However, 
+Disclosure 102-15 has a broader scope 
+than the corresponding CDP questions, 
+referring to economic, environmental 
+and social topics more generally.",102-15
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"CC5.1d 
+Please explain why you do not consider 
+your company to be exposed to 
+inherent risks driven by changes in 
+regulation that have the potential 
+to generate a substantive change in 
+your business operations, revenue or 
+expenditure 
+[free text question] 
+CC5.1e 
+Please explain why you do not consider 
+your company to be exposed to 
+inherent risks driven by physical climate 
+parameters that have the potential 
+to generate a substantive change in 
+your business operations, revenue or 
+expenditure 
+[free text question] 
+CC5.1f 
+Please explain why you do not consider 
+your company to be exposed to 
+inherent risks driven by changes in other 
+climate- related developments that have 
+the potential to generate a substantive 
+change in your business operations, 
+revenue or expenditure 
+[free text question]",No direct linkage.,"If CDP responders state that they are 
+not exposed to a particular risk type, 
+CDP requests an explanation as to why 
+not in CC5.1d – CC5.1f.",
+3,CC6. Climate Change Opportunities,,,
+4,"CC6.1 
+Have you identified any inherent climate 
+change opportunities that have the 
+potential to generate a substantive 
+change in your business operations, 
+revenue or expenditure? 
+ 
+[tick-box selection] 
+CC6.1a 
+Please describe your inherent 
+opportunities that are driven by changes 
+in regulation 
+[table question] 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-15 
+Key impacts, risks, and 
+opportunities 
+a. A description of key impacts, risks, 
+and opportunities. 
+Reporting recommendations in clauses: 
+•  2.2.1 [on its significant economic, 
+environmental and social impacts, 
+and associated challenges and 
+opportunities] 
+•  2.2.8 [on the most important 
+risks and opportunities for 
+the organization arising from 
+sustainability trends] 
+Continues on next page »","The information requested by CC6.1 
+– CC6.1.c can be reported with 
+Disclosures 102-15 and 201-2. However, 
+Disclosure 102-15 has a broader scope 
+than the corresponding CDP questions, 
+referring to economic, environmental 
+and social topics more generally.",102-15
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC6.1b 
+Please describe the inherent 
+opportunities that are driven by changes 
+in physical climate parameters 
+[table question] 
+CC6.1c 
+Please describe the inherent 
+opportunities that are driven by changes 
+in other climate-related developments 
+[table question]","» Continues from previous page 
+GRI 201: ECONOMIC 
+PERFORMANCE 
+Disclosure 201-2 
+Financial implications and other risks 
+and opportunities due to climate 
+change 
+a.  Risks and opportunities posed 
+by climate change that have the 
+potential to generate substantive 
+changes in operations, revenue, or 
+expenditure, including: 
+i.  a description of the risk or 
+opportunity and its classification 
+as either physical, regulatory, or 
+other; 
+ii.  a description of the impact 
+associated with the risk or 
+opportunity; 
+iii.  the financial implications of the 
+risk or opportunity before action 
+is taken; 
+iv.  the methods used to manage the 
+risk or opportunity; 
+v.  the costs of actions taken to 
+manage the risk or opportunity.",,
+3,"CC6.1d 
+Please explain why you do not 
+consider your company to be exposed 
+to inherent opportunities driven by 
+changes in regulation that have the 
+potential to generate a substantive 
+change in your business operations, 
+revenue or expenditure 
+[free text question] 
+CC6.1e 
+Please explain why you do not 
+consider your company to be exposed 
+to inherent opportunities driven by 
+physical climate parameters that have 
+the potential to generate a substantive 
+change in your business operations, 
+revenue or expenditure 
+[free text question] 
+ 
+Continues on next page »",No direct linkage.,"If CDP responders state that they are 
+not exposed to a particular opportunity 
+type, CDP requests an explanation as to 
+why not in CC6.1d – CC6.1f.",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC6.1f 
+Please explain why you do not 
+consider your company to be exposed 
+to inherent opportunities driven 
+by changes in other climate-related 
+developments that have the potential 
+to generate a substantive change in 
+your business operations, revenue or 
+expenditure 
+[free text question]",,,
+3,Emissions,,,
+4,CC7. Emissions Methodology,,,
+5,Base Year,,,
+6,"CC7.1 
+Please provide your base year and base 
+year emissions (Scopes 1 and 2) 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-1 (d) 
+Direct (Scope 1) GHG emissions 
+d.  Base year for the calculation, if 
+applicable, including: 
+i.  the rationale for choosing it; 
+ii.  emissions in the base year; 
+iii.  the context for any significant 
+changes in emissions that 
+triggered recalculations of base 
+year emissions. 
+Disclosure 305-2 (d) 
+Energy indirect (Scope 2) GHG 
+emissions 
+d.  Base year for the calculation, if 
+applicable, including: 
+i.  the rationale for choosing it; 
+ii.  emissions in the base year; 
+iii.  the context for any significant 
+changes in emissions that 
+triggered recalculations of base 
+year emissions.","In addition to the base year and the 
+base year emissions, Disclosures 305-1 
+(d) and 305-2 (d) require the rationale 
+for choosing the base year and the 
+context for any significant changes in 
+emissions that triggered recalculations of 
+base year emissions.",
+7,Methodology,,,
+8,"CC7.2 
+Please give the name of the standard, 
+protocol or methodology you have used 
+to collect activity data and calculate 
+Scope 1 and Scope 2 emissions 
+[drop down menu selection] 
+Continues on next page »","GRI 305: EMISSIONS 
+Disclosure 305-1 (g) 
+Direct (Scope 1) GHG emissions 
+g. Standards, methodologies, 
+assumptions, and/or calculation tools 
+used. 
+Continues on next page »","CDP asks responders to select the 
+applicable methodology or 
+methodologies in CC7.2. Assumptions 
+and sources of uncertainty should be 
+reported in CC8.5.",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC7.2a 
+If you have selected “Other” in CC7.2 
+please provide details of the standard, 
+protocol or methodology you have used 
+to collect activity data and calculate 
+Scope 1 and Scope 2 emissions 
+[free text question]","» Continues from previous page 
+Disclosure 305-2 (g) 
+Energy indirect (Scope 2) GHG 
+emissions 
+g. Standards, methodologies, 
+assumptions, and/or calculation tools 
+used. 
+Disclosure 305-5 (e) 
+Reduction of GHG emissions 
+e. Standards, methodologies, 
+assumptions, and/or calculation tools 
+used.",,
+3,"CC7.3 
+Please give the source for the global 
+warming potentials you have used 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-1 (b, e) 
+Direct (Scope 1) GHG emissions 
+b. Gases included in the calculation; 
+whether CO2, CH4, N2O, HFCs, 
+PFCs, SF6, NF3, or all. 
+e. Source of the emission factors and 
+the global warming potential (GWP) 
+rates used, or a reference to the 
+GWP source. 
+Disclosure 305-2 (c, e) 
+Energy indirect (Scope 2) GHG 
+emissions 
+c. If available, the gases included in the 
+calculation; whether CO2, CH4, 
+N2O, HFCs, PFCs, SF6, NF3, or all. 
+e. Source of the emission factors and 
+the global warming potential (GWP) 
+rates used, or a reference to the 
+GWP source. 
+Disclosure 305-5 (b) 
+Reduction of GHG emissions 
+b. Gases included in the calculation; 
+whether CO2, CH4, N2O, HFCs, 
+PFCs, SF6, NF3, or all.","Disclosures 305-1 (e) and 305-2 (e) 
+require either a reference to the global 
+warming potential source or the global 
+warming potential rates. 
+Disclosures 305-1 (b), 305-2 (c) and 
+305-5 (b) require disclosure of the gases 
+included in the calculation, if available. 
+CC7.3 requests a breakdown of the 
+global warming potential source by gas.",
+4,"CC7.4 
+Please give the emissions factors 
+you have applied and their origin; 
+alternatively, please attach an Excel 
+spreadsheet with this data at the 
+bottom of this page 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-1 (e) 
+Direct (Scope 1) GHG emissions 
+e. Source of the emission factors and 
+the global warming potential (GWP) 
+rates used, or a reference to the 
+GWP source. 
+Continues on next page »","Disclosures 305-1 (e) and 305-2 (e) 
+require the source of the emissions 
+factors used. 
+ 
+ 
+ 
+ 
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,,"» Continues from previous page 
+Disclosure 305-2 (e) 
+Energy indirect (Scope 2) GHG 
+emissions 
+e. Source of the emission factors and 
+the global warming potential (GWP) 
+rates used, or a reference to the 
+GWP source.","» Continues from previous page 
+In addition to the source of the 
+emissions factors used, CC7.4 also 
+requests the actual emissions factors, 
+the fuel/material/energy to which the 
+emissions factors apply, and the unit of 
+measurement.",
+3,CC8. Emissions Data,,,
+4,Boundary,,,
+5,"CC8.1 
+Please select the boundary you are using 
+for your Scope 1 and 2 greenhouse gas 
+inventory 
+[drop down menu selection]","GRI 305: EMISSIONS 
+Disclosure 305-1 (f) 
+Direct (Scope 1) GHG emissions 
+f. Consolidation approach for emissions; 
+whether equity share, financial 
+control, or operational control. 
+Disclosure 305-2 (f) 
+Energy indirect (Scope 2) GHG 
+emissions 
+f. Consolidation approach for emissions; 
+whether equity share, financial 
+control, or operational control.","Both GRI and CDP recommend 
+selecting a consistent consolidation 
+approach for emissions, for both Scope 
+1 and 2 (see clause 2.2.3 in GRI 305: 
+Emissions).",
+6,Scope 1 and 2 Emissions Data,,,
+7,"CC8.2 
+Please provide your gross global Scope 1 
+emissions figures in metric tonnes CO2e 
+[number fleld]","GRI 305: EMISSIONS 
+Disclosure 305-1 (a) 
+Direct (Scope 1) GHG emissions 
+a. Gross direct (Scope 1) GHG 
+emissions in metric tons of CO2 
+equivalent.","Disclosure 305-1 requires that the gross 
+Scope 1 GHG emissions exclude any 
+GHG trades (see clause 2.1.1). 
+In its guidance document, CDP also 
+indicates that gross emissions should 
+be reported before any reductions for 
+offsets are made.",
+8,"CC8.3 
+Please describe your approach to 
+reporting Scope 2 emissions 
+[drop down menu] 
+CC8.3a 
+Please provide your gross global Scope 2 
+emissions figures in metric tonnes CO2e 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-2 (a, b, g) 
+Energy indirect (Scope 2) GHG 
+emissions 
+a.  Gross location-based energy indirect 
+(Scope 2) GHG emissions in metric 
+tons of CO2 equivalent. 
+b.  If applicable, gross market-based 
+energy indirect (Scope 2) GHG 
+emissions in metric tons of CO2 
+equivalent. 
+g. Standards, methodologies, 
+assumptions, and/or calculation tools 
+used.","Disclosure 305-2 requires organizations 
+to report the standards, methodologies, 
+assumptions, and/or calculation tools 
+used for calculating Scope 2 emissions. 
+Disclosure 305-2 requires that the gross 
+Scope 2 GHG emissions exclude any 
+GHG trades (see clause 2.3.1). 
+CDP allows companies to reflect their 
+purchase of low-carbon electricity in 
+their Scope 2 figure, provided that 
+the purchase has been tracked by 
+appropriate instruments, and that the 
+production and consumption of the elec- 
+tricity has taken place within the same 
+grid region. CDP’s approach to Scope 
+2 accounting is available in the technical 
+note “Accounting of Scope 2 emissions”, 
+available at www.cdp.net/guidance.",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"CC8.4 
+Are there any sources (e.g. facilities, 
+specific GHGs, activities, geographies, 
+etc.) of Scope 1 and Scope 2 emissions 
+that are within your selected reporting 
+boundary which are not included in 
+your disclosure? 
+ 
+[drop down menu selection] 
+CC8.4a 
+Please provide details of the sources 
+of Scope 1 and Scope 2 emissions that 
+are within your selected reporting 
+boundary which are not included in 
+your disclosure 
+[table question]","GRI 103: MANAGEMENT 
+APPROACH (applied together with 
+GRI 305: Emissions) 
+Disclosure 103-1 (b, c) 
+Explanation of the material topic 
+and its Boundary 
+b.  The Boundary for the material topic, 
+which includes a description of: 
+i.  where the impacts occur; 
+ii.  the organization’s involvement 
+with the impacts. For example, 
+whether the organization has 
+caused or contributed to the 
+impacts, or is directly linked to 
+the impacts through its business 
+relationships. 
+c.  Any specific limitation regarding the 
+topic Boundary","For each source of Scope 1 and Scope 
+2 emissions that are within the selected 
+reporting boundary but which are not 
+included in the disclosure, CDP requests 
+an explanation of why the source is 
+excluded.",
+3,Data Accuracy,,,
+4,"CC8.5 
+Please estimate the level of uncertainty 
+of the total gross global Scope 1 and 2 
+emissions figures that you have supplied 
+and specify the sources of uncertainty 
+in your data gathering, handling and 
+calculations 
+ 
+[table question]",No direct linkage.,"The GRI standards do not specifically 
+require reporting the level of 
+uncertainty for Scope 1 and Scope 
+2 emissions figures (as in CC8.5). 
+However, this information can be 
+reported with Disclosures 305-1 
+( g) and 305-2 (g), which require 
+organizations to report the standards, 
+methodologies, assumptions and/or 
+calculation tools used for Scope 1 and 
+Scope 2 emissions respectively.",
+5,External Verification or Assurance,,,
+6,"CC8.6 
+Please indicate the verification/ 
+assurance status that applies to your 
+reported Scope 1 emissions 
+[drop down menu selection] 
+CC8.6a 
+Please provide further details of the 
+verification/assurance undertaken for 
+your Scope 1 emissions, and attach the 
+relevant statements 
+[table question] 
+ 
+ 
+ 
+ 
+Continues on next page »","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-56 (a, b-i) 
+External assurance 
+a. A description of the organization’s 
+policy and current practice with 
+regard to seeking external assurance 
+for the report. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Continues on next page »","GRI requires organizations to provide 
+information about external assurance 
+for the sustainability report under 
+Disclosure 102-56. However, this 
+information is not presented per 
+disclosure (e.g., Disclosures 305-1 and 
+305-2 on Scope 1 and Scope 2 GHG 
+emissions). 
+CDP requests information on third- 
+party verification/assurance only. In 
+addition, it requests further details of 
+the verification/ assurance undertaken, 
+such as the proportion of reported 
+Scope 1 and 2 emissions verified. It also 
+requests that responders attach a copy 
+of the verification statement to their 
+response. 
+ 
+Continues on next page »",102-56
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+If “No third party veriflcation or assurance 
+– regulatory CEMS required” selected in 
+CC8.6: 
+CC8.6b 
+Please provide further details of the 
+regulatory regime to which you are 
+complying that specifies the use of 
+Continuous Emissions Monitoring 
+Systems (CEMS) 
+ 
+[table question] 
+CC8.7 
+Please indicate the verification/ 
+assurance status that applies to your 
+reported Scope 2 emissions 
+[drop down menu selection] 
+CC8.7a 
+Please provide further details of the 
+verification/assurance undertaken for 
+your Scope 2 emissions, and attach the 
+relevant statements 
+[table question] 
+CC8.8 
+Please identify if any data points have 
+been verified as part of the third party 
+verification work undertaken, other 
+than the verification of emissions figures 
+reported in CC8.6, CC8.7 and CC14.2 
+[table question]","» Continues from previous page 
+b.  If the report has been externally 
+assured: 
+i.  A reference to the external 
+assurance report, statements, or 
+opinions. If not included in the 
+assurance report accompanying 
+the sustainability report, a 
+description of what has and 
+what has not been assured and 
+on what basis, including the 
+assurance standards used, the 
+level of assurance obtained, and 
+any limitations of the assurance 
+process;","» Continues from previous page 
+For Scope 2, CDP asks the company to 
+specify whether the verification pertains 
+to the company’s location-based Scope 
+2 emissions figure or the market-based 
+Scope 2 emissions figure. 
+In addition, CDP allows responders that 
+do not have third-party verification or 
+assurance in place but are required to 
+gather data using Continuous Emissions 
+Monitoring Systems (CEMS) as part of 
+a regulatory regime to report this in 
+questions CC8.6 and CC8.6b. 
+In the GRI Standards, when reporting 
+the management approach for 
+emissions, the reporting organization 
+can also explain whether it is subject to 
+any country, regional, or industry-level 
+emissions regulations and policies.",
+3,Carbon Dioxide Emissions from Biologically Sequestered Carbon,,,
+4,"CC8.9 
+Are carbon dioxide emissions from 
+biologically sequestered carbon relevant 
+to your organization? 
+[drop down menu selection] 
+CC8.9a 
+Please provide the emissions from 
+biologically sequestered carbon relevant 
+to your organization in metric tonnes 
+CO2 
+[number fleld]","GRI 305: EMISSIONS 
+Disclosure 305-1 (c) 
+Direct (Scope 1) GHG emissions 
+c. Biogenic CO2 emissions in metric 
+tons of CO2 equivalent. 
+Disclosure 305-3 (c) 
+Other indirect (Scope 3) GHG 
+emissions 
+c. Biogenic CO2 emissions in metric 
+tons of CO2 equivalent.","In CC8.9 CDP invites disclosure 
+of carbon dioxide emissions from 
+biologically sequestered carbon from 
+sources deemed relevant by the 
+responder, whether direct or indirect. 
+For GRI, organizations are required 
+to report carbon dioxide emissions 
+from biologically sequestered carbon 
+separately from the gross GHG 
+emissions for Scopes 1 and 3 (see 
+clauses 2.1.2 and 2.5.3 in GRI 305: 
+Emissions). 
+In the GRI Standards, carbon dioxide 
+emissions from biologically sequestered 
+carbon are referred to as ‘biogenic CO2 
+emissions’.",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,CC9. Scope 1 Emissions Breakdown,,,
+3,"CC9.1 
+Do you have Scope 1 emissions sources 
+in more than one country? 
+[drop down menu selection] 
+CC9.1a 
+Please break down your total gross 
+global Scope 1 emissions by country/ 
+region 
+[table question] 
+CC9.2 
+Please indicate which other Scope 1 
+emissions breakdowns you are able to 
+provide (tick all that apply) 
+[tick-box question] 
+CC9.2a 
+By business division 
+[table question] 
+CC9.2b 
+By facility 
+[table question] 
+CC9.2c 
+By GHG type 
+[table question] 
+CC9.2d 
+By activity 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-1 (b) 
+Direct (Scope 1) GHG emissions 
+b. Gases included in the calculation; 
+whether CO2, CH4, N2O, HFCs, 
+PFCs, SF6, NF3, or all. 
+Reporting recommendations in clause 
+2.2.5 [on breakdowns of direct (Scope 
+1) GHG emissions].","CDP requests a breakdown of Scope 1 
+emissions by country/region and invites 
+further disaggregation by business 
+division, facility, GHG type and activity. 
+For GRI, Disclosure 305-1 requires 
+organizations to report which gases 
+have been included in the calculation of 
+the gross Scope 1 emissions. 
+Organizations are recommended 
+to disaggregate Scope 1 emissions 
+data where this aids transparency or 
+comparability over time, such as by 
+business unit or facility, or country.",
+4,CC10. Scope 2 Emissions Breakdown,,,
+5,"CC10.1 
+Do you have Scope 2 emissions sources 
+in more than one country? 
+[drop down menu selection] 
+CC10.1a 
+Please break down your total gross 
+global Scope 2 emissions and energy 
+consumption by country/region 
+[table question] 
+ 
+ 
+Continues on next page »","GRI 302: ENERGY 
+Disclosure 302-1 
+Energy consumption within the 
+organization 
+Reporting recommendations in clause 
+2.2.6 [on breakdowns of energy 
+consumption data]. 
+ 
+ 
+ 
+ 
+Continues on next page »","CDP requests a breakdown by country/ 
+region of Scope 2 emissions and 
+purchased and consumed electricity, 
+heat, steam or cooling, including 
+low-carbon. It then invites further 
+disaggregation of Scope 2 emissions by 
+business division, facility and activity. 
+The GRI Standards recommend 
+organizations to disaggregate energy 
+consumption data and Scope 2 emissions 
+data where this aids transparency or 
+comparability over time, such as by 
+business unit or facility, or country. 
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC10.2 
+Please indicate which other Scope 2 
+emissions breakdowns you are able to 
+provide (tick all that apply) 
+[tick-box selection] 
+CC10.2a 
+By business division 
+[table question] 
+CC10.2b 
+By facility 
+[table question] 
+CC10.2c 
+By activity 
+[table question]","» Continues from previous page 
+GRI 305: EMISSIONS 
+Disclosure 305-2 
+Energy indirect (Scope 2) GHG 
+emissions 
+Reporting recommendations in clause 
+2.4.5 [on breakdowns of energy indirect 
+(Scope 2) GHG emissions].","» Continues from previous page 
+CDP asks responders to specify 
+whether their breakdown pertains to 
+the market-based Scope 2 figure or their 
+location-based Scope 2 figure.",
+3,CC11. Energy,,,
+4,"CC11.1 
+What percentage of your total 
+operational spend in the reporting year 
+was on energy? 
+[drop down menu selection]",See “Comments”.,"The total operating costs (or 
+‘operational spend’) are reported 
+with Disclosure 201-1 from GRI 201: 
+Economic Performance. 
+In addition, organizations are required 
+to describe the resources for managing 
+each material topic, if applicable, under 
+Disclosure 103-2 (c-v) from GRI 103: 
+Management Approach.",
+5,"CC11.2 
+Please state how much heat, steam and 
+cooling in MWh your organization has 
+purchased and consumed during the 
+reporting year 
+[table question] 
+CC11.3 
+Please state how much fuel in MWh 
+your organization has consumed (for 
+energy purposes) during the reporting 
+year 
+[number fleld] 
+Continues on next page »","GRI 302: ENERGY 
+Disclosure 302-1 (a, b, c, e, g) 
+Energy consumption within the 
+organization 
+a.  Total fuel consumption within the 
+organization from non-renewable 
+sources, in joules or multiples, and 
+including fuel types used. 
+b.  Total  fuel  consumption  within 
+the organization from renewable 
+sources, in joules or multiples, and 
+including fuel types used. 
+ 
+Continues on next page »","Both GRI and CDP require data on 
+fuel consumed and electricity, heat(ing), 
+cooling and steam purchased and 
+consumed. 
+When reporting self-generated energy 
+consumption in both GRI and CDP, 
+organizations are required to avoid the 
+double-counting of fuel consumption. 
+For example, if an organization 
+generates electricity from coal and then 
+consumes the generated electricity, the 
+energy consumption is only counted 
+once, under fuel consumption. 
+ 
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC11.3a 
+Please complete the table by breaking 
+down the total “Fuel” figure entered 
+above by fuel type 
+[table question] 
+CC11.4 
+Please provide details of the electricity, 
+heat, steam or cooling amounts that 
+were accounted at a low carbon 
+emission factor in the market-based 
+Scope 2 figure you provided in CC8.3a 
+[table question] 
+CC11.5 
+Please report how much electricity 
+you produce in MWh, and how much 
+electricity you consume in MWh 
+[table question]","» Continues from previous page 
+c.  In joules, watt-hours or multiples, 
+the total: 
+i.  electricity consumption 
+ii.  heating consumption 
+iii.  cooling consumption 
+iv.  steam consumption 
+e. Total energy consumption within the 
+organization, in joules or multiples. 
+g. Source of the conversion factors 
+used.","» Continues from previous page 
+For GRI, organizations are also required 
+to report electricity, heating, cooling and 
+steam sold as separate figures. In CDP, 
+if an organization sells self-generated 
+electricity, heat, cooling or steam to 
+other organizations, the organization 
+does not account or report this energy 
+as consumed, but it accounts for the 
+emissions generated for its production 
+(e.g., by burning natural gas) in the 
+Scope 1 figure and the energy content 
+of natural gas as consumed fuel. 
+For GRI, it is required to break down 
+fuel consumption by renewable and 
+non- renewable sources, in addition to 
+by fuel type. 
+GRI requires energy data to be reported 
+in joules or multiples. CDP requests 
+data to be reported in MWh. 
+In CDP, organizations are requested 
+to provide details of electricity, heat, 
+steam or cooling amounts that were 
+accounted at a low-carbon emission 
+factor in the Scope 2 figure provided in 
+CC8.3a, including the basis for applying 
+a low-carbon emission factor, and the 
+MWh associated with the low-carbon 
+electricity, heat, steam or cooling. 
+Further, in CDP, organizations are also 
+requested to report further details and 
+breakdowns: total electricity consumed 
+that is purchased, total electricity 
+produced, total renewable electricity 
+produced, and consumed renewable 
+electricity that is produced by the 
+company. 
+GRI requires further details such as the 
+standards, methodologies, assumptions, 
+and/or calculation tools used for 
+calculating energy consumption within 
+the organization under Disclosure 302-1 
+(f). 
+GRI 302: Energy includes additional 
+disclosures on energy consumption 
+outside of the organization (Disclosure 
+302-2), energy intensity (Disclosure 
+302-3) and reduction of energy 
+consumption (Disclosure 302-4).",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,CC12. Emissions Performance,,,
+3,Emissions History,,,
+4,"CC12.1 
+How do your gross global emissions 
+(Scope 1 and 2 combined) for the 
+reporting year compare to the previous 
+year? 
+[drop down menu selection] 
+CC12.1a 
+Please identify the reasons for any 
+change in your gross global emissions 
+(Scope 1 and 2 combined) and for each 
+of them specify how your emissions 
+compare to the previous year 
+[table question] 
+CC12.1b 
+Is your emissions performance 
+calculations in CC12.1 and CC12.1a 
+based on a location-based Scope 2 
+emissions figure or a market-based 
+Scope 2 emissions figure? 
+[drop down menu selection]","GRI 305: EMISSIONS 
+Disclosure 305-5 (a, c, d) 
+Reduction of GHG emissions 
+a. GHG emissions reduced as a direct 
+result of reduction initiatives, in 
+metric tons of CO2 equivalent. 
+See also ‘Guidance for Disclosure 305-5’ 
+Extract: The organization can report 
+reductions disaggregated by initiatives or 
+groups of initiatives. 
+c.  Base year or baseline, including the 
+rationale for choosing it. 
+d.  Scopes in which reductions took 
+place; whether direct (Scope 1), 
+energy indirect (Scope 2), and/or 
+other indirect (Scope 3).","Disclosure 305-5 requires organizations 
+to report the amount of GHG emissions 
+reductions achieved as a direct result 
+of initiatives to reduce emissions. 
+Reductions in emissions that result 
+from reduced production capacity 
+or outsourcing are not included in 
+Disclosure 305-5 (see clause 2.9.1). 
+Organizations are required to report, 
+separately, reductions for Scope 1, 
+Scope 2 and/or Scope 3 if reporting two 
+or more Scope types. 
+CDP requests organizations to indicate 
+whether the emissions performance 
+calculations in CC12.1 and CC12.1a 
+are based on a location-based Scope 
+2 emissions figure or a market-based 
+Scope 2 emissions figure. GRI requires 
+organizations to indicate the Scopes 
+in which reductions took place when 
+reporting the reduction of GHG 
+emissions in Disclosure 305-5 (either 1, 
+2 and/or 3). 
+In CDP, organizations are asked to 
+identify the reasons for any change in 
+the gross global emissions (Scope 1 and 
+2 combined) and provide the change 
+in emissions attributed to the reason 
+as a percentage of the Scope 1 and 
+2 combined emissions. In addition to 
+emissions reduction activities, reasons 
+reported in CDP may also include 
+divestments, acquisitions, change in 
+boundary, etc. Changes include reduction, 
+increase or constancy in the amount of 
+emissions compared to the previous year. 
+For GRI, organizations are not required 
+to identify the reasons for changes in 
+gross global emissions, but can report 
+reduction of emissions by initiative (e.g., 
+process redesign, fuel switching). 
+While in CDP comparisons are made 
+against the previous year, with the GRI 
+Standards organizations have flexibility 
+in selecting the base year or baseline 
+and are then required to report the 
+rationale for choosing it. 
+GRI recommends presenting information 
+for the current reporting period and at 
+least two previous periods, including for 
+Disclosures 305-1 and 305-2 (see clause 
+2.7.1 in GRI 101: Foundation).",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,Emissions Intensity,,,
+3,"CC12.2 
+Please describe your gross global 
+combined Scope 1 and 2 emissions for 
+the reporting year in metric tonnes 
+CO2e per unit currency total revenue 
+[table question] 
+CC12.3 
+Please provide an additional intensity 
+(normalized) metric that is appropriate 
+to your business operations 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-4 (a, b, c) 
+GHG emissions intensity 
+a.  GHG emissions intensity ratio for 
+the organization. 
+b.  Organization-specific  metric  (the 
+denominator) chosen to calculate 
+the ratio. 
+c.  Types of GHG emissions included in 
+the intensity ratio; whether direct 
+(Scope 1), energy indirect (Scope 2), 
+and/or other indirect (Scope 3).","For GRI, organizations are required 
+to report at least one GHG emissions 
+ratio. The ratio can be for either 
+Scope 1, Scope 2, or Scope 3 GHG 
+emissions, or a combination of both 
+Scope 1 and 2. The selection of the 
+most appropriate ratio denominator is 
+left to the discretion of the organization 
+(for examples of organization-specific 
+metrics, see ‘Guidance for Disclosure 305- 
+4’). GRI also requires disclosure of the 
+gases included in the calculation of the 
+intensity ratio under Disclosure 305-4 
+(d). 
+In CDP, organizations need to provide 
+the emissions intensity ratios for 
+Scope 1 and 2 combined per unit 
+currency total revenue, and for an 
+additional intensity (normalized) metric 
+appropriate to their business operations. 
+In addition, CDP requests, for each 
+of the intensity ratios provided, the 
+percentage change from the previous 
+year, the direction of change from 
+the previous year, and the reason for 
+change. 
+For GRI, organizations can report 
+an intensity figure for their Scope 3 
+emissions, whereas CDP requests 
+intensity figures for Scope 1 and 2 
+emissions only.",
+4,CC13. Emissions Trading,,,
+5,"CC13.1 
+Do you participate in any emissions 
+trading schemes? 
+[drop down menu selection] 
+CC13.1a 
+Please complete the following table for 
+each of the emission trading schemes in 
+which you participate 
+[table question] 
+CC13.1b 
+What is your strategy for complying 
+with the schemes in which you 
+participate or anticipate participating? 
+[free text question] 
+Continues on next page »","GRI 305: EMISSIONS 
+1. Management approach disclosures 
+(from GRI 305: Emissions) 
+Reporting requirements in clause 1.2 
+[on explaining whether offsets were 
+used to meet the GHG emissions 
+targets].","GRI does not include specific 
+requirements on the disclosure of 
+emissions trading schemes or project- 
+based carbon credits or credit purchase. 
+However, organizations can report this 
+as part of their management approach 
+disclosures for emissions (see GRI 305: 
+Emissions and GRI 103: Management 
+Approach).",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC13.2 
+Has your organization originated 
+any project-based carbon credits or 
+purchased any within the reporting 
+period? 
+[drop down menu selection] 
+CC13.2a 
+Please provide details on the project- 
+based carbon credits originated or 
+purchased by your organization in the 
+reporting period 
+[table question]",,,
+3,CC14. Scope 3 Emissions,,,
+4,"CC14.1 
+Please account for your organization’s 
+Scope 3 emissions, disclosing and 
+explaining any exclusions 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-3 (a, d, f, g) 
+Other indirect (Scope 3) GHG 
+emissions 
+a. Gross other indirect (Scope 3) GHG 
+emissions in metric tons of CO2 
+equivalent. 
+d. Other indirect (Scope 3) GHG 
+emissions categories and activities 
+included in the calculation. 
+See also ‘Guidance for Disclosure 305-3’ 
+Extract: For each of these categories and 
+activities, the organization can provide a 
+figure in CO2 equivalent or explain why 
+certain data are not included. 
+f.  Source of the emission factors and 
+the global warming potential (GWP) 
+rates used, or a reference to the 
+GWP source. 
+g.  Standards, methodologies, 
+assumptions, and/or calculation tools 
+used.","For GRI, organizations are required to 
+report the gross Scope 3 emissions 
+and indicate the Scope 3 emissions 
+categories and activities included in 
+the calculation. Organizations can 
+disaggregate data by the categories and 
+activities documented in the WRI and 
+WBCSD ‘GHG Protocol Corporate 
+Value Chain (Scope 3) Accounting and 
+Reporting Standard’. 
+Disclosure 305-3 requires that the gross 
+Scope 3 GHG emissions exclude any 
+GHG trades and energy indirect (Scope 
+2) GHG emissions from this disclosure 
+(see clauses 2.5.1 and 2.5.2). 
+GRI requires further details for Scope 
+3 emissions, such as the chosen base 
+year, the rationale for choosing the base 
+year, emissions in the base year, and the 
+context for any significant changes in 
+emissions that triggered recalculations of 
+base year emissions (Disclosure 305-3 
+(e)). 
+CDP requests a disaggregation of 
+data by the categories and activities 
+documented in the WRI and WBCSD 
+‘GHG Protocol Corporate Value Chain 
+(Scope 3) Accounting and Reporting 
+Standard’. CDP also requests further 
+details on the percentage of Scope 3 
+emissions calculated using data obtained 
+from suppliers or other value chain 
+partners in its table (column 5). 
+ 
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,,,"» Continues from previous page 
+GRI also requires disclosure of the gases 
+included in the calculation of the intensity 
+ratio under Disclosure 305-3 (b). 
+CDP responders may report the gases 
+included in the calculation under the 
+“Emissions calculation methodology” 
+column in CC14.1.",
+3,"CC14.2 
+Please indicate the verification/ 
+assurance status that applies to your 
+reported Scope 3 emissions 
+[drop down menu selection] 
+CC14.2a 
+Please provide further details of the 
+verification/assurance undertaken, and 
+attach the relevant statements 
+[table question]","GRI 102: GENERAL DISCLOSURES 
+Disclosure 102-56 (a, b-i) 
+External assurance 
+a.  A description of the organization’s 
+policy and current practice with 
+regard to seeking external assurance 
+for the report. 
+b.  If the report has been externally 
+assured: 
+i.  A reference to the external 
+assurance report, statements, or 
+opinions. If not included in the 
+assurance report accompanying 
+the sustainability report, a 
+description of what has and 
+what has not been assured and 
+on what basis, including the 
+assurance standards used, the 
+level of assurance obtained, and 
+any limitations of the assurance 
+process;","GRI requires organizations to 
+provide information about external 
+assurance for the sustainability report 
+under Disclosure 102-56. However, 
+this information does not have to 
+be presented per disclosure (e.g., 
+Disclosure 305-3 on Scope 3 GHG 
+emissions). 
+CDP requests information on third- 
+party verification/assurance only. In 
+addition, it requests further details of 
+the third-party verification/assurance 
+undertaken, such as the proportion of 
+reported Scope 3 emissions verified, and 
+it also requests that responders attach 
+a copy of the verification statement to 
+their response.",102-56
+4,"CC14.3 
+Are you able to compare your Scope 
+3 emissions for the reporting year with 
+those for the previous year for any 
+sources? 
+[drop down menu selection] 
+CC14.3a 
+Please identify the reasons for any 
+change in your Scope 3 emissions and 
+for each of them specify how your 
+emissions compare to the previous year 
+[table question]","GRI 305: EMISSIONS 
+Disclosure 305-5 (a, c, d) 
+Reduction of GHG emissions 
+a. GHG emissions reduced as a direct 
+result of reduction initiatives, in 
+metric tons of CO2 equivalent. 
+See also ‘Guidance for Disclosure 305-5’ 
+Extract: The organization can report 
+reductions disaggregated by initiatives or 
+groups of initiatives. 
+c.  Base year or baseline, including the 
+rationale for choosing it. 
+d.  Scopes in which reductions took 
+place; whether direct (Scope 1), 
+energy indirect (Scope 2), and/or 
+other indirect (Scope 3).","Disclosure 305-5 requires organizations 
+to report the amount of GHG 
+emissions reductions achieved as a 
+direct result of initiatives to reduce 
+emissions. Reductions in emissions 
+that result from reduced production 
+capacity or outsourcing are not included 
+in Disclosure 305-5. Organizations 
+are required to report, separately, 
+reductions for Scope 1, Scope 2 and/or 
+Scope 3 if reporting two or more Scope 
+types. 
+GRI also requires disclosure of the gases 
+included in the calculation, and the 
+standards, methodologies, assumptions, 
+and/or calculation tools used, under 
+Disclosures 305-5 (b) and 305-5 (e), 
+respectively. 
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,,,"» Continues from previous page 
+In CC14.3a, organizations are asked 
+to identify the reasons for any change 
+in the Scope 3 emissions and how 
+they compare to the previous year 
+as percentage change. In addition to 
+emissions reduction activities, reasons 
+reported in CDP may also include 
+divestments, acquisitions, change 
+in boundary, etc. Changes include 
+reduction, increase or constancy in the 
+amount of emissions compared to the 
+previous year. For GRI, organizations 
+are not required to identify the reasons 
+for changes in gross global emissions, 
+but can report reduction of emissions 
+by initiative (e.g., process redesign, fuel 
+switching). 
+While in CDP comparisons are made 
+against the previous year, with the GRI 
+Standards organizations have flexibility 
+in selecting the base year or baseline 
+and are then required to report the 
+rationale for choosing it. 
+GRI recommends presenting 
+information for the current reporting 
+period and at least two previous 
+periods, including for Disclosure 305-3 
+(see clause 2.7.1 in GRI 101: Foundation).",
+3,"CC14.4 
+Do you engage with any of the elements 
+of your value chain on GHG emissions 
+and climate change strategies? 
+[tick-box selection] 
+CC14.4a 
+Please give details of methods of 
+engagement, your strategy for 
+prioritizing engagements and measures 
+of success 
+[free text question] 
+CC14.4b 
+To give a sense of scale of this 
+engagement, please give the number of 
+suppliers with whom you are engaging 
+and the proportion of your total spend 
+that they represent 
+[table question] 
+Continues on next page »",See “Comments”.,"GRI does not include specific 
+requirements on the disclosure of 
+engagement with value chain elements 
+on GHG emissions and climate change 
+strategies. However, organizations can 
+report this as part of their management 
+approach for emissions and/or supplier 
+environmental assessment (see GRI 103: 
+Management Approach together with GRI 
+305: Emissions and/or GRI 308: Supplier 
+Environmental Assessment).",
+0,CDP Questions,GRI Standards,Comments,
+1,,,,
+2,"» Continues from previous page 
+CC14.4c 
+Please explain why you do not engage 
+with any elements of your value chain 
+on GHG emissions and climate change 
+strategies, and any plans you have to 
+develop an engagement strategy in the 
+future 
+[free text question]",,,
