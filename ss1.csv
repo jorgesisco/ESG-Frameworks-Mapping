@@ -1,9 +1,7 @@
-,CDP,GRI,,GRI ID
+,CDP,GRI,
 1,CC1. Governance,"GRI 102: General Disclosures: Disclosures 102-18, 102-20, and 102-35 (b) 
 GRI 103: Management Approach (applied together with GRI 305: Emissions): 
-Disclosure 103-2 (c-iv) (and reporting recommendations in clauses 1.6.1 and 1.6.2)",,"102-18,
-102-20,
-102-35"
+Disclosure 103-2 (c-iv) (and reporting recommendations in clauses 1.6.1 and 1.6.2)",
 2,CC2. Strategy,"GRI 102: General Disclosures: Disclosures 102-12, 102-13 (and reporting 
 recommendations in clause 1.5), 102-14, 102-15 (and reporting recommendations in 
 clauses 2.2.3, 2.2.4, 2.2.9, 2.2.10 and 2.2.12), 102-29, 102-30, and 102-31 
@@ -12,13 +10,7 @@ requirements for reporting the management approach in clause 1.2, Disclosures 10
 (a) (and related ‘Guidance’), 103-2 (c-i) (and reporting recommendations in clause 1.3), 
 and 103-2 (c-vii) (and reporting recommendations in clause 1.9) 
 GRI 415: Public Policy: Management approach disclosures (reporting 
-recommendations in clauses 1.2.1 and 1.2.2)",,"102-12,
-102-13,
-102-14,
-102-15,
-102-29,
-102-30,
-102-31"
+recommendations in clauses 1.2.1 and 1.2.2)",
 3,CC3. Targets and Initiatives,"GRI 102: General Disclosures: Disclosures 102-14 (and reporting recommendations 
 in clauses 2.1.5 and 2.1.6) and 102-15 (and reporting recommendations in clauses 
 2.2.10 and 2.2.11) 
@@ -27,37 +19,36 @@ GRI 103: Management Approach (applied together with GRI 302: Energy and/or GRI
 1.5.1, 1.5.3, 1.5.4 and 1.5.5) 
 GRI 103: Management Approach (applied together with GRI 305: Emissions): 
 Disclosure 103 (c-vii) (and reporting recommendations in clause 1.9) 
-GRI 305: Emissions: Disclosures 305-3 (e) and 305-5 (a, d)",,"102-14,
-102-15"
+GRI 305: Emissions: Disclosures 305-3 (e) and 305-5 (a, d)",
 4,CC5. Climate Change Risk,"GRI 102: General Disclosures: Disclosure 102-15 (and reporting recommendations 
 in clauses 2.2.1 and 2.2.8) 
-GRI 201: Economic Performance: Disclosure 201-2",,102-15
+GRI 201: Economic Performance: Disclosure 201-2",
 5,CC6. Climate Change Opportunities,"GRI 102: General Disclosures: Disclosure 102-15 (and reporting recommendations 
 in clauses 2.2.1 and 2.2.8) 
-GRI 201: Economic Performance: Disclosure 201-2",,102-15
-6,CC7. Emissions Methodology,"GRI 305: Emissions: Disclosures 305-1 (b, d, e, g), 305-2 (c, d, e, g), and 305-5 (b, e)",,
+GRI 201: Economic Performance: Disclosure 201-2",
+6,CC7. Emissions Methodology,"GRI 305: Emissions: Disclosures 305-1 (b, d, e, g), 305-2 (c, d, e, g), and 305-5 (b, e)",
 7,CC8. Emissions Data,"GRI 102: General Disclosures: Disclosure 102-56 (a, b-i) 
 GRI 103: Management Approach (applied together with GRI 305: Emissions): 
 Disclosure 103-1 (b, c) 
-GRI 305: Emissions: Disclosures 305-1 (a, c, f), 305-2 (a, b, f, g), and 305-3 (c)",,102-56
+GRI 305: Emissions: Disclosures 305-1 (a, c, f), 305-2 (a, b, f, g), and 305-3 (c)",
 8,CC9. Scope 1 Emissions Breakdown,"GRI 305: Emissions: Disclosure 305-1 (b) (and reporting recommendations in clause 
-2.2.5)",,
-0,CDP,GRI,,
+2.2.5)",
+0,CDP,GRI,
 1,CC10. Scope 2 Emissions Breakdown,"GRI 302: Energy: Disclosure 302-1 (reporting recommendations in clause 2.2.6) 
-GRI 305: Emissions: Disclosure 305-2 (reporting recommendations in clause 2.4.5)",,
-2,CC11. Energy,"GRI 302: Energy: Disclosure 302-1 (a, b, c, e, g)",,
+GRI 305: Emissions: Disclosure 305-2 (reporting recommendations in clause 2.4.5)",
+2,CC11. Energy,"GRI 302: Energy: Disclosure 302-1 (a, b, c, e, g)",
 3,CC12. Emissions Performance,"GRI 305: Emissions: Disclosures 305-4 (a, b, c) and 305-5 (a, c, d) (and related 
-‘Guidance’)",,
+‘Guidance’)",
 4,CC13. Emissions Trading,"GRI 305: Emissions: Management approach disclosures (reporting requirements in 
-clause 1.2)",,
+clause 1.2)",
 5,CC14. Scope 3 Emissions,"GRI 102: General Disclosures: Disclosure 102-56 (a, b-i) 
 GRI 305: Emissions: Disclosures 305-3 (a, d, f, g) (and related ‘Guidance’) and 305-5 
-(a, c, d) (and related ‘Guidance’)",,102-56
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,Management,,,
-3,CC1. Governance,,,
-4,Group and Individual Responsibility,,,
+(a, c, d) (and related ‘Guidance’)",
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,Management,,
+3,CC1. Governance,,
+4,Group and Individual Responsibility,,
 5,"CC1.1 
 Where is the highest level of direct 
 responsibility for climate change within 
@@ -107,11 +98,10 @@ Disclosures 102-18 and 102-20 have a
 broader scope than the corresponding 
 CDP questions, referring to economic, 
 environmental and social topics more 
-generally.","102-18,
-102-20"
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,Individual Performance,,,
+generally."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,Individual Performance,,
 3,"CC1.2 
 Do you provide incentives for the 
 management of climate change issues, 
@@ -150,9 +140,9 @@ Emissions. However, Disclosure 102-
 35 (b) has a broader scope than the 
 corresponding CDP questions, referring 
 to economic, environmental and social 
-topics more generally.",102-35
-4,CC2. Strategy,,,
-5,Risk Management Approach,,,
+topics more generally."
+4,CC2. Strategy,,
+5,Risk Management Approach,,
 6,"CC2.1 
 Please select the option that best 
 describes your risk management 
@@ -198,9 +188,9 @@ Emissions. However, Disclosures 102-
 broader scope than the corresponding 
 CDP questions, referring to economic, 
 environmental and social topics and 
-their impacts more generally.",102-15
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+their impacts more generally."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC2.1c 
 How do you prioritize the risks and 
@@ -249,11 +239,9 @@ Explanation of the material topic
 and its Boundary 
 a. An explanation of why the topic is 
 material. 
-Continues on next page »",,"102-29,
-102-30,
-102-31"
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »",
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,,"» Continues from previous page 
 See also ‘Guidance for Disclosure 103-1-a’ 
 Extract: The explanation of why the 
@@ -267,7 +255,7 @@ The management approach and its
 components 
 Disclosure 103-2 (c-vii) [on specific 
 actions] and related reporting 
-recommendations in clause 1.9.",,
+recommendations in clause 1.9.",
 3,"CC2.1d 
 Please explain why you do not have a 
 process in place for assessing and 
@@ -281,8 +269,8 @@ General requirements for reporting
 the management approach 
 Reporting requirements in clause 1.2 [if 
 there is no management approach for a 
-material topic].",,
-4,Business Strategy,,,
+material topic].",
+4,Business Strategy,,
 5,"CC2.2 
 Is climate change integrated into your 
 business strategy? 
@@ -337,10 +325,9 @@ internal price on carbon. However,
 organizations can report this as part of 
 their management approach disclosures 
 for emissions (see GRI 305: Emissions 
-and GRI 103: Management Approach).","102-14,
-102-15"
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+and GRI 103: Management Approach)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,,"» Continues from previous page 
  
 •  2.2.9 [on prioritization of key 
@@ -360,7 +347,7 @@ clause 1.3.
  
 Disclosure 103-2 (c-vii) [on specific 
 actions] and related reporting 
-recommendations in clause 1.9.",,
+recommendations in clause 1.9.",
 3,"CC2.2b 
 Please explain why climate change is not 
 integrated into your business strategy 
@@ -377,8 +364,8 @@ do not have an approach to manage
 the impact(s) of emissions, are required 
 to describe any plans to implement a 
 management approach or the reasons 
-for not having a management approach.",
-4,Engagement with Policy Makers,,,
+for not having a management approach."
+4,Engagement with Policy Makers,,
 5,"CC2.3 
 Do you engage in activities that could 
 either directly or indirectly influence 
@@ -420,10 +407,9 @@ management approach disclosures have
 a broader scope than the corresponding 
 CDP questions, referring to economic, 
 environmental and social topics more 
-generally.","102-12,
-102-13"
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+generally."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC2.3c 
 Please enter the details of those trade 
@@ -458,9 +444,9 @@ Reporting recommendations in clauses:
 •  1.2.1 [on significant issues related 
 to public policy development and 
 lobbying] 
-•  1.2.2 [on its stance on these issues]",,
-3,CC3. Targets and Initiatives,,,
-4,Targets,,,
+•  1.2.2 [on its stance on these issues]",
+3,CC3. Targets and Initiatives,,
+4,Targets,,
 5,"CC3.1 
 Did you have an emissions reduction 
 or renewable energy consumption 
@@ -509,9 +495,9 @@ contextual information: e.g., the range of
 entities included in the goals and targets, 
 and their location. 
  
-Continues on next page »",102-14
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC3.1b 
 Please provide details of your intensity 
@@ -587,10 +573,10 @@ The GRI Standards do not specifically
 require an explanation of why an 
 organization does not have a target or 
 a forecast of emissions for the next five 
-years (as in CC3.1f).",102-15
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,Emissions Reduction Initiatives,,,
+years (as in CC3.1f)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,Emissions Reduction Initiatives,,
 3,"CC3.2 
 Do you classify any of your existing 
 goods and/or services as low carbon 
@@ -607,7 +593,7 @@ specific information on low carbon
 products. However, this can be related 
 to Disclosure 302-5, which focuses on 
 the reductions in energy requirements 
-of products and services.",
+of products and services."
 4,"CC3.3 
 Did you have emissions reduction 
 initiatives that were active within the 
@@ -660,10 +646,10 @@ asks responders to identify the total
 number of projects at each stage of 
 development, and, for those in the 
 implementation stages, the estimated 
-CO2e savings.",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,CC5. Climate Change Risk,,,
+CO2e savings."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,CC5. Climate Change Risk,,
 3,"CC5.1 
 Have you identified any inherent climate 
 change risks that have the potential 
@@ -729,9 +715,9 @@ Disclosures 102-15 and 201-2. However,
 Disclosure 102-15 has a broader scope 
 than the corresponding CDP questions, 
 referring to economic, environmental 
-and social topics more generally.",102-15
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+and social topics more generally."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"CC5.1d 
 Please explain why you do not consider 
 your company to be exposed to 
@@ -761,8 +747,8 @@ revenue or expenditure
 [free text question]",No direct linkage.,"If CDP responders state that they are 
 not exposed to a particular risk type, 
 CDP requests an explanation as to why 
-not in CC5.1d – CC5.1f.",
-3,CC6. Climate Change Opportunities,,,
+not in CC5.1d – CC5.1f."
+3,CC6. Climate Change Opportunities,,
 4,"CC6.1 
 Have you identified any inherent climate 
 change opportunities that have the 
@@ -797,9 +783,9 @@ Disclosures 102-15 and 201-2. However,
 Disclosure 102-15 has a broader scope 
 than the corresponding CDP questions, 
 referring to economic, environmental 
-and social topics more generally.",102-15
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+and social topics more generally."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC6.1b 
 Please describe the inherent 
@@ -835,7 +821,7 @@ is taken;
 iv.  the methods used to manage the 
 risk or opportunity; 
 v.  the costs of actions taken to 
-manage the risk or opportunity.",,
+manage the risk or opportunity.",
 3,"CC6.1d 
 Please explain why you do not 
 consider your company to be exposed 
@@ -858,9 +844,9 @@ revenue or expenditure
 Continues on next page »",No direct linkage.,"If CDP responders state that they are 
 not exposed to a particular opportunity 
 type, CDP requests an explanation as to 
-why not in CC6.1d – CC6.1f.",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+why not in CC6.1d – CC6.1f."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC6.1f 
 Please explain why you do not 
@@ -871,10 +857,10 @@ developments that have the potential
 to generate a substantive change in 
 your business operations, revenue or 
 expenditure 
-[free text question]",,,
-3,Emissions,,,
-4,CC7. Emissions Methodology,,,
-5,Base Year,,,
+[free text question]",,
+3,Emissions,,
+4,CC7. Emissions Methodology,,
+5,Base Year,,
 6,"CC7.1 
 Please provide your base year and base 
 year emissions (Scopes 1 and 2) 
@@ -905,8 +891,8 @@ base year emissions, Disclosures 305-1
 for choosing the base year and the 
 context for any significant changes in 
 emissions that triggered recalculations of 
-base year emissions.",
-7,Methodology,,,
+base year emissions."
+7,Methodology,,
 8,"CC7.2 
 Please give the name of the standard, 
 protocol or methodology you have used 
@@ -923,9 +909,9 @@ Continues on next page »","CDP asks responders to select the
 applicable methodology or 
 methodologies in CC7.2. Assumptions 
 and sources of uncertainty should be 
-reported in CC8.5.",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+reported in CC8.5."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC7.2a 
 If you have selected “Other” in CC7.2 
@@ -944,7 +930,7 @@ Disclosure 305-5 (e)
 Reduction of GHG emissions 
 e. Standards, methodologies, 
 assumptions, and/or calculation tools 
-used.",,
+used.",
 3,"CC7.3 
 Please give the source for the global 
 warming potentials you have used 
@@ -980,7 +966,7 @@ Disclosures 305-1 (b), 305-2 (c) and
 305-5 (b) require disclosure of the gases 
 included in the calculation, if available. 
 CC7.3 requests a breakdown of the 
-global warming potential source by gas.",
+global warming potential source by gas."
 4,"CC7.4 
 Please give the emissions factors 
 you have applied and their origin; 
@@ -1001,9 +987,9 @@ factors used.
  
  
  
-Continues on next page »",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,,"» Continues from previous page 
 Disclosure 305-2 (e) 
 Energy indirect (Scope 2) GHG 
@@ -1017,9 +1003,9 @@ emissions factors used, CC7.4 also
 requests the actual emissions factors, 
 the fuel/material/energy to which the 
 emissions factors apply, and the unit of 
-measurement.",
-3,CC8. Emissions Data,,,
-4,Boundary,,,
+measurement."
+3,CC8. Emissions Data,,
+4,Boundary,,
 5,"CC8.1 
 Please select the boundary you are using 
 for your Scope 1 and 2 greenhouse gas 
@@ -1039,8 +1025,8 @@ control, or operational control.","Both GRI and CDP recommend
 selecting a consistent consolidation 
 approach for emissions, for both Scope 
 1 and 2 (see clause 2.2.3 in GRI 305: 
-Emissions).",
-6,Scope 1 and 2 Emissions Data,,,
+Emissions)."
+6,Scope 1 and 2 Emissions Data,,
 7,"CC8.2 
 Please provide your gross global Scope 1 
 emissions figures in metric tonnes CO2e 
@@ -1055,7 +1041,7 @@ GHG trades (see clause 2.1.1).
 In its guidance document, CDP also 
 indicates that gross emissions should 
 be reported before any reductions for 
-offsets are made.",
+offsets are made."
 8,"CC8.3 
 Please describe your approach to 
 reporting Scope 2 emissions 
@@ -1093,9 +1079,9 @@ tricity has taken place within the same
 grid region. CDP’s approach to Scope 
 2 accounting is available in the technical 
 note “Accounting of Scope 2 emissions”, 
-available at www.cdp.net/guidance.",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+available at www.cdp.net/guidance."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"CC8.4 
 Are there any sources (e.g. facilities, 
 specific GHGs, activities, geographies, 
@@ -1133,8 +1119,8 @@ topic Boundary","For each source of Scope 1 and Scope
 reporting boundary but which are not 
 included in the disclosure, CDP requests 
 an explanation of why the source is 
-excluded.",
-3,Data Accuracy,,,
+excluded."
+3,Data Accuracy,,
 4,"CC8.5 
 Please estimate the level of uncertainty 
 of the total gross global Scope 1 and 2 
@@ -1153,8 +1139,8 @@ reported with Disclosures 305-1
 organizations to report the standards, 
 methodologies, assumptions and/or 
 calculation tools used for Scope 1 and 
-Scope 2 emissions respectively.",
-5,External Verification or Assurance,,,
+Scope 2 emissions respectively."
+5,External Verification or Assurance,,
 6,"CC8.6 
 Please indicate the verification/ 
 assurance status that applies to your 
@@ -1203,9 +1189,9 @@ requests that responders attach a copy
 of the verification statement to their 
 response. 
  
-Continues on next page »",102-56
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 If “No third party veriflcation or assurance 
 – regulatory CEMS required” selected in 
@@ -1267,8 +1253,8 @@ the management approach for
 emissions, the reporting organization 
 can also explain whether it is subject to 
 any country, regional, or industry-level 
-emissions regulations and policies.",
-3,Carbon Dioxide Emissions from Biologically Sequestered Carbon,,,
+emissions regulations and policies."
+3,Carbon Dioxide Emissions from Biologically Sequestered Carbon,,
 4,"CC8.9 
 Are carbon dioxide emissions from 
 biologically sequestered carbon relevant 
@@ -1303,10 +1289,10 @@ Emissions).
 In the GRI Standards, carbon dioxide 
 emissions from biologically sequestered 
 carbon are referred to as ‘biogenic CO2 
-emissions’.",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,CC9. Scope 1 Emissions Breakdown,,,
+emissions’."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,CC9. Scope 1 Emissions Breakdown,,
 3,"CC9.1 
 Do you have Scope 1 emissions sources 
 in more than one country? 
@@ -1352,8 +1338,8 @@ Organizations are recommended
 to disaggregate Scope 1 emissions 
 data where this aids transparency or 
 comparability over time, such as by 
-business unit or facility, or country.",
-4,CC10. Scope 2 Emissions Breakdown,,,
+business unit or facility, or country."
+4,CC10. Scope 2 Emissions Breakdown,,
 5,"CC10.1 
 Do you have Scope 2 emissions sources 
 in more than one country? 
@@ -1389,9 +1375,9 @@ consumption data and Scope 2 emissions
 data where this aids transparency or 
 comparability over time, such as by 
 business unit or facility, or country. 
-Continues on next page »",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC10.2 
 Please indicate which other Scope 2 
@@ -1417,8 +1403,8 @@ Reporting recommendations in clause
 CDP asks responders to specify 
 whether their breakdown pertains to 
 the market-based Scope 2 figure or their 
-location-based Scope 2 figure.",
-3,CC11. Energy,,,
+location-based Scope 2 figure."
+3,CC11. Energy,,
 4,"CC11.1 
 What percentage of your total 
 operational spend in the reporting year 
@@ -1431,7 +1417,7 @@ In addition, organizations are required
 to describe the resources for managing 
 each material topic, if applicable, under 
 Disclosure 103-2 (c-v) from GRI 103: 
-Management Approach.",
+Management Approach."
 5,"CC11.2 
 Please state how much heat, steam and 
 cooling in MWh your organization has 
@@ -1471,9 +1457,9 @@ consumes the generated electricity, the
 energy consumption is only counted 
 once, under fuel consumption. 
  
-Continues on next page »",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC11.3a 
 Please complete the table by breaking 
@@ -1549,11 +1535,11 @@ disclosures on energy consumption
 outside of the organization (Disclosure 
 302-2), energy intensity (Disclosure 
 302-3) and reduction of energy 
-consumption (Disclosure 302-4).",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,CC12. Emissions Performance,,,
-3,Emissions History,,,
+consumption (Disclosure 302-4)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,CC12. Emissions Performance,,
+3,Emissions History,,
 4,"CC12.1 
 How do your gross global emissions 
 (Scope 1 and 2 combined) for the 
@@ -1639,10 +1625,10 @@ GRI recommends presenting information
 for the current reporting period and at 
 least two previous periods, including for 
 Disclosures 305-1 and 305-2 (see clause 
-2.7.1 in GRI 101: Foundation).",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
-2,Emissions Intensity,,,
+2.7.1 in GRI 101: Foundation)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
+2,Emissions Intensity,,
 3,"CC12.2 
 Please describe your gross global 
 combined Scope 1 and 2 emissions for 
@@ -1694,8 +1680,8 @@ For GRI, organizations can report
 an intensity figure for their Scope 3 
 emissions, whereas CDP requests 
 intensity figures for Scope 1 and 2 
-emissions only.",
-4,CC13. Emissions Trading,,,
+emissions only."
+4,CC13. Emissions Trading,,
 5,"CC13.1 
 Do you participate in any emissions 
 trading schemes? 
@@ -1724,9 +1710,9 @@ However, organizations can report this
 as part of their management approach 
 disclosures for emissions (see GRI 305: 
 Emissions and GRI 103: Management 
-Approach).",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Approach)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC13.2 
 Has your organization originated 
@@ -1739,8 +1725,8 @@ Please provide details on the project-
 based carbon credits originated or 
 purchased by your organization in the 
 reporting period 
-[table question]",,,
-3,CC14. Scope 3 Emissions,,,
+[table question]",,
+3,CC14. Scope 3 Emissions,,
 4,"CC14.1 
 Please account for your organization’s 
 Scope 3 emissions, disclosing and 
@@ -1800,9 +1786,9 @@ emissions calculated using data obtained
 from suppliers or other value chain 
 partners in its table (column 5). 
  
-Continues on next page »",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,,,"» Continues from previous page 
 GRI also requires disclosure of the gases 
 included in the calculation of the intensity 
@@ -1810,7 +1796,7 @@ ratio under Disclosure 305-3 (b).
 CDP responders may report the gases 
 included in the calculation under the 
 “Emissions calculation methodology” 
-column in CC14.1.",
+column in CC14.1."
 3,"CC14.2 
 Please indicate the verification/ 
 assurance status that applies to your 
@@ -1856,7 +1842,7 @@ undertaken, such as the proportion of
 reported Scope 3 emissions verified, and 
 it also requests that responders attach 
 a copy of the verification statement to 
-their response.",102-56
+their response."
 4,"CC14.3 
 Are you able to compare your Scope 
 3 emissions for the reporting year with 
@@ -1901,9 +1887,9 @@ standards, methodologies, assumptions,
 and/or calculation tools used, under 
 Disclosures 305-5 (b) and 305-5 (e), 
 respectively. 
-Continues on next page »",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Continues on next page »"
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,,,"» Continues from previous page 
 In CC14.3a, organizations are asked 
 to identify the reasons for any change 
@@ -1932,7 +1918,7 @@ GRI recommends presenting
 information for the current reporting 
 period and at least two previous 
 periods, including for Disclosure 305-3 
-(see clause 2.7.1 in GRI 101: Foundation).",
+(see clause 2.7.1 in GRI 101: Foundation)."
 3,"CC14.4 
 Do you engage with any of the elements 
 of your value chain on GHG emissions 
@@ -1961,9 +1947,9 @@ approach for emissions and/or supplier
 environmental assessment (see GRI 103: 
 Management Approach together with GRI 
 305: Emissions and/or GRI 308: Supplier 
-Environmental Assessment).",
-0,CDP Questions,GRI Standards,Comments,
-1,,,,
+Environmental Assessment)."
+0,CDP Questions,GRI Standards,Comments
+1,,,
 2,"» Continues from previous page 
 CC14.4c 
 Please explain why you do not engage 
@@ -1972,4 +1958,4 @@ on GHG emissions and climate change
 strategies, and any plans you have to 
 develop an engagement strategy in the 
 future 
-[free text question]",,,
+[free text question]",,

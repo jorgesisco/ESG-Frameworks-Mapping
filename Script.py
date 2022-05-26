@@ -648,4 +648,48 @@ class MapLinks2Excel:
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2016 equivalent") 
 
 	def mapCDP17_GRI(self):
-		pass
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+		
+				if target_cell != None:
+					try:
+						disclosure_to_add = self.df.loc[self.df['GRI ID'] == target_cell]['CDP'].values
+						
+						if len(disclosure_to_add) > 0:
+							ws.cell(row=i, column=14, value='\n'.join(disclosure_to_add))
+					except:
+							pass
+
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CDP 2017 equivalent") 
+
+	def mapGRI_CDP17(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		regex = '[a-zA-Z]+.+\d'
+		r = 3
+		for i in self.df['CDP']:
+			if re.search(regex, i):
+				ws.cell(row=r, column=1, value=i)
+				r+=1
+
+		regex_2 = 'GRI \w+\d:'
+		r = 3
+		for i in self.df['GRI']:
+			if i != None and re.search(regex_2, i):
+				ws.cell(row=r, column=2, value=i)
+				r+=1
+
+				
+
+		wb.save(self.path_file)
+
