@@ -266,6 +266,13 @@ class ExtractPDFTables:
 			else:
 				return print("WARNING: Answer 'yes' or 'no' without any typos")
 			
+	def getTablesEV2022(self):
+		df = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
+						   area = self.area, multiple_tables=False)
+		
+
+
+		return df
 
 		
 
@@ -715,3 +722,51 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)
 
+	def mapCDP18_GRI(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+
+				# print(target_cell)
+		
+				if target_cell != None:
+					try:
+						disclosure_to_add = self.df.loc[self.df['GRI ID'] == target_cell]['CDP Water Security Questions'].values
+						
+						if len(disclosure_to_add) > 0:
+							ws.cell(row=i, column=16, value='\n'.join(disclosure_to_add))
+						
+					except:
+							pass
+
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CDP Water 2018 equivalent") 
+
+	def mapGRI_CEP18(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		regex = '[a-zA-Z]+.+\d'
+		r = 3
+		for i in self.df['CDP Water Security Questions']:
+			if re.search(regex, i):
+				ws.cell(row=r, column=1, value=i)
+				r+=1
+
+		regex_2 = 'GRI \w+\d:'
+		r = 3
+		for i in self.df['GRI Disclosures']:
+			if i != None and re.search(regex_2, i):
+				ws.cell(row=r, column=2, value=i)
+				r+=1
+
+				
+
+		wb.save(self.path_file)
