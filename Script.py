@@ -211,8 +211,10 @@ class ExtractPDFTables:
 
 		return df
 
-	def getTablesCDP17_GRI(self):
-		regex = r'(\d\d\d-\d\d)'
+	def getTablesCDP_GRI(self):
+		# regex = r'(\d\d\d-\d\d)'
+		regex = r'\d\d\d-\d\d*| \d\d\d-\d\d*-\w'
+		
 		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
 		frames = []
 
@@ -229,20 +231,40 @@ class ExtractPDFTables:
 		df.columns = df.iloc[0]
 		df = df[1:]
 
-		structuringApproach = input('Do you want to map CDP on GRI sheet (yes or no)? - if no, then the dataframe will be optimal for mapping GRI on CDP sheet:')
+		structuringApproach = input("Are you trying to map CDP 2017 press '1' - GRI 2016 or CDP Water 2018 - GRI?? press '2'")
+		
 
-		if structuringApproach == 'yes':
-			df['GRI ID'] = df['GRI'].str.findall(regex).str.join(' ') # will be needed for mapping gri on csp sheet :D
-			df['GRI ID'] = df['GRI ID'].str.split()
-			df = df.explode('GRI ID')
-			return df
+		if structuringApproach == str(1):
+			structuringApproach_2 = input('Do you want to map CDP on GRI sheet (yes or no)? - if no, then the dataframe will be optimal for mapping GRI on CDP sheet:')
 
-		elif structuringApproach == 'no':
-			df['GRI ID'] = df['GRI'].str.findall(regex).str.join(',\n')
-			return df
+			if structuringApproach_2 == 'yes':
+				df['GRI ID'] = df['GRI'].str.findall(regex).str.join(' ') # will be needed for mapping gri on csp sheet :D
+				df['GRI ID'] = df['GRI ID'].str.split()
+				df = df.explode('GRI ID')
+				return df
 
-		else:
-			return print("WARNING: Answer 'yes' or 'no' without any typos")
+			elif structuringApproach_2 == 'no':
+				df['GRI ID'] = df['GRI'].str.findall(regex).str.join(',\n')
+				return df
+
+			else:
+				return print("WARNING: Answer 'yes' or 'no' without any typos")
+
+		elif structuringApproach == str(2):
+			structuringApproach_2 = input('Do you want to map CDP on GRI sheet (yes or no)? - if no, then the dataframe will be optimal for mapping GRI on CDP sheet:')
+
+			if structuringApproach_2 == 'yes':
+				df['GRI ID'] = df['GRI Disclosures'].str.findall(regex).str.join(' ') # will be needed for mapping gri on csp sheet :D
+				df['GRI ID'] = df['GRI ID'].str.split()
+				df = df.explode('GRI ID')
+				return df
+
+			elif structuringApproach_2 == 'no':
+				df['GRI ID'] = df['GRI Disclosures'].str.findall(regex).str.join(',\n')
+				return df
+
+			else:
+				return print("WARNING: Answer 'yes' or 'no' without any typos")
 			
 
 		
