@@ -267,11 +267,9 @@ class ExtractPDFTables:
 				return print("WARNING: Answer 'yes' or 'no' without any typos")
 			
 	def getTablesEV2022(self):
-		df = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
-						   area = self.area, multiple_tables=False)
+		df = read_pdf(self.file_path, stream=True, pages = self.page_range,
+						   area = self.area, multiple_tables=True)
 		
-
-
 		return df
 
 		
