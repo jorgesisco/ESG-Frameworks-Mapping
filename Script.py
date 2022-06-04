@@ -6,6 +6,7 @@ import re
 import pdfplumber
 from tabula import read_pdf
 import openpyxl
+import camelot.io as camelot
 
 
 class ExtractPDFTables:
@@ -231,7 +232,7 @@ class ExtractPDFTables:
 		df.columns = df.iloc[0]
 		df = df[1:]
 
-		structuringApproach = input("Are you trying to map CDP 2017 press '1' - GRI 2016 or CDP Water 2018 - GRI?? press '2'")
+		structuringApproach = input("Are you trying to map CDP Climate Change 2017 - GRI 2016 press '1'  or CDP Water 2018 - GRI?? press '2'")
 		
 
 		if structuringApproach == str(1):
@@ -266,12 +267,20 @@ class ExtractPDFTables:
 			else:
 				return print("WARNING: Answer 'yes' or 'no' without any typos")
 			
-	def getTablesEV2022(self):
-		df = read_pdf(self.file_path, stream=True, pages = self.page_range,
-						   area = self.area, multiple_tables=True)
-		
-		return df
+	def getTablesGRIGoal20(self):
 
+		tables = camelot.read_pdf(self.file_path, pages=f'{self.page_range[0]}-{self.page_range[1]}', flavor='lattice')
+
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		return df
 		
 
 	# Funtions needed in some of the extracted dataframes
@@ -674,7 +683,7 @@ class MapLinks2Excel:
 
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's GRI 2016 equivalent") 
 
-	def mapCDP17_GRI(self):
+	def mapCDPCC17_GRI(self):
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
 		rows = ws.max_row
@@ -698,7 +707,7 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CDP 2017 equivalent") 
 
-	def mapGRI_CDP17(self):
+	def mapGRI_CDPCC17(self):
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
 
