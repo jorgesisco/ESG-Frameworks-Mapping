@@ -266,10 +266,30 @@ class ExtractPDFTables:
 
 			else:
 				return print("WARNING: Answer 'yes' or 'no' without any typos")
-			
-	def getTablesGRIGoal20(self):
+				
+	def getTablesEV22(self):
+		
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor='lattice')
+		
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
 
-		tables = camelot.read_pdf(self.file_path, pages=f'{self.page_range[0]}-{self.page_range[1]}', flavor='lattice')
+		df =  pd.concat(frames)
+		return df
+
+
+	def getTablesCDP_TCFD(self):
+
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor='lattice')
 
 		frames = []
 		for i in tables:
@@ -282,7 +302,6 @@ class ExtractPDFTables:
 		df =  pd.concat(frames)
 		return df
 		
-
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
 		
