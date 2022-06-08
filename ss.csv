@@ -1,3 +1,184 @@
-,Unnamed: 0,IFRS,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
-0,,Conceptual Framework forFinancial Reporting,"Practice Statement on Mgmt.Commentary(This is not a stand-aloneConceptual Framework, andsits within the scope of theIASB Conceptual Framework)",CDSB,GRI - Exposure draft,IIRC,SASB - Exposure draft,TCFD
-1,The purpose of theconceptual framework,"SP1.1: The ConceptualFramework for FinancialReporting describes the objectiveof, and the concepts for, generalpurpose financial reporting.The purpose of the ConceptualFramework is to:(a) assist the InternationalAccounting Standards Board(Board) to develop IFRSStandards (Standards) that arebased on consistent concepts;(b) assist preparers to developconsistent accounting policieswhen no Standard applies to aparticular transaction or otherevent, or when a Standardallows a choice of accountingpolicy; and(c) assist all parties to understandand interpret the Standards.SP1.2: The ConceptualFramework is not a Standard.Nothing in the ConceptualFramework overrides anyStandard or any requirementin a Standard.","IN1: The IFRS Practice StatementManagement Commentaryprovides a broad, non bindingframework for the presentation ofmanagement commentary thatrelates to financial statementsthat have been prepared inaccordance with InternationalFinancial Reporting Standards(IFRSs).IN2: The Practice Statementis not an IFRS. Consequently,entities applying IFRSs arenot required to comply with thePractice Statement, unlessspecifically required by theirjurisdiction. Furthermore, noncompliance with the PracticeStatement will not prevent anentity’s financial statements fromcomplying with IFRSs, if theyotherwise do so.","1. Purpose:The CDSB Framework setsout an approach to reportingenvironmental information inmainstream reports.(...)The CDSB Framework assumesthat the following mattersare routinely disclosed in amainstream report and thereforeprovide context for environmentalinformation reported according tothe CDSB Framework:• The organisation’s principalactivities and business model;• The main markets andjurisdictions in which theorganisation operates;• A description of theorganisation’s supply chain;and• Other key legal, staffing andperformance indicators","A. Background onsustainability reporting - GRIFoundation 2016GRI 101: Foundation applies toany organisation that wants to usethe GRI Standards to report aboutits economic, environmental, and/or social impacts. Therefore, thisStandard is applicable to:• an organisation that intends toprepare a sustainability reportin accordance with the GRIStandards; or• an organisation that intends touse selected GRI Standards,or parts of their content, toreport on impacts related tospecific economic, social, and/or environmental topics (e.g.,to report on emissions only).GRI 101 can be used by anorganisation of any size, type,sector, or geographic location.","1.3: The purpose of thisFramework is to establish GuidingPrinciples and Content Elementsthat govern the overall contentof an integrated report, and toexplain the fundamental conceptsthat underpin them.1.4: This Framework is writtenprimarily in the context of privatesector, for-profit companiesof any size but it can also beapplied, adapted as necessary,by public sector and not-for-profitorganizations.1.5: This Framework identifiesinformation to be included inan integrated report for use inassessing an organisation’s abilityto create value; it does not setbenchmarks for such things asthe quality of an organisation’sstrategy or the level of itsperformance.1.6: In this Framework, referenceto the creation of value:• Includes instances whenvalue is preserved and when itis diminished• Relates to value creation overtime (i.e., over the short-,medium- and long-term).","6: This Conceptual Frameworkarticulates the key conceptsillustrated in Figure 2. Theseconcepts serve three purposes.First, they act as a guide tothe Standards Board andtechnical staff in carryingout their standard-settingactivities. Second, they can helpstakeholders better understandSASB’s approach to standardsetting. Third, they can helpto improve the StandardsBoard’s and technical staff’sengagement and consultationwith stakeholders by providinga common language forcommunication.",
+,STANDARD DISCLOSURE SECTOR STANDARD REF #,Disclosure,REF #
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,Disclosure 3-3 Management of material topics Additional sector recommendations • Describe actions taken to manage flaring and venting and the effectiveness of actions taken.,11.1.1
+3,Topic Standard disclosures,,
+4,GRI 302: Energy 2016,Disclosure 302-1 Energy consumption within the organization,11.1.2
+5,,Disclosure 302-2 Energy consumption outside of the organization,11.1.3
+6,,Disclosure 302-3 Energy intensity,11.1.4
+7,GRI 305: Emissions 2016,"Disclosure 305-1 Direct (Scope 1) GHG emissions Additional sector recommendations • Report the percentage of gross direct (Scope 1) GHG emissions from CH4. • Report the breakdown of gross direct (Scope 1) GHG emissions by type of source (stationary combustion, process, fugitive).2",11.1.5
+8,,Disclosure 305-2 Energy indirect (Scope 2) GHG emissions,11.1.6
+9,,Disclosure 305-3 Other indirect (Scope 3) GHG emissions,11.1.7
+10,,Disclosure 305-4 GHG emissions intensity,11.1.8
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+0,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe policies, commitments, and actions of the organization to prevent or mitigate the impacts of the transition to a low-carbon economy on workers and local communities. • Report the level and function within the organization that has been assigned responsibility for managing risks and opportunities due to climate change. • Describe the board’s oversight in managing risks and opportunities due to climate change. • Report whether responsibility to manage climate change-related impacts is linked to performance assessments or incentive mechanisms, including in the remuneration policies for highest governance body members and senior executives. • Describe the climate change-related scenarios used to assess the resilience of the organization’s strategy, including a 2°C or lower scenario.",11.2.1
+1,Topic Standard disclosures,,
+2,GRI 201: Economic Performance 2016,"Disclosure 201-2 Financial implications and other risks and opportunities due to climate change Additional sector recommendations • Report the emissions potential for proven and probable reserves.4 • Report the internal carbon-pricing and oil and gas pricing assumptions that have informed the identification of risks and opportunities due to climate change. • Describe how climate change-related risks and opportunities affect or could affect the organization’s operations or revenue, including: - development of currently proven and probable reserves; - potential write-offs and early closure of existing assets; - oil and gas production volumes for the current reporting period and projected volumes for the next five years. • Report the percentage of capital expenditure (CapEx) that is allocated to investments in: - prospection, exploration, and development of new reserves; - energy from renewable sources (by type of source); - technologies to remove CO2 from the atmosphere and nature-based solutions to mitigate climate change; - other research and development initiatives that can address the organization’s risks related to climate change. • Report net mass of CO2 in metric tons captured and removed from the atmosphere (CO2 stored less the GHG emitted in the process).5",11.2.2
+3,GRI 305: Emissions 2016,"Disclosure 305-5 Reduction of GHG emissions Additional sector recommendations • Report how the goals and targets for GHG emissions are set, specify whether they are informed by scientific consensus, and list any authoritative",11.2.3
+0,STANDARD,DISCLOSURE,SECTOR STANDARD REF #
+1,,"intergovernmental instruments or mandatory legislation the goals and targets are aligned with. • Report the Scopes (1, 2, 3) of GHG emissions, activities, and business relationships to which the goals and targets apply. • Report the baseline for the goals and targets and the timeline for achieving them.",
+2,Additional sector disclosures,,
+3,"Describe the organization’s approach to public policy development and lobbying on climate change, including: • the organization’s stance on significant issues related to climate change that are the focus of its participation in public policy development and lobbying, and any differences between these positions and its stated policies, goals, or other public positions; • whether it is a member of, or contributes to, any representative associations or committees that participate in public policy development and lobbying on climate change, including: - the nature of this contribution; - any differences between the organization’s stated policies, goals, or other public positions on significant issues related to climate change; and the positions of the representative associations or committees.6",,11.2.4
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.3.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 305: Emissions 2016,"Disclosure 305-7 Nitrogen oxides (NOX), sulfur oxides (SOX), and other significant air emissions",11.3.2
+5,GRI 416: Customer Health and Safety 2016,Disclosure 416-1 Assessment of the health and safety impacts of product and service categories Additional sector recommendations • Describe actions taken to improve product quality to reduce air emissions,11.3.3
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,Disclosure 3-3 Management of material topics Additional sector recommendations • Describe policies and commitments to achieving no net loss or a net gain to biodiversity on operational sites; and whether these commitments apply to existing and future operations and to operations beyond areas of high biodiversity value. • Report whether application of the mitigation hierarchy has informed actions to manage biodiversity-related impacts.,11.4.1
+3,Topic Standard disclosures,,
+4,GRI 304: Biodiversity 2016,"Disclosure 304-1 Operational sites owned, leased, managed in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas",11.4.2
+5,,"Disclosure 304-2 Significant impacts of activities, products and services on biodiversity Additional sector recommendations • Report significant impacts on biodiversity with reference to affected habitats and ecosystems.",11.4.3
+6,,"Disclosure 304-3 Habitats protected or restored Additional sector recommendations • Describe how the application of the mitigation hierarchy, if applicable, has resulted in: - areas protected through avoidance measures or offset measures; - areas restored through on-site restoration measures or offset measures.",11.4.4
+7,,Disclosure 304-4 IUCN Red List species and national conservation list species with habitats in areas affected by operations,11.4.5
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.5.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 306: Waste Disclosure 306-1 Waste generation and significant waste-related impacts 11.5.2,,
+0,2020,Disclosure 306-2 Management of significant waste-related impacts,11.5.3
+1,,"Disclosure 306-3 Waste generated Additional sector recommendations • When reporting the composition of the waste generated, include a breakdown of the following waste streams, if applicable: - Drilling waste (muds and cuttings) - Scale and sludges - Tailings",11.5.4
+2,,"Disclosure 306-4 Waste diverted from disposal Additional sector recommendations • When reporting the composition of the waste diverted from disposal, include a breakdown of the following waste streams, if applicable: - Drilling waste (muds and cuttings) - Scale and sludges - Tailings",11.5.5
+3,,"Disclosure 306-5 Waste directed to disposal Additional sector recommendations • When reporting the composition of the waste directed to disposal, include a breakdown of the following waste streams, if applicable: - Drilling waste (muds and cuttings) - Scale and sludges - Tailings",11.5.6
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.6.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 303: Water and Effluents 2018,Disclosure 303-1 Interactions with water as a shared resource,11.6.2
+5,,Disclosure 303-2 Management of water discharge-related impacts,11.6.3
+6,,Disclosure 303-3 Water withdrawal,11.6.4
+7,,Disclosure 303-4 Water discharge Additional sector recommendations • Report volume in megaliters of produced water and process wastewater discharged. • Report the concentration (mg/L) of hydrocarbons discharged in produced water and process wastewater.,11.6.5
+8,,Disclosure 303-5 Water consumption,11.6.6
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.7.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 402: Labor/Management Relations 2016,Disclosure 402-1 Minimum notice periods regarding operational changes Additional sector recommendations • Describe the approach to engaging workers in advance of significant operational changes.,11.7.2
+5,GRI 404: Training and Education 2016,Disclosure 404-2 Programs for upgrading employee skills and transition assistance programs,11.7.3
+6,Additional sector disclosures,,
+7,List the operational sites that: • have closure and rehabilitation plans in place; • have been closed; • are in the process of being closed.,,11.7.4
+8,List the decommissioned structures left in place and describe the rationale for leaving them in place.,,11.7.5
+9,"Report the total monetary value of financial provisions for closure and rehabilitation made by the organization, including post-closure monitoring and aftercare for operational sites.",,11.7.6
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.8.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 306: Effluents and Waste 2016,"Disclosure 306-3 Significant spills9 Additional sector recommendations • For each significant spill, report the cause of the spill and the volume of spill recovered.",11.8.2
+5,Additional sector disclosures,,
+6,"11.8.3 Report the total number of Tier 1 and Tier 2 process safety events, and a breakdown of this total by business activity (e.g., exploration, development, production, closure and rehabilitation, refining, processing, transportation, storage).10",,
+0,"The following additional sector disclosures are for organizations with oil sands mining operations. • List the organization’s tailings facilities. • For each tailings facility: - describe the tailings facility; - report whether the facility is active, inactive, or closed; - report the date and main findings of the most recent risk assessment. • Describe actions taken to: - manage impacts from tailings facilities, including during closure and post-closure; - prevent catastrophic failures of tailings facilities.11",11.8.4,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.9.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 403: Occupational Health and Safety 2018,Disclosure 403-1 Occupational health and safety management system,11.9.2
+5,,"Disclosure 403-2 Hazard identification, risk assessment, and incident investigation",11.9.3
+6,,Disclosure 403-3 Occupational health services,11.9.4
+7,,"Disclosure 403-4 Worker participation, consultation, and communication on occupational health and safety",11.9.5
+8,,Disclosure 403-5 Worker training on occupational health and safety,11.9.6
+9,,Disclosure 403-6 Promotion of worker health,11.9.7
+10,,Disclosure 403-7 Prevention and mitigation of occupational health and safety impacts directly linked by business relationships,11.9.8
+11,,Disclosure 403-8 Workers covered by an occupational health and safety management system,11.9.9
+12,,Disclosure 403-9 Work-related injuries,11.9.10
+13,,Disclosure 403-10 Work-related ill health,11.9.11
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.10.1 Topics 2021,,
+0,Topic Standard disclosures,,
+1,GRI 401: Employment 2016,Disclosure 401-1 New employee hires and employee turnover,11.10.2
+2,,Disclosure 401-2 Benefits provided to full-time employees that are not provided to temporary or part-time employees,11.10.3
+3,,Disclosure 401-3 Parental leave,11.10.4
+4,GRI 402: Labor/Management Relations 2016,Disclosure 402-1 Minimum notice periods regarding operational changes,11.10.5
+5,GRI 404: Training and Education 2016,Disclosure 404-1 Average hours of training per year per employee,11.10.6
+6,,Disclosure 404-2 Programs for upgrading employee skills and transition assistance programs,11.10.7
+7,GRI 414: Supplier Social Assessment 2016,Disclosure 414-1 New suppliers that were screened using social criteria,11.10.8
+8,,Disclosure 414-2 Negative social impacts in the supply chain and actions taken,11.10.9
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.11.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 202: Market Presence 2016,Disclosure 202-2 Proportion of senior management hired from the local community,11.11.2
+5,GRI 401: Employment 2016,Disclosure 401-3 Parental leave,11.11.3
+6,GRI 404: Training and Education 2016,Disclosure 404-1 Average hours of training per year per employee,11.11.4
+7,GRI 405: Diversity and Equal Opportunity 2016,Disclosure 405-1 Diversity of governance bodies and employees,11.11.5
+8,,Disclosure 405-2 Ratio of basic salary and remuneration,11.11.6
+9,GRI 406: Non- discrimination 2016,Disclosure 406-1 Incidents of discrimination and corrective actions taken,11.11.7
+0,Management of the topic,,
+1,GRI 3: Material Disclosure 3-3 Management of material topics 11.12.1 Topics 2021,,
+2,Topic Standard disclosures,,
+3,GRI 409: Forced or Compulsory Labor 2016,Disclosure 409-1 Operations and suppliers at significant risk for incidents of forced or compulsory labor,11.12.2
+4,GRI 414: Supplier Social Assessment 2016,Disclosure 414-1 New suppliers that were screened using social criteria,11.12.3
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.13.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 407: Freedom of Association and Collective Bargaining 2016,Disclosure 407-1 Operations and suppliers in which the right to freedom of association and collective bargaining may be at risk,11.13.2
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe the community development programs in place that are intended to enhance positive impacts for local communities, including the approach to providing employment, procurement, and training opportunities.",11.14.1
+3,Topic Standard disclosures,,
+0,GRI 201: Economic Performance 2016,Disclosure 201-1 Direct economic value generated and distributed Additional sector recommendations • Report direct economic value generated and distributed (EVG&D) by project.,11.14.2
+1,GRI 202: Market Presence 2016,Disclosure 202-2 Proportion of senior management hired from the local community,11.14.3
+2,GRI 203: Indirect Economic Impacts 2016,Disclosure 203-1 Infrastructure investments and services supported,11.14.4
+3,,Disclosure 203-2 Significant indirect economic impacts,11.14.5
+4,GRI 204: Procurement Practices 2016,Disclosure 204-1 Proportion of spending on local suppliers,11.14.6
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe the approach to identifying stakeholders within local communities and to engaging with them. • List the vulnerable groups that the organization has identified within local communities. • List any collective or individual rights that the organization has identified that are of particular concern for local communities.12 • Describe the approach to engaging with vulnerable groups, including: - how it seeks to ensure meaningful engagement; and - how it seeks to ensure safe and equitable gender participation.",11.15.1
+3,Topic Standard disclosures,,
+4,GRI 413: Local Communities 2016,"Disclosure 413-1 Operations with local community engagement, impact assessments, and development programs",11.15.2
+5,,Disclosure 413-2 Operations with significant actual and potential negative impacts on local communities Additional sector recommendations • Describe impacts on the health of local communities as a result of exposure to pollution caused by operations or use of hazardous substances.,11.15.3
+6,Additional sector disclosures,,
+7,"Report the number and type of grievances from local communities identified, including: 11.15.4 • percentage of the grievances that were addressed and resolved; • percentage of the grievances that were resolved through remediation.",,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe the approach to engaging with affected vulnerable groups, including: - how the organization seeks to ensure engagement is meaningful; - how the organization seeks to ensure safe and equitable gender participation. • Describe the approach to providing remediation to local communities or individuals subject to involuntary resettlement, such as the process for establishing compensation for loss of assets or other assistance to improve or restore standards of living or livelihoods.",11.16.1
+3,Additional sector disclosures,,
+4,"List the locations of operations that caused or contributed to involuntary resettlement or where such 11.16.2 resettlement is ongoing. For each location, describe how peoples’ livelihoods and human rights were affected and restored.",,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe the community development programs that are intended to enhance positive impacts for indigenous peoples, including the approach to providing employment, procurement, and training opportunities. • Describe the approach of engaging with indigenous peoples, including: - how the organization seeks to ensure engagement is meaningful; - how the organization seeks to ensure indigenous women can participate safely and equitably.",11.17.1
+3,Topic Standard disclosures,,
+4,GRI 411: Rights of Indigenous Peoples 2016,Disclosure 411-1 Incidents of violations involving rights of indigenous peoples Additional sector recommendations • Describe the identified incidents of violations involving the rights of indigenous peoples.,11.17.2
+5,Additional sector disclosures,,
+6,List the locations of operations where indigenous peoples are present or affected by activities of the organization.,,11.17.3
+7,"Report if the organization has been involved in a process of seeking free, prior and informed consent (FPIC) from indigenous peoples for any of the organization’s activities, including, in each case: • whether the process has been mutually accepted by the organization and the affected indigenous peoples; • whether an agreement has been reached, and if so, if the agreement is publicly available.",,11.17.4
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,Disclosure 3-3 Management of material topics Additional sector recommendations • List the locations of operations in areas of conflict. • Describe the approach to ensuring respect for human rights by public and private security providers.,11.18.1
+3,Topic Standard disclosures,,
+4,GRI 410: Security 11.18.2 Disclosure 410-1 Security personnel trained in human rights policies or Practices 2016 procedures,,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.19.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,"GRI 206: Anti- 11.19.2 Disclosure 206-1 Legal actions for anti-competitive behavior, anti-trust, and competitive monopoly practices Behavior 2016",,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,Disclosure 3-3 Management of material topics Additional sector recommendations • Describe how potential impacts of corruption or risks of corruption are managed in the organization’s supply chain. • Describe the whistleblowing and other mechanisms in place for individuals to raise concerns about corruption.,11.20.1
+3,Topic Standard disclosures,,
+0,GRI 205: Anti- corruption 2016,Disclosure 205-1 Operations assessed for risks related to corruption,11.20.2
+1,,Disclosure 205-2 Communication and training about anti-corruption policies and procedures,11.20.3
+2,,Disclosure 205-3 Confirmed incidents of corruption and actions taken,11.20.4
+3,Additional sector disclosures,,
+4,"Describe the approach to contract transparency, including: • whether contracts and licenses are made publicly and, if so, where they are published; • if contracts or licenses are not publicly available, the reason for this and actions taken to make them public in the future.14",,11.20.5
+5,"List the organization’s beneficial owners and explain how the organization identifies the beneficial owners of business partners, including joint ventures and suppliers.15",,11.20.6
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Disclosure 3-3 Management of material topics 11.21.1 Topics 2021,,
+3,Topic Standard disclosures,,
+4,GRI 201: Economic Performance 2016,Disclosure 201-1 Direct economic value generated and distributed,11.21.2
+5,,Disclosure 201-4 Financial assistance received from government Additional sector recommendations For state-owned organizations (SOE): • Report the financial relationship between the government and the SOE.17,11.21.3
+6,GRI 207: Tax 2019,Disclosure 207-1 Approach to tax,11.21.4
+7,,"Disclosure 207-2 Tax governance, control, and risk management",11.21.5
+8,,Disclosure 207-3 Stakeholder engagement and management of concerns related to tax,11.21.6
+9,,"Disclosure 207-4 Country-by-country reporting Additional sector recommendations • Report a breakdown of the payments to governments levied at the project-level, by project and the following revenue streams, if applicable: - The host government’s production entitlement; - National state-owned company production; - Royalties; - Dividends; - Bonuses (e.g., signature, discovery, and production bonuses); - License fees, rental fees, entry fees; and other considerations for licenses or concessions; - Any other significant payments and material benefits to government.18 • Report the value of any thresholds19 that have been applied and any other contextual information necessary to understand how the project-level payments to governments reported have been compiled.",11.21.7
+10,Additional sector disclosures,,
+0,"For oil and gas purchased from the state, or from third parties appointed by the state to sell on their behalf, report: • volumes and types of oil and gas purchased; • full names of the buying entity and the recipient of the payment; • payments made for the purchase.20",11.21.8,
+0,STANDARD DISCLOSURE SECTOR STANDARD REF #,,
+1,Management of the topic,,
+2,GRI 3: Material Topics 2021,"Disclosure 3-3 Management of material topics Additional sector recommendations • Describe the organization’s stance on significant issues that are the focus of its participation in public policy development and lobbying; and any differences between these positions and its stated policies, goals, or other public positions. • Report whether the organization is a member of, or contributes to, any representative associations or committees that participate in public policy development and lobbying, including: - the nature of this contribution; - any differences between the organization’s stated policies, goals, or other public positions on significant issues related to climate change, and the positions of the representative associations or committees.21",11.22.1
+3,Topic Standard disclosures,,
+4,GRI 415: Public Disclosure 415-1 Political contributions 11.22.2 Policy 2016,,

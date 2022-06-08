@@ -300,8 +300,34 @@ class ExtractPDFTables:
 				pass
 
 		df =  pd.concat(frames)
+		df.columns = df.iloc[0]
+		df = df[1:]
+
 		return df
 		
+	def getTablesCam(self):
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor='lattice')
+
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df.columns = df.iloc[0]
+		df = df[1:]
+		df.columns.values[0] = "STANDARD DISCLOSURE SECTOR STANDARD REF #"
+		df.columns.values[1] = "Disclosure"
+		df.columns.values[2] = "REF #"
+		df = df.replace(r'\n','', regex=True)
+		df = df.replace(r'  ',' ', regex=True)
+		return df
+
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
 		
@@ -775,7 +801,7 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's CDP Water 2018 equivalent") 
 
-	def mapGRI_CEP18(self):
+	def mapGRI_CDP18(self):
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
 
@@ -795,4 +821,31 @@ class MapLinks2Excel:
 
 				
 
+		wb.save(self.path_file)
+
+	def mapEV22(self):
+		pass
+
+	def mapCDP_TCFD(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		r=3
+		for i in self.df["Question \nnumber (CDP \nclimate change)"]:
+			if i != None:
+				ws.cell(row=r, column=1, value=i)
+				r+=1
+
+		r=3
+		for i in self.df['Question text']:
+			if i != None:
+				ws.cell(row=r, column=2, value=i)
+				r+=1
+
+		r=3
+		for i in self.df['TCFD recommendations']:
+			if i != None:
+				ws.cell(row=r, column=3, value=i)
+				r+=1
+		
 		wb.save(self.path_file)
