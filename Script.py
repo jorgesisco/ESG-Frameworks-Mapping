@@ -849,3 +849,38 @@ class MapLinks2Excel:
 				r+=1
 		
 		wb.save(self.path_file)
+
+
+# Pendiente (pdf has not only GRI 2016!!!)
+def GRI16_GRI_OIL_GAS(self):
+	wb = openpyxl.load_workbook(self.path_file)
+	ws = wb[self.sheet]
+
+	rows = ws.max_row
+	regex = 'GRI 101: Foundation|GRI 102: General Disclosures|GRI 102: Strategy|GRI 102: Ethics and Integrity|GRI 102: Governance|GRI 103: Management Approach|GRI 201: Economic Performance|GRI 202: Market Presence|GRI 203: Indirect Economic Impacts|GRI 204: Procurement Practices|GRI 205: Anti-Corruption|GRI 206: Anti-Competitive Behavior|GRI 207: Tax|GRI 301: Materials|GRI 302: Energy 2016|GRI 303: Water and Effluents|GRI 304: Biodiversity|GRI 305: Emissions 2016|GRI 306: Waste|GRI 307: Environmental Compliance|GRI 401: Employment|GRI 402: Labor\/Management Relations|GRI 403: Occupational Health and Safety|GRI 404: Training and Education|GRI 405: Diversity and Equal Opportunity|GRI 406: Non-Discrimination|GRI 407: Freedom of Association and Collective Bargaining|GRI 408: Child Labor|GRI 409: Forced or Compulsory Labor|GRI 410: Security Practices|GRI 411: Rights of Indigenous People|GRI 412: Human Rights Assessment|GRI 413: Local Communities|GRI 414: Supplier Social Assessment|GRI 415: Public Policy|GRI 416: Customer Health and Safety|GRI 417: Marketing and Labeling|GRI 418: Customer Privacy|GRI 419: Socioeconomic Compliance'
+
+	for i in range(1, rows):
+		if ws.cell(row=i, column=1).value == None:
+			pass
+
+		else:
+			target_cell = ws.cell(row=i, column=1).value
+
+			if (re.search(regex, target_cell)):
+				target = re.search(regex, target_cell).group()
+
+				df_target = re.match
+
+				try:
+					value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].values,
+										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].values]
+						
+					# ws.cell(row=i, column=3, value=' '.join(value_to_add[0]))
+					# ws.cell(row=i, column=4, value=' '.join(value_to_add[1]))
+
+				except:
+					pass
+
+		# wb.save(self.path_file)
+
+		return f'{self.sheet} sheet from Excel file have bee mapped'
