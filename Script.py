@@ -286,7 +286,6 @@ class ExtractPDFTables:
 		df =  pd.concat(frames)
 		return df
 
-
 	def getTablesCDP_TCFD(self):
 
 		tables = camelot.read_pdf(self.file_path, 
@@ -305,29 +304,6 @@ class ExtractPDFTables:
 		df.columns = df.iloc[0]
 		df = df[1:]
 
-		return df
-		
-	def getTablesGRI_GRIOIL(self):
-		tables = camelot.read_pdf(self.file_path, 
-								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
-								  flavor='lattice')
-
-		frames = []
-		for i in tables:
-			try:
-				table = i.df
-				frames.append(table)
-			except:
-				pass
-
-		df =  pd.concat(frames)
-		df.columns = df.iloc[0]
-		df = df[1:]
-		df.columns.values[0] = "STANDARD DISCLOSURE SECTOR STANDARD REF #"
-		df.columns.values[1] = "Disclosure"
-		df.columns.values[2] = "REF #"
-		df = df.replace(r'\n','', regex=True)
-		df = df.replace(r'  ',' ', regex=True)
 		return df
 
 	def getTablesGRI_GRI_OILGAS_OR_COAL(self):
@@ -367,7 +343,37 @@ class ExtractPDFTables:
 		else:
 			return print("Type 2016 or 2017, there are not other options...")
 
+	def getTablesGRI_HKEX20(self):
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+		frames = []
+
+		for i in range(0, len(self.page_range)):
+			try:
+				page = pdf.pages[i]
+				table = page.extract_table()
+				frames.append(pd.DataFrame(table))
+					
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df = df.drop_duplicates(keep='first')
+		df.columns = df.iloc[0]
+		df = df[1:]
+		# note: I GRI16 foundation clauses are not been able to extract from text with regex, mapped them manually in the meantime, still looking for a regex solution
+
+		framework = input('Are you going to map GRI 2016 sheet? yes or no:')
+
+		if framework == 'yes':
+			df['GRI_Code'] = df['GRI Standards and Disclosures'].str.findall(r'\d+-\d+').str.join(', ')
+			# pandas Explode feature allows to separate GRI code on an unique row with the info to map on excel
+			df = df.assign(GRI_Code=df['GRI_Code'].str.split(', ')).explode('GRI_Code')
+			return df
 		
+		elif framework == 'no':
+			df['GRI_Code'] = df['GRI Standards and Disclosures'].str.findall(r'\d+-\d+').str.join('\n')
+			return df
+
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
@@ -413,6 +419,7 @@ class ExtractPDFTables:
 		df_GRI_TCDF = df[['GRI Standards', 'id', 'Recommended \nDisclosures \n(TCFD Framework)']]
 		df_GRI_TCDF.rename(columns = {'GRI Standards':'GRI_Standards'}, inplace = True)
 		df_GRI_TCDF['GRI_Standards'].str.split(', ')
+
 		df_GRI_TCDF = df_GRI_TCDF.assign(GRI_Standards=df_GRI_TCDF['GRI_Standards'].str.split(', ')).explode('GRI_Standards')
 
 		return df_GRI_TCDF
@@ -892,7 +899,6 @@ class MapLinks2Excel:
 		
 		wb.save(self.path_file)
 
-
 	# Pendiente (pdf has not only GRI 2016!!!)
 	def GRI_GRI_OIL_GAS_COAL(self):
 		wb = openpyxl.load_workbook(self.path_file)
@@ -939,3 +945,28 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 
 		return f'{self.sheet} sheet from Excel file have bee mapped'
+
+	def mapGRI_HKEX22(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+		
+				if target_cell != None:
+					try:
+						disclosure_to_add = self.df.loc[self.df['GRI_Code'] == target_cell]['HKEX ESG Reporting Guide'].values
+						
+						if len(disclosure_to_add) > 0:
+							ws.cell(row=i, column=22, value='\n'.join(disclosure_to_add))
+						
+					except:
+							pass
+
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's HKEX equivalent") 

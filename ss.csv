@@ -1,34 +1,237 @@
-,STANDARD,DISCLOSURE,"SECTOR 
-STANDARD 
-REF #"
-4,GRI 302: Energy,Disclosure 302-1 Energy consumption within the organization,11.1.2
-5,GRI 302: Energy,Disclosure 302-2 Energy consumption outside of the organization,11.1.3
-6,GRI 302: Energy,Disclosure 302-3 Energy intensity,11.1.4
-7,GRI 305: Emissions,"Disclosure 305-1 Direct (Scope 1) GHG emissions  Additional sector recommendations •  Report the percentage of gross direct (Scope 1) GHG emissions from CH4. •  Report the breakdown of gross direct (Scope 1) GHG emissions by type of source (stationary combustion, process, fugitive).2",11.1.5
-8,GRI 305: Emissions,Disclosure 305-2 Energy indirect (Scope 2) GHG emissions,11.1.6
-9,GRI 305: Emissions,Disclosure 305-3 Other indirect (Scope 3) GHG emissions,11.1.7
-10,GRI 305: Emissions,Disclosure 305-4 GHG emissions intensity,11.1.8
-2,GRI 201: Economic Performance,"Disclosure 201-2 Financial implications and other risks and opportunities due to climate change Additional sector recommendations •  Report the emissions potential for proven and probable reserves.4 •  Report the internal carbon-pricing and oil and gas pricing assumptions that have informed the identification of risks and opportunities due to climate change. •  Describe how climate change-related risks and opportunities affect or could affect the organization’s operations or revenue, including: -  development of currently proven and probable reserves; -  potential write-offs and early closure of existing assets; -  oil and gas production volumes for the current reporting period and projected volumes for the next five years. •  Report the percentage of capital expenditure (CapEx) that is allocated to investments in: -  prospection, exploration, and development of new reserves; -  energy from renewable sources (by type of source); -  technologies to remove CO2 from the atmosphere and nature-based solutions to mitigate climate change; -  other research and development initiatives that can address the organization’s risks related to climate change. •  Report net mass of CO2 in metric tons captured and removed from the atmosphere (CO2 stored less the GHG emitted in the process).5",11.2.2
-4,GRI 305: Emissions,"Disclosure 305-7 Nitrogen oxides (NOX), sulfur oxides (SOX), and other significant air emissions",11.3.2
-5,GRI 416: Customer Health and Safety,Disclosure 416-1 Assessment of the health and safety impacts of product and service categories Additional sector recommendations •  Describe actions taken to improve product quality to reduce air emissions,11.3.3
-4,GRI 304: Biodiversity,"Disclosure 304-1 Operational sites owned, leased, managed in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas",11.4.2
-5,GRI 304: Biodiversity,"Disclosure 304-2 Significant impacts of activities, products and services on biodiversity Additional sector recommendations •  Report significant impacts on biodiversity with reference to affected habitats and ecosystems.",11.4.3
-6,GRI 304: Biodiversity,"Disclosure 304-3 Habitats protected or restored  Additional sector recommendations •  Describe how the application of the mitigation hierarchy, if applicable, has resulted in: -  areas protected through avoidance measures or offset measures; -  areas restored through on-site restoration measures or offset measures.",11.4.4
-7,GRI 304: Biodiversity,Disclosure 304-4 IUCN Red List species and national conservation list species with habitats in areas affected by operations,11.4.5
-4,GRI 402: Labor/Management Relations,Disclosure 402-1 Minimum notice periods regarding operational changes  Additional sector recommendations •  Describe the approach to engaging workers in advance of significant operational changes.,11.7.2
-5,GRI 404: Training and Education,Disclosure 404-2 Programs for upgrading employee skills and transition assistance programs,11.7.3
-4,GRI 202: Market Presence,Disclosure 202-2 Proportion of senior management hired from the local community,11.11.2
-5,GRI 401: Employment,Disclosure 401-3 Parental leave,11.11.3
-6,GRI 404: Training and Education,Disclosure 404-1 Average hours of training per year per employee,11.11.4
-7,GRI 405: Diversity and Equal Opportunity,Disclosure 405-1 Diversity of governance bodies and employees,11.11.5
-8,GRI 405: Diversity and Equal Opportunity,Disclosure 405-2 Ratio of basic salary and remuneration,11.11.6
-9,GRI 406: Non- discrimination,Disclosure 406-1 Incidents of discrimination and corrective actions taken,11.11.7
-3,GRI 409: Forced or Compulsory Labor,Disclosure 409-1 Operations and suppliers at significant risk for incidents of forced or compulsory labor,11.12.2
-4,GRI 414: Supplier Social Assessment,Disclosure 414-1 New suppliers that were screened using social criteria,11.12.3
-4,GRI 413: Local Communities,"Disclosure 413-1 Operations with local community engagement, impact assessments, and development programs",11.15.2
-5,GRI 413: Local Communities,Disclosure 413-2 Operations with significant actual and potential negative impacts on local communities Additional sector recommendations •  Describe impacts on the health of local communities as a result of exposure to pollution caused by operations or use of hazardous substances.,11.15.3
-4,GRI 411: Rights of Indigenous Peoples,Disclosure 411-1 Incidents of violations involving rights of indigenous peoples  Additional sector recommendations •  Describe the identified incidents of violations involving the rights of indigenous peoples.,11.17.2
-4,GRI 410: Security Practices,Disclosure 410-1 Security personnel trained in human rights policies or procedures,11.18.2
-4,GRI 201: Economic Performance,Disclosure 201-1 Direct economic value generated and distributed,11.21.2
-5,GRI 201: Economic Performance,Disclosure 201-4 Financial assistance received from government  Additional sector recommendations For state-owned organizations (SOE): •  Report the financial relationship between the government and the SOE.17,11.21.3
-4,GRI 415: Public Policy,Disclosure 415-1 Political contributions,11.22.2
+,HKEX ESG Reporting Guide,GRI Standards and Disclosures,GRI_Code
+1,Overall Approach: para 7,"GRI 101: Foundation: 
+•  Clause 1.1 (Stakeholder Inclusiveness principle)
+•  Clause 1.3 (Materiality principle)
+•   Clause 2.1 (Applying the Reporting Principles)
+GRI 102: General Disclosures: Disclosures 102-40, 102-42, 102-43, and 102-44","102-40
+102-42
+102-43
+102-44"
+2,Overall Approach: para 8,"GRI 101: Foundation: 
+•  Clause 2.3.1 (Identifying material topics and their Boundaries)
+•  Clause 2.5.3 (Reporting on material topics)",
+3,Overall Approach: para 9,GRI 102: General Disclosures: Disclosure 102-56,102-56
+4,Overall Approach: para 10,GRI 102: General Disclosures: Disclosures 102-26 and 102-32,"102-26
+102-32"
+5,Reporting Principles: para 11,"GRI 101: Foundation: 
+•  Clause 1.3 (Materiality principle)
+•  Clause 1.6 (Balance principle)
+•  Clause 1.8 (Comparability principle)",
+6,"Part B: Mandatory Disclosure 
+Requirements",,
+7,Governance structure 13,"GRI 102: General Disclosures: Disclosures 102-14, 102-15, 102-29, 102-30, and 
+102-31
+GRI 103 Management Approach: Disclosure 103-1, 103-2, and 103-3","102-14
+102-15
+102-29
+102-30
+102-31
+103-1
+103-2
+103-3"
+8,Reporting Principles 14,"GRI 102: General Disclosures: Disclosure 102-40, 102-42, 102-43, 102-44, 102-47
+GRI 101: Foundation: Clause 1.8 (Comparability principle)","102-40
+102-42
+102-43
+102-44
+102-47"
+1,Reporting Boundary 15,GRI 102: General Disclosures: Disclosure 102-45 and 102-49,"102-45
+102-49"
+2,"Part C: “Comply or explain” 
+Provisions",,
+3,"Aspect A1 Emissions: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+305: Emissions, and GRI 306: Effluents and Waste)
+GRI 305: Emissions: Management approach disclosures guidance
+GRI 307: Environmental Compliance: Disclosure 307-1","103-2
+307-1"
+4,KPI A1.1,"GRI 305: Emissions: Disclosures 305-1, 305-2, 305-3, 305-6, and 305-7","305-1
+305-2
+305-3
+305-6
+305-7"
+5,KPI A1.2,"GRI 305: Emissions: Disclosures 305-1, 305-2, 305-4","305-1
+305-2
+305-4"
+6,KPI A1.3,GRI 306: Waste: Disclosure 306-3 (a),306-3
+7,KPI A1.4,GRI 306: Waste: Disclosure 306-3 (a),306-3
+8,KPI A1.5,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 305: 
+Emissions)
+GRI 305: Emissions: Clause 1.2 and Disclosure 305-5","103-2
+305-5"
+9,KPI A1.6,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 306: 
+Waste)
+GRI 306: Waste: Disclosures 306-4 and 306-5","103-2
+306-4
+306-5"
+10,"Aspect A2 Use of Resources: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+301: Materials, GRI 302: Energy, and GRI 303: Water and Effluents)",103-2
+11,KPI A2.1,GRI 302: Energy: Disclosures 302-1 and 302-3,"302-1
+302-3"
+12,KPI A2.2,GRI 303: Water and Effluents: Disclosure 303-5,303-5
+13,KPI A2.3,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 302: 
+Energy) 
+GRI 302: Energy: Disclosures 302-4 and 302-5","103-2
+302-4
+302-5"
+14,KPI A2.4,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
+Water and Effluents)
+GRI 303: Water and Effluents: Disclosure 303-1","103-2
+303-1"
+15,KPI A2.5,GRI 301: Materials: Disclosure 301-1,301-1
+16,"Aspect A3 The Environment and 
+Natural Resources: General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+301: Materials, GRI 302: Energy, GRI 303: Water and Effluents, GRI 304: Biodiversity, 
+GRI 305: Emissions, and GRI 306: Waste)",103-2
+17,KPI A3.1,"GRI 103: Management Approach: Disclosures 103-1 and 103-2 (used together 
+with GRI 301: Materials, GRI 302: Energy, GRI 303: Water and Effluents, GRI 304: 
+Biodiversity, GRI 305: Emissions, and GRI 306: Waste) 
+GRI 303: Water and Effluents: Disclosure 303-1
+GRI 304: Biodiversity: Disclosure 304-2 
+GRI 306: Waste: Disclosures 306-1 and 306-2","103-1
+103-2
+303-1
+304-2
+306-1
+306-2"
+18,"Aspect A4 Climate Change: General 
+Disclosure","GRI 103: management approach: Disclosure 103-2 (c-i) (used together with GRI 
+201: Economic Performance)
+GRI 102: General Disclosures: Disclosure 102-29","103-2
+102-29"
+19,KPI A4.1,GRI 201: Economic Performance: Disclosure 201-2,201-2
+20,"Aspect B1 Employment: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+202: Market Presence, GRI 401: Employment, GRI 405: Diversity and Equal Opportunity, 
+GRI 406: Non-discrimination)
+GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
+419-1"
+1,KPI B1.1,"GRI 102: General Disclosures: Disclosures 102-8 (a), 102-8 (b), and 102-8 (c)
+GRI 405: Diversity and Equal Opportunity: Disclosure 405-1(b)","102-8
+102-8
+102-8
+405-1"
+2,KPI B1.2,GRI 401: Employment: Disclosure 401-1 (b),401-1
+3,"Aspect B2 Health and Safety: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+403: Occupational Health and Safety)
+GRI 403: Occupational Health and Safety: Disclosure 403-1
+GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
+403-1
+419-1"
+4,KPI B2.1,"GRI 403: Occupational Health and Safety: Disclosure 403-9, 403-10","403-9
+403-10"
+5,KPI B2.2,"Not directly covered by the GRI Standards – see comments in the Comprehensive 
+linkage table",
+6,KPI B2.3,"GRI 103: Management Approach: Disclosure 103-2 and 103-3 (a-i) (used together 
+with GRI 403: Occupational Health and Safety)
+GRI 403: Occupational Health and Safety: Disclosures 403-1, 403-3, 403-5, 403-7","103-2
+103-3
+403-1
+403-3
+403-5
+403-7"
+7,"Aspect B3 Development and Training: 
+General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+404: Training and Education)
+GRI 404: Training and Education: Disclosure 404-2 (a)","103-2
+404-2"
+8,KPI B3.1,"Not directly covered by the GRI Standards – see comments in the Comprehensive 
+linkage table",
+9,KPI B3.2,GRI 404: Training and Education: Disclosure 404-1,404-1
+10,"Aspect B4 Labour Standards: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+408: Child Labor and GRI 409: Forced or Compulsory Labor)
+GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
+419-1"
+11,KPI B4.1,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 408: 
+Child Labor and GRI 409: Forced or Compulsory Labor)
+GRI 408: Child Labor: Disclosure 408-1(c)
+GRI 409: Forced or Compulsory Labor: Disclosure 409-1(b)","103-2
+408-1
+409-1"
+12,KPI B4.2,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 408: 
+Child Labor and GRI 409: Forced or Compulsory Labor)
+GRI 408: Child Labor: Disclosure 408-1(c)
+GRI 409: Forced or Compulsory Labor: Disclosure 409-1(b)","103-2
+408-1
+409-1"
+13,"Aspect B5 Supply Chain Management: 
+General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+308: Supplier Environmental Assessment and GRI 414: Supplier Social Assessment)",103-2
+14,KPI B5.1,GRI 102: General Disclosures: Disclosure 102-9,102-9
+15,KPI B5.2,"GRI 102: General Disclosures: Disclosure 102-9
+GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
+Water and Effluents, GRI 308: Supplier Environmental Assessment and GRI 414: Supplier 
+Social Assessment)
+GRI 303: Water and Effluents: Disclosure 303-1 (c) 
+GRI 308: Supplier Environmental Assessment: Disclosures 308-1 and 308-2 
+GRI 414: Supplier Social Assessment: Disclosures 414-1 and 414-2","102-9
+103-2
+303-1
+308-1
+308-2
+414-1
+414-2"
+16,KPI B5.3,"GRI 102: General Disclosures: Disclosure 102-9
+GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
+Water and Effluents, GRI 308: Supplier Environmental Assessment and GRI 414: Supplier 
+Social Assessment)
+GRI 303: Water and Effluents: Disclosure 303-1 (c) 
+GRI 308: Supplier Environmental Assessment: Disclosures 308-1 and 308-2 
+GRI 414: Supplier Social Assessment: Disclosures 414-1 and 414-2","102-9
+103-2
+303-1
+308-1
+308-2
+414-1
+414-2"
+1,KPI B5.4,"GRI 103: Management Approach: Disclosure 103-2 (used together with
+GRI 306: Waste and GRI 308: Supplier Environmental Assessment)",103-2
+2,"Aspect B6 Product Responsibility: 
+General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+416: Customer Health and Safety, GRI 417: Marketing and Labeling, and GRI 418: 
+Customer Privacy)
+GRI 416: Customer Health and Safety: Disclosure 416-2
+GRI 417: Marketing and Labeling: Disclosures 417-2 and 417-3
+GRI 418: Customer Privacy: Disclosure 418-1
+GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
+416-2
+417-2
+417-3
+418-1
+419-1"
+3,KPI B6.1,Not covered by the GRI Standards,
+4,KPI B6.2,"GRI 102: General Disclosures: Disclosures 102-43 and 102-44
+GRI 103: Management Approach: Disclosure 103-2 (c-vi)
+GRI 418: Customer Privacy: Disclosure 418-1","102-43
+102-44
+103-2
+418-1"
+5,KPI B6.3,Not covered by the GRI Standards,
+6,KPI B6.4,Not covered by the GRI Standards,
+7,KPI B6.5,"GRI 103: Management Approach: Disclosures 103-2 and 103-3 (a-i) (used together 
+with GRI 418: Customer Privacy)","103-2
+103-3"
+8,"Aspect B7 Anti-corruption: General 
+Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 205: 
+Anti-corruption)
+GRI 205 Anti-corruption: Disclosure 205-3 
+GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
+205-3
+419-1"
+9,KPI B7.1,GRI 205: Anti-corruption: Disclosure 205-3,205-3
+10,KPI B7.2,"GRI 102: General Disclosures: Disclosure 102-17
+GRI 103: Management Approach: Disclosures 103-2 and 103-3 (a-i) (used together 
+with GRI 205: Anti-corruption) 
+GRI 205: Anti-corruption: Clause 1.2","102-17
+103-2
+103-3"
+11,KPI B7.3,"GRI 205: Anti-corruption: Disclosure: 205-2: Communication and training about 
+anti-corruption policies and procedures",205-2
+12,"Aspect B8 Community Investment: 
+General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
+413: Local Communities)",103-2
+13,KPI B8.1,GRI 203: Indirect Economic Impacts: Disclosure 203-1(a),203-1
+14,KPI B8.2,GRI 201: Economic Performance: Disclosure 201-1(a-ii),201-1
