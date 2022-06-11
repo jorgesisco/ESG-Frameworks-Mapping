@@ -210,6 +210,8 @@ class ExtractPDFTables:
 		df.columns.values[0] = "ID_CASS_CSR"
 		df.columns.values[2] = "ID_GRI"
 
+
+
 		return df
 
 	def getTablesCDP_GRI(self):
@@ -305,7 +307,7 @@ class ExtractPDFTables:
 
 		return df
 		
-	def getTablesCam(self):
+	def getTablesGRI_GRIOIL(self):
 		tables = camelot.read_pdf(self.file_path, 
 								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
 								  flavor='lattice')
@@ -327,6 +329,45 @@ class ExtractPDFTables:
 		df = df.replace(r'\n','', regex=True)
 		df = df.replace(r'  ',' ', regex=True)
 		return df
+
+	def getTablesGRI_GRI_OILGAS_OR_COAL(self):
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+		frames = []
+
+		for i in range(0, len(self.page_range)):
+			try:
+				page = pdf.pages[i]
+				table = page.extract_table()
+				frames.append(pd.DataFrame(table))
+					
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df = df.drop_duplicates(keep='first')
+		df.columns = df.iloc[0]
+		df = df[1:]
+		df = df.fillna(method='ffill') # Filling rows below with same value as above 
+		df = df.replace(r'\n','', regex=True)
+
+		year = input("with GRI sheet would you like to map? 2016 or 2021?")
+
+		if year == '2016':
+			df = df[df['STANDARD'].str.contains(year)]
+			# df = df.replace(f' {year}','', regex=True)
+			df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d+-\d+').str.join(' ')
+			return df
+		
+		elif year == '2021':
+			df = df[df['STANDARD'].str.contains(year)]
+			# df = df.replace(f' {year}','', regex=True)
+			df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d-\d').str.join(' ')
+			return df
+		
+		else:
+			return print("Type 2016 or 2017, there are not other options...")
+
+		
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
@@ -413,6 +454,7 @@ class MapLinks2Excel:
 		self.df = df
 		self.sheet = sheet
 		self.path_file = path_file
+		
 	
 	def MapSDG_GRI(self):
 		regex = '[+-]?[0-9]+\.-?[0-9a-zA-Z_]+'
@@ -851,36 +893,49 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 
 
-# Pendiente (pdf has not only GRI 2016!!!)
-def GRI16_GRI_OIL_GAS(self):
-	wb = openpyxl.load_workbook(self.path_file)
-	ws = wb[self.sheet]
+	# Pendiente (pdf has not only GRI 2016!!!)
+	def GRI_GRI_OIL_GAS_COAL(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
 
-	rows = ws.max_row
-	regex = 'GRI 101: Foundation|GRI 102: General Disclosures|GRI 102: Strategy|GRI 102: Ethics and Integrity|GRI 102: Governance|GRI 103: Management Approach|GRI 201: Economic Performance|GRI 202: Market Presence|GRI 203: Indirect Economic Impacts|GRI 204: Procurement Practices|GRI 205: Anti-Corruption|GRI 206: Anti-Competitive Behavior|GRI 207: Tax|GRI 301: Materials|GRI 302: Energy 2016|GRI 303: Water and Effluents|GRI 304: Biodiversity|GRI 305: Emissions 2016|GRI 306: Waste|GRI 307: Environmental Compliance|GRI 401: Employment|GRI 402: Labor\/Management Relations|GRI 403: Occupational Health and Safety|GRI 404: Training and Education|GRI 405: Diversity and Equal Opportunity|GRI 406: Non-Discrimination|GRI 407: Freedom of Association and Collective Bargaining|GRI 408: Child Labor|GRI 409: Forced or Compulsory Labor|GRI 410: Security Practices|GRI 411: Rights of Indigenous People|GRI 412: Human Rights Assessment|GRI 413: Local Communities|GRI 414: Supplier Social Assessment|GRI 415: Public Policy|GRI 416: Customer Health and Safety|GRI 417: Marketing and Labeling|GRI 418: Customer Privacy|GRI 419: Socioeconomic Compliance'
+		rows = ws.max_row
 
-	for i in range(1, rows):
-		if ws.cell(row=i, column=1).value == None:
-			pass
+		# In depending on the option, it will mapp the data on the right columns on excel
+		framework = input("'GRI 'oil & gas' or 'coal'???")
+		for i in range(1, rows):
+			if ws.cell(row=i, column=1).value == None:
+				pass
 
-		else:
-			target_cell = ws.cell(row=i, column=1).value
+			else:
+				target_cell = ws.cell(row=i, column=2).value
 
-			if (re.search(regex, target_cell)):
-				target = re.search(regex, target_cell).group()
+		
+				if target_cell != None and framework=='oil & gas':
+					try:
+						value_to_add = self.df.loc[self.df['GRI Code'] == target_cell]['SECTOR \nSTANDARD \nREF #'].values
 
-				df_target = re.match
+						if len(value_to_add) > 0 and self.sheet== 'GRI 2016':
+							ws.cell(row=i, column=18, value=' '.join(value_to_add))
 
-				try:
-					value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].values,
-										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].values]
-						
-					# ws.cell(row=i, column=3, value=' '.join(value_to_add[0]))
-					# ws.cell(row=i, column=4, value=' '.join(value_to_add[1]))
+						elif len(value_to_add) > 0 and self.sheet== 'GRI 2021':
+							ws.cell(row=i, column=6, value='\n'.join(value_to_add))
 
-				except:
-					pass
+					except:
+						pass
+				
+				if target_cell != None and framework=='coal':
+					try:
+						value_to_add = self.df.loc[self.df['GRI Code'] == target_cell]['SECTOR \nSTANDARD \nREF #'].values
 
-		# wb.save(self.path_file)
+						if len(value_to_add) > 0 and self.sheet== 'GRI 2016':
+							ws.cell(row=i, column=20, value='\n'.join(value_to_add))
+
+						elif len(value_to_add) > 0 and self.sheet== 'GRI 2021':
+							ws.cell(row=i, column=8, value='\n'.join(value_to_add))
+
+					except:
+						pass
+
+		wb.save(self.path_file)
 
 		return f'{self.sheet} sheet from Excel file have bee mapped'

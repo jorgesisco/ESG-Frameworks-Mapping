@@ -1,0 +1,34 @@
+,STANDARD,DISCLOSURE,"SECTOR 
+STANDARD 
+REF #",GRI Code
+4,GRI 302: Energy,Disclosure 302-1 Energy consumption within the organization,11.1.2,302-1
+5,GRI 302: Energy,Disclosure 302-2 Energy consumption outside of the organization,11.1.3,302-2
+6,GRI 302: Energy,Disclosure 302-3 Energy intensity,11.1.4,302-3
+7,GRI 305: Emissions,"Disclosure 305-1 Direct (Scope 1) GHG emissions  Additional sector recommendations •  Report the percentage of gross direct (Scope 1) GHG emissions from CH4. •  Report the breakdown of gross direct (Scope 1) GHG emissions by type of source (stationary combustion, process, fugitive).2",11.1.5,305-1
+8,GRI 305: Emissions,Disclosure 305-2 Energy indirect (Scope 2) GHG emissions,11.1.6,305-2
+9,GRI 305: Emissions,Disclosure 305-3 Other indirect (Scope 3) GHG emissions,11.1.7,305-3
+10,GRI 305: Emissions,Disclosure 305-4 GHG emissions intensity,11.1.8,305-4
+2,GRI 201: Economic Performance,"Disclosure 201-2 Financial implications and other risks and opportunities due to climate change Additional sector recommendations •  Report the emissions potential for proven and probable reserves.4 •  Report the internal carbon-pricing and oil and gas pricing assumptions that have informed the identification of risks and opportunities due to climate change. •  Describe how climate change-related risks and opportunities affect or could affect the organization’s operations or revenue, including: -  development of currently proven and probable reserves; -  potential write-offs and early closure of existing assets; -  oil and gas production volumes for the current reporting period and projected volumes for the next five years. •  Report the percentage of capital expenditure (CapEx) that is allocated to investments in: -  prospection, exploration, and development of new reserves; -  energy from renewable sources (by type of source); -  technologies to remove CO2 from the atmosphere and nature-based solutions to mitigate climate change; -  other research and development initiatives that can address the organization’s risks related to climate change. •  Report net mass of CO2 in metric tons captured and removed from the atmosphere (CO2 stored less the GHG emitted in the process).5",11.2.2,201-2
+4,GRI 305: Emissions,"Disclosure 305-7 Nitrogen oxides (NOX), sulfur oxides (SOX), and other significant air emissions",11.3.2,305-7
+5,GRI 416: Customer Health and Safety,Disclosure 416-1 Assessment of the health and safety impacts of product and service categories Additional sector recommendations •  Describe actions taken to improve product quality to reduce air emissions,11.3.3,416-1
+4,GRI 304: Biodiversity,"Disclosure 304-1 Operational sites owned, leased, managed in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas",11.4.2,304-1
+5,GRI 304: Biodiversity,"Disclosure 304-2 Significant impacts of activities, products and services on biodiversity Additional sector recommendations •  Report significant impacts on biodiversity with reference to affected habitats and ecosystems.",11.4.3,304-2
+6,GRI 304: Biodiversity,"Disclosure 304-3 Habitats protected or restored  Additional sector recommendations •  Describe how the application of the mitigation hierarchy, if applicable, has resulted in: -  areas protected through avoidance measures or offset measures; -  areas restored through on-site restoration measures or offset measures.",11.4.4,304-3
+7,GRI 304: Biodiversity,Disclosure 304-4 IUCN Red List species and national conservation list species with habitats in areas affected by operations,11.4.5,304-4
+4,GRI 402: Labor/Management Relations,Disclosure 402-1 Minimum notice periods regarding operational changes  Additional sector recommendations •  Describe the approach to engaging workers in advance of significant operational changes.,11.7.2,402-1
+5,GRI 404: Training and Education,Disclosure 404-2 Programs for upgrading employee skills and transition assistance programs,11.7.3,404-2
+4,GRI 202: Market Presence,Disclosure 202-2 Proportion of senior management hired from the local community,11.11.2,202-2
+5,GRI 401: Employment,Disclosure 401-3 Parental leave,11.11.3,401-3
+6,GRI 404: Training and Education,Disclosure 404-1 Average hours of training per year per employee,11.11.4,404-1
+7,GRI 405: Diversity and Equal Opportunity,Disclosure 405-1 Diversity of governance bodies and employees,11.11.5,405-1
+8,GRI 405: Diversity and Equal Opportunity,Disclosure 405-2 Ratio of basic salary and remuneration,11.11.6,405-2
+9,GRI 406: Non- discrimination,Disclosure 406-1 Incidents of discrimination and corrective actions taken,11.11.7,406-1
+3,GRI 409: Forced or Compulsory Labor,Disclosure 409-1 Operations and suppliers at significant risk for incidents of forced or compulsory labor,11.12.2,409-1
+4,GRI 414: Supplier Social Assessment,Disclosure 414-1 New suppliers that were screened using social criteria,11.12.3,414-1
+4,GRI 413: Local Communities,"Disclosure 413-1 Operations with local community engagement, impact assessments, and development programs",11.15.2,413-1
+5,GRI 413: Local Communities,Disclosure 413-2 Operations with significant actual and potential negative impacts on local communities Additional sector recommendations •  Describe impacts on the health of local communities as a result of exposure to pollution caused by operations or use of hazardous substances.,11.15.3,413-2
+4,GRI 411: Rights of Indigenous Peoples,Disclosure 411-1 Incidents of violations involving rights of indigenous peoples  Additional sector recommendations •  Describe the identified incidents of violations involving the rights of indigenous peoples.,11.17.2,411-1
+4,GRI 410: Security Practices,Disclosure 410-1 Security personnel trained in human rights policies or procedures,11.18.2,410-1
+4,GRI 201: Economic Performance,Disclosure 201-1 Direct economic value generated and distributed,11.21.2,201-1
+5,GRI 201: Economic Performance,Disclosure 201-4 Financial assistance received from government  Additional sector recommendations For state-owned organizations (SOE): •  Report the financial relationship between the government and the SOE.17,11.21.3,201-4
+4,GRI 415: Public Policy,Disclosure 415-1 Political contributions,11.22.2,415-1
