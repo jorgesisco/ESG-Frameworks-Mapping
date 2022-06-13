@@ -374,6 +374,8 @@ class ExtractPDFTables:
 			df['GRI_Code'] = df['GRI Standards and Disclosures'].str.findall(r'\d+-\d+').str.join('\n')
 			return df
 
+		return df
+
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
@@ -970,3 +972,27 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's HKEX equivalent") 
+
+	def mapHKEX22_GRI(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		r=3
+		for i in self.df["HKEX ESG Reporting Guide"]:
+			if i != None:
+				ws.cell(row=r, column=1, value=i)
+				r+=1
+
+		r=3
+		for i in self.df['GRI Standards and Disclosures']:
+			if i != None:
+				ws.cell(row=r, column=2, value=i)
+				r+=1
+
+		r=3
+		for i in self.df['GRI_Code']:
+			if i != None:
+				ws.cell(row=r, column=3, value=i)
+				r+=1
+		
+		wb.save(self.path_file)
