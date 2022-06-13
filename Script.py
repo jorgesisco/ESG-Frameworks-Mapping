@@ -375,6 +375,48 @@ class ExtractPDFTables:
 			return df
 
 		return df
+	
+	def getTablesGRI_SEBI_GRI(self):
+		regex = '\w\d\-\w\d\d\w|\w\d\-\w\d\w|\w\d-\w\d|\w\d\w,\w,\w|\w\d\d\w|\w\d\d|\w\d|^$'
+
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor='stream')
+
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df = df.drop_duplicates(keep='first')
+		df.rename(columns = {0:'SEBI - BRSR Framework', 1:'GRI Standards and Disclosures'}, inplace = True)
+		df['SEBI - BRSR Framework'] = df['SEBI - BRSR Framework'].replace(' ', '', regex=True)
+		df = df[df['SEBI - BRSR Framework'].str.contains(regex)]
+		df = df[df["GRI Standards and Disclosures"].str.contains("No direct linkage")==False]
+		df = df.drop(labels = 'SEBI - BRSR Framework',axis = 1).astype(str).groupby(df['SEBI - BRSR Framework'].mask(df['SEBI - BRSR Framework']=='').ffill()).agg(' '.join).reset_index()
+
+		year = input('Enter GRI year to filter data:')
+		if year == '2016':
+			df = df[df['GRI Standards and Disclosures'].str.contains(year)]
+			# df = df.replace(f' {year}','', regex=True)
+			# df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d+-\d+').str.join(' ')
+			return df
+		
+		elif year == '2021':
+			df = df[df['GRI Standards and Disclosures'].str.contains(year)]
+			# df = df.replace(f' {year}','', regex=True)
+			# df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d-\d').str.join(' ')
+			return df
+		
+		else:
+			return print("Type 2016 or 2021, there are not other options...")
+
+
+		# return df
 
 
 	# Funtions needed in some of the extracted dataframes

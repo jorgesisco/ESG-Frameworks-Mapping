@@ -1,237 +1,120 @@
-,HKEX ESG Reporting Guide,GRI Standards and Disclosures,GRI_Code
-1,Overall Approach: para 7,"GRI 101: Foundation: 
-•  Clause 1.1 (Stakeholder Inclusiveness principle)
-•  Clause 1.3 (Materiality principle)
-•   Clause 2.1 (Applying the Reporting Principles)
-GRI 102: General Disclosures: Disclosures 102-40, 102-42, 102-43, and 102-44","102-40
-102-42
-102-43
-102-44"
-2,Overall Approach: para 8,"GRI 101: Foundation: 
-•  Clause 2.3.1 (Identifying material topics and their Boundaries)
-•  Clause 2.5.3 (Reporting on material topics)",
-3,Overall Approach: para 9,GRI 102: General Disclosures: Disclosure 102-56,102-56
-4,Overall Approach: para 10,GRI 102: General Disclosures: Disclosures 102-26 and 102-32,"102-26
-102-32"
-5,Reporting Principles: para 11,"GRI 101: Foundation: 
-•  Clause 1.3 (Materiality principle)
-•  Clause 1.6 (Balance principle)
-•  Clause 1.8 (Comparability principle)",
-6,"Part B: Mandatory Disclosure 
-Requirements",,
-7,Governance structure 13,"GRI 102: General Disclosures: Disclosures 102-14, 102-15, 102-29, 102-30, and 
-102-31
-GRI 103 Management Approach: Disclosure 103-1, 103-2, and 103-3","102-14
-102-15
-102-29
-102-30
-102-31
-103-1
-103-2
-103-3"
-8,Reporting Principles 14,"GRI 102: General Disclosures: Disclosure 102-40, 102-42, 102-43, 102-44, 102-47
-GRI 101: Foundation: Clause 1.8 (Comparability principle)","102-40
-102-42
-102-43
-102-44
-102-47"
-1,Reporting Boundary 15,GRI 102: General Disclosures: Disclosure 102-45 and 102-49,"102-45
-102-49"
-2,"Part C: “Comply or explain” 
-Provisions",,
-3,"Aspect A1 Emissions: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-305: Emissions, and GRI 306: Effluents and Waste)
-GRI 305: Emissions: Management approach disclosures guidance
-GRI 307: Environmental Compliance: Disclosure 307-1","103-2
-307-1"
-4,KPI A1.1,"GRI 305: Emissions: Disclosures 305-1, 305-2, 305-3, 305-6, and 305-7","305-1
-305-2
-305-3
-305-6
-305-7"
-5,KPI A1.2,"GRI 305: Emissions: Disclosures 305-1, 305-2, 305-4","305-1
-305-2
-305-4"
-6,KPI A1.3,GRI 306: Waste: Disclosure 306-3 (a),306-3
-7,KPI A1.4,GRI 306: Waste: Disclosure 306-3 (a),306-3
-8,KPI A1.5,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 305: 
-Emissions)
-GRI 305: Emissions: Clause 1.2 and Disclosure 305-5","103-2
-305-5"
-9,KPI A1.6,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 306: 
-Waste)
-GRI 306: Waste: Disclosures 306-4 and 306-5","103-2
-306-4
-306-5"
-10,"Aspect A2 Use of Resources: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-301: Materials, GRI 302: Energy, and GRI 303: Water and Effluents)",103-2
-11,KPI A2.1,GRI 302: Energy: Disclosures 302-1 and 302-3,"302-1
-302-3"
-12,KPI A2.2,GRI 303: Water and Effluents: Disclosure 303-5,303-5
-13,KPI A2.3,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 302: 
-Energy) 
-GRI 302: Energy: Disclosures 302-4 and 302-5","103-2
-302-4
-302-5"
-14,KPI A2.4,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
-Water and Effluents)
-GRI 303: Water and Effluents: Disclosure 303-1","103-2
-303-1"
-15,KPI A2.5,GRI 301: Materials: Disclosure 301-1,301-1
-16,"Aspect A3 The Environment and 
-Natural Resources: General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-301: Materials, GRI 302: Energy, GRI 303: Water and Effluents, GRI 304: Biodiversity, 
-GRI 305: Emissions, and GRI 306: Waste)",103-2
-17,KPI A3.1,"GRI 103: Management Approach: Disclosures 103-1 and 103-2 (used together 
-with GRI 301: Materials, GRI 302: Energy, GRI 303: Water and Effluents, GRI 304: 
-Biodiversity, GRI 305: Emissions, and GRI 306: Waste) 
-GRI 303: Water and Effluents: Disclosure 303-1
-GRI 304: Biodiversity: Disclosure 304-2 
-GRI 306: Waste: Disclosures 306-1 and 306-2","103-1
-103-2
-303-1
-304-2
-306-1
-306-2"
-18,"Aspect A4 Climate Change: General 
-Disclosure","GRI 103: management approach: Disclosure 103-2 (c-i) (used together with GRI 
-201: Economic Performance)
-GRI 102: General Disclosures: Disclosure 102-29","103-2
-102-29"
-19,KPI A4.1,GRI 201: Economic Performance: Disclosure 201-2,201-2
-20,"Aspect B1 Employment: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-202: Market Presence, GRI 401: Employment, GRI 405: Diversity and Equal Opportunity, 
-GRI 406: Non-discrimination)
-GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
-419-1"
-1,KPI B1.1,"GRI 102: General Disclosures: Disclosures 102-8 (a), 102-8 (b), and 102-8 (c)
-GRI 405: Diversity and Equal Opportunity: Disclosure 405-1(b)","102-8
-102-8
-102-8
-405-1"
-2,KPI B1.2,GRI 401: Employment: Disclosure 401-1 (b),401-1
-3,"Aspect B2 Health and Safety: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-403: Occupational Health and Safety)
-GRI 403: Occupational Health and Safety: Disclosure 403-1
-GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
-403-1
-419-1"
-4,KPI B2.1,"GRI 403: Occupational Health and Safety: Disclosure 403-9, 403-10","403-9
-403-10"
-5,KPI B2.2,"Not directly covered by the GRI Standards – see comments in the Comprehensive 
-linkage table",
-6,KPI B2.3,"GRI 103: Management Approach: Disclosure 103-2 and 103-3 (a-i) (used together 
-with GRI 403: Occupational Health and Safety)
-GRI 403: Occupational Health and Safety: Disclosures 403-1, 403-3, 403-5, 403-7","103-2
-103-3
-403-1
-403-3
-403-5
-403-7"
-7,"Aspect B3 Development and Training: 
-General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-404: Training and Education)
-GRI 404: Training and Education: Disclosure 404-2 (a)","103-2
-404-2"
-8,KPI B3.1,"Not directly covered by the GRI Standards – see comments in the Comprehensive 
-linkage table",
-9,KPI B3.2,GRI 404: Training and Education: Disclosure 404-1,404-1
-10,"Aspect B4 Labour Standards: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-408: Child Labor and GRI 409: Forced or Compulsory Labor)
-GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
-419-1"
-11,KPI B4.1,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 408: 
-Child Labor and GRI 409: Forced or Compulsory Labor)
-GRI 408: Child Labor: Disclosure 408-1(c)
-GRI 409: Forced or Compulsory Labor: Disclosure 409-1(b)","103-2
-408-1
-409-1"
-12,KPI B4.2,"GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 408: 
-Child Labor and GRI 409: Forced or Compulsory Labor)
-GRI 408: Child Labor: Disclosure 408-1(c)
-GRI 409: Forced or Compulsory Labor: Disclosure 409-1(b)","103-2
-408-1
-409-1"
-13,"Aspect B5 Supply Chain Management: 
-General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-308: Supplier Environmental Assessment and GRI 414: Supplier Social Assessment)",103-2
-14,KPI B5.1,GRI 102: General Disclosures: Disclosure 102-9,102-9
-15,KPI B5.2,"GRI 102: General Disclosures: Disclosure 102-9
-GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
-Water and Effluents, GRI 308: Supplier Environmental Assessment and GRI 414: Supplier 
-Social Assessment)
-GRI 303: Water and Effluents: Disclosure 303-1 (c) 
-GRI 308: Supplier Environmental Assessment: Disclosures 308-1 and 308-2 
-GRI 414: Supplier Social Assessment: Disclosures 414-1 and 414-2","102-9
-103-2
-303-1
-308-1
-308-2
-414-1
-414-2"
-16,KPI B5.3,"GRI 102: General Disclosures: Disclosure 102-9
-GRI 103: Management Approach: Disclosure 103-2 (used together with GRI 303: 
-Water and Effluents, GRI 308: Supplier Environmental Assessment and GRI 414: Supplier 
-Social Assessment)
-GRI 303: Water and Effluents: Disclosure 303-1 (c) 
-GRI 308: Supplier Environmental Assessment: Disclosures 308-1 and 308-2 
-GRI 414: Supplier Social Assessment: Disclosures 414-1 and 414-2","102-9
-103-2
-303-1
-308-1
-308-2
-414-1
-414-2"
-1,KPI B5.4,"GRI 103: Management Approach: Disclosure 103-2 (used together with
-GRI 306: Waste and GRI 308: Supplier Environmental Assessment)",103-2
-2,"Aspect B6 Product Responsibility: 
-General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-416: Customer Health and Safety, GRI 417: Marketing and Labeling, and GRI 418: 
-Customer Privacy)
-GRI 416: Customer Health and Safety: Disclosure 416-2
-GRI 417: Marketing and Labeling: Disclosures 417-2 and 417-3
-GRI 418: Customer Privacy: Disclosure 418-1
-GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
-416-2
-417-2
-417-3
-418-1
-419-1"
-3,KPI B6.1,Not covered by the GRI Standards,
-4,KPI B6.2,"GRI 102: General Disclosures: Disclosures 102-43 and 102-44
-GRI 103: Management Approach: Disclosure 103-2 (c-vi)
-GRI 418: Customer Privacy: Disclosure 418-1","102-43
-102-44
-103-2
-418-1"
-5,KPI B6.3,Not covered by the GRI Standards,
-6,KPI B6.4,Not covered by the GRI Standards,
-7,KPI B6.5,"GRI 103: Management Approach: Disclosures 103-2 and 103-3 (a-i) (used together 
-with GRI 418: Customer Privacy)","103-2
-103-3"
-8,"Aspect B7 Anti-corruption: General 
-Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 205: 
-Anti-corruption)
-GRI 205 Anti-corruption: Disclosure 205-3 
-GRI 419: Socioeconomic Compliance: Disclosure 419-1","103-2
-205-3
-419-1"
-9,KPI B7.1,GRI 205: Anti-corruption: Disclosure 205-3,205-3
-10,KPI B7.2,"GRI 102: General Disclosures: Disclosure 102-17
-GRI 103: Management Approach: Disclosures 103-2 and 103-3 (a-i) (used together 
-with GRI 205: Anti-corruption) 
-GRI 205: Anti-corruption: Clause 1.2","102-17
-103-2
-103-3"
-11,KPI B7.3,"GRI 205: Anti-corruption: Disclosure: 205-2: Communication and training about 
-anti-corruption policies and procedures",205-2
-12,"Aspect B8 Community Investment: 
-General Disclosure","GRI 103: Management Approach: Disclosure 103-2 (c-i) (used together with GRI 
-413: Local Communities)",103-2
-13,KPI B8.1,GRI 203: Indirect Economic Impacts: Disclosure 203-1(a),203-1
-14,KPI B8.2,GRI 201: Economic Performance: Disclosure 201-1(a-ii),201-1
+,SEBI - BRSR Framework,GRI Standards and Disclosures
+0,A12,"GRI 2: General Disclosures 2021, Disclosure 2-3-d"
+1,A13,"GRI 2: General Disclosures 2021, Disclosure 2-2-a,2-2-c"
+2,A14,"GRI 2: General Disclosures 2021, Disclosure 2-6-b-i"
+3,A15,"GRI 2: General Disclosures 2021, Disclosure 2-6-b-I"
+4,A16,"GRI 2: General Disclosures 2021, Disclosure 2-6-b-i"
+5,A17a,"GRI 2: General Disclosures 2021, Disclosure 2-6-b-i"
+6,A17c,"GRI 2: General Disclosures 2021, Disclosure 2-6-b-iii"
+7,A18a,"GRI 2: General Disclosures 2021, Disclosures 2-7-a; 2-7-b-i-ii; 2-8-a"
+8,A18b,GRI 405: Diversity and Equal Opportunity 2016 Disclosure 405-1-b-iii
+9,A19,GRI 405: Diversity and Equal Opportunity 2016 Disclosure 405-1-a-I; 405-1-b-i
+10,A2,"GRI 2: General Disclosures 2021, 
+Disclosure 2-1-a"
+11,A20,GRI 401: Employment 2016 Disclosure 401-1-b
+12,A21,"GRI 2: General Disclosures 2021, Disclosures 2-2-a; 2-2-b"
+13,A22,GRI 201: Economic Performance 2016 Disclosure 201-1-a-i-ii
+14,A23,"GRI 2: General Disclosures 2021, Disclosures 2-25-e"
+15,A24,GRI 3: Material Topics 2021 Disclosure 3-1-a-i-ii; 3-1-b
+16,A5,"GRI 2: General Disclosures 2021, Disclosure 2-1-c"
+17,A6,"GRI 2: General Disclosures 2021, Disclosure 2-3-d"
+18,A7,"GRI 2: General Disclosures 2021, Disclosure 2-3-d"
+19,A9,"GRI 2: General Disclosures 2021, Disclosure 2-3-a,2-3-b"
+20,B11,GRI 2: General Disclosures 2021 Disclosure 2-5-b-i-iii
+21,"B1a,b,c",GRI 2: General Disclosures 2021 Disclosure 2-23-a;2-23-c;2-23-d
+22,B2,GRI 2: General Disclosures 2021 Disclosure 2-24-a-ii
+23,B3,GRI 2: General Disclosures 2021 Disclosure 2-23-e
+24,B5,GRI 3: Material Topics 2021 Disclosure 3-3-c;3-3-e-ii
+25,B6,GRI 3: Material Topics 2021 Disclosure 3-3-e-iii
+26,B7,GRI 2: General Disclosures 2021 Disclosure 2-22-a
+27,B8,GRI 2: General Disclosures 2021 Disclosure 2-13-a-i
+28,B9,GRI 2: General Disclosures 2021 Disclosure 2-9-b; 2-9-c-i-viii
+29,"P-
+8L5","GRI 3: Material Topics 2021, to be used together with any relevant material topic Disclosure 3-3-d-i-ii"
+30,P-8E3,"GRI 3: Material Topics 2021, to be used together with GRI 413: Local Communities 2016 Disclosure 3-3; GRI 2: General Disclosures 2021 Disclosure 2-25-b; GRI 413: Local Communities 2016 413-1-a-viii"
+31,P-8L1,"GRI 413: Local Communities 2016 Disclosure 413-1-a-iv;  GRI 3: Material Topics 2021, to be used together with GRI 413: Local Communities 2016 Disclosure 3-3-d-i-ii"
+32,P-8L4,Can be covered by - GRI 201: Economic Performance 2016 Disclosure 201-1-a
+33,P-9E5,"Can be covered by - GRI 3: Material Topics 2021, to be used together with GRI 418: Customer Privacy 2016 Disclosure 3-3; GRI 2: General Disclosures 2021 Disclosures 2-23-a; 2-23-c"
+34,P-9L1,Can be covered by - GRI 2: General Disclosures 2021 Disclosure 2-6-b-I
+35,P1-E1,GRI 2: General Disclosures 2021 Disclosures 2-17-a; 2-24-a-iv
+36,P1-E2,"GRI 2: General Disclosures 2021 Disclosures 2-27 a i- ii; b i-ii; c, d"
+37,P1-E3,"GRI 2: General Disclosures 2021 Disclosure 2-27 a I, ii"
+38,P1-E4, GRI 2: General Disclosures 2021 Disclosures 2-23-a; 2-23-c; GRI 3: Material Topics 2021 to be used together with GRI 205: Anti-corruption 2016 Disclosure 3-3-c
+39,P1-E5,GRI 205: Anti-corruption 2016 Disclosure 205-3-a; 205-3-b
+40,P1-E6,Can be covered by - GRI 2: General Disclosures 2021 Disclosure 2-25-e
+41,P1-E7,GRI 205: Anti-corruption 2016 Disclosure 205-3-d
+42,P1-L1,GRI 2: General Disclosures 2021 Disclosure 2-24-a-iv
+43,P1-L2,GRI 2: General Disclosures 2021 Disclosures 2-10-b-iii; 2-15-a
+44,P2-E2,Can be covered by - GRI 308 Supplier environmental assessment Disclosure 308-1-a; GRI 414 Supplier social assessment Disclosure 414-1-a
+45,P2-E3,"GRI 3: Material Topics 2021, to be used together with GRI 301: Materials 2016 Disclosures 3-3-d  and GRI 306: Waste 2020 Disclosure 306-2-a"
+46,P2-L2,"GRI 3: Material Topics 2021, to be used together with GRI 306: Waste 2020 Disclosures 3-3-a; - 3-3-d-i-iii; GRI 306: Waste 2020 Disclosure 306-2-a"
+47,P2-L3,GRI 301: Materials 2016 Disclosure 301-2-a
+48,P2-L5,GRI 301: Materials 2016 Disclosure 301-3-a
+49,P3-E10a,"GRI 403: Occupational Health and Safety 2018 Disclosure 403-1-a, 403-1-b"
+50,P3-E10b,GRI 403: Occupational Health and Safety 2018 Disclosure 403-2-a
+51,P3-E10c,GRI 403: Occupational Health and Safety 2018 Disclosures 403-2-b; 403-2-c
+52,P3-E10d,GRI 403: Occupational Health and Safety 2018 Disclosure 403-6-a
+53,P3-E11,GRI 403: Occupational Health and Safety 2018 Disclosure 403-9-a-i-v; 403-9-b-i-v; 403-10-a; 403-10-b-ii
+54,P3-E12,"GRI 3: Material Topics 2021, to be used together with GRI 403: Occupational Health and Safety 2018 Disclosure 3-3-d-i-iii; GRI 403: Occupational Health and Safety 2018 Disclosure 403-2-a-i-ii; 403-9-c-iii; 403-10-c-ii-iii"
+55,P3-E1a,GRI 401: Employment 2016 Disclosure 401-2-a-I- vii
+56,P3-E2,GRI 201: Economic Performance 2016 Disclosures 201-3-b-i-iii; 201-3-c; 201-3-d; 201-3-e
+57,P3-E3,"Can be covered by – GRI 3: Material Topics 2021, to be used together with GRI 405: Diversity and Equal Opportunity 2016 Disclosure 3-3"
+58,P3-E5,GRI 401: Employment 2016 Disclosure 401-3-a; 401-3-b; 401-3-c; 401-3-d; 401-3-e
+59,P3-E6,Can be covered by - GRI 2: General Disclosures 2021 Disclosure 2-25-b
+60,P3-E7,GRI 2: General Disclosure 2021 Disclosure 2-30-a
+61,P3-E8,GRI 403: Occupational Health and Safety 2018 Disclosure 403-5-a; GRI 404: Training and Education 2016 Disclosures 404-1-a-I; 404-2-a
+62,P3-E9,GRI 404: Training and Education 2016 Disclosure 404-3-a
+63,P3-L3,"Can be covered by - GRI 3: Material Topics 2021, to be used together with GRI 403: Occupational Health and Safety 2018 Disclosure 3-3-d-ii"
+64,P3-L4,GRI 404: Training and Education 2016 Disclosure 404-2-b
+65,P3-L5,GRI 414: Supplier social Assessment 2016 Disclosure 414-2-a
+66,P3-L6,GRI 414: Supplier social Assessment 2016 Disclosures 414-2-d; 414-2-e
+67,P3-P4,"Can be covered by - GRI 3: Material Topics 2021, to be used together with GRI 405: Diversity and Equal Opportunity 2016 Disclosure 3-3-c"
+68,P4-L2,GRI 3: Material Topics 2021 Disclosure 3-1-a-i-ii; 3-1-b
+69,P4-L3,GRI 2: General Disclosures 2021 Disclosure 2-29-a-i-iii
+70,P5-E1,GRI 2: General Disclosures 2021 Disclosure 2-24-a-iv
+71,P5-E10,"GRI 3: Material Topics 2021, to be used together with each material topic the organization has determined relevant to the Human Rights Rights principle Disclosures 3-3-d-i-ii"
+72,P5-E8,"GRI 2: General Disclosures 2021 Disclosures 2-23-a-iv; 2-23-e; 2-23-f; 2-24-a-iii; GRI 3: Material Topics 2021, to be used together with GRI 414: Supplier Social Assessment 2016 Disclosure 3-3"
+73,P5-L1,GRI 2: General Disclosures 2021 Disclosures 2-25-b; 2-25-e; GRI 3: Material Topics 2021 Disclosures 3-3-d-i-ii
+74,P5-L2,GRI 3: Material Topics 2021 Disclosures 3-1-a-i;  3-3-a; 3-3-c; 3-3-d
+75,P5-L3,"Can be covered by – GRI 3: Material Topics 2021, to be used together with GRI 405: Diversity and Equal Opportunity 2016 Disclosure 3-3"
+76,P5-L4,"GRI 3: Material Topics 2021, to be used together with GRI 414: Supplier Social Assessment 2016 Disclosure 3-3; GRI 414: Supplier Social Assessment 2016 Disclosures 414-1-a; 414-2-a"
+77,P5-L5,GRI 414: Supplier Social Assessment 2016 Disclosures 414-2-d; 414-2-e
+78,P6-E1,GRI 302: Energy 2016 Disclosure 302-1-a; 302-1-b; 302-1-c-I; 302-1-e GRI 302: Energy 2016 Disclosure 302-3-a; 302-1-b
+79,P6-E10,GRI 304: Biodiversity 2016 Disclosure 304-1-a-i-v
+80,P6-E11,GRI 304: Biodiversity 2016 Topic management disclosures Guidance;
+81,P6-E2,"Can be covered by - GRI 3: Material Topics 2021, to be used together with GRI 302: Energy 2016 Disclosure 3-3"
+82,P6-E3,GRI 303: Water and Effluents 2018 Disclosures 303-3-a-i-v; 303-5-a
+83,P6-E4,Can be covered by - GRI 303: Water and Effluents 2018 Disclosures 303-1-a; 303-2-a
+84,P6-E5,GRI 305: Emissions 2016 Disclosure 305-7-a-i-vii
+85,P6-E6,"GRI 305: Emissions 2016 Disclosures 305-1 a; 305-1-b; 305-2-a, 305-2-b; 305-2-c; 305-4-a; 305-4-b; 305-4-c"
+86,P6-E7,GRI 305: Emissions 2016 Disclosures 305-5-a; 305-5-b; 305-5-c; 305-5-d
+87,P6-E8,GRI 306: Waste 2020 Disclosures 306-3-a; 306-4-a; 306-4-b-i-iii; 306-4-c-i-iii; 306-5-a; 306-5-b-i-iii; 306-5-c-i-iv
+88,P6-E9,"GRI 306: Waste 2020 Disclosure 306-2-a; GRI 3: Material Topics 2021, to be used together with GRI 306: Waste 2020 Disclosures 3-3-c; 3-3-d-i-ii"
+89,P6-L1,GRI 302: Energy 2016 Disclosures 302-1-a; 302-1-b; 302-1-c-I; 302-1-e
+90,P6-L2,GRI 303: Water and Effluents 2018 Disclosure 303-4-a-i-iv
+91,P6-L3,GRI 303: Water and Effluents 2018 Disclosures 303-3-b-i-iv; 303-4-a-i-ii
+92,P6-L4,GRI 305: Emissions 2016 Disclosures 305-3-a; 305-3-b; 305-4-a; 305-4-b; 305-4-c
+93,P6-L5,GRI 304: Biodiversity 2016 Disclosures 304-2-a-i-vi; 304-2-b-i-iv; 304-3-a
+94,P6-L6,"GRI 3: Material Topics 2021, to be used together with GRI 301: Materials 2016, GRI 302: Energy 2016, GRI 303: Water and Effluents 2018, GRI 304: Biodiversity 2016, GRI 305: Emissions 2016, and"
+95,P8-E1,Can be covered by - GRI 413: Local Communities 2016 Disclosure 413-1-a-i-iii
+96,P8-E2,Can be covered by - GRI 413: Local Communities 2016 Disclosure 413-1-a-iv
+97,P8-E4,GRI 204: Procurement Practices 2016 Disclosures 204-1-a; 204-1-b; 204-1-c
+98,P8-L2,Can be covered by - GRI 413: Local Communities 2016 Disclosure 413-1-a-iv
+99,P8-L3,"Can be covered by - GRI 3: Material Topics 2021, to be used together with GRI 204: Procurement Practices 2016 Disclosure 3-3 ; GRI 204: Procurement Practices 2016 Disclosure 204-1-a"
+100,P8-L6,Can be covered by - GRI 413: Local Communities 2016 Disclosure 413-1-a-ivC
+101,P9-E1,Can be covered by - GRI 2: General Disclosures 2021 Disclosures 2-25-b; 2-25-d; 2-25-e
+102,P9-E2,GRI 417: Marketing and Labeling 2016 Disclosures 417-1-a-i-v; 417-1-b
+103,P9-E3,GRI 418: Customer Privacy 2016 Disclosure 418-1-a-i-ii; 418-1-b
+104,P9-E4,Can be covered by - GRI 416: Customer Health and Safety 2016 Disclosure 416-2-a-i-iii
+105,P9-E6,"GRI 3: Material Topics 2021, to be used together with any relevant material topic Disclosure 3-3-d-i-ii"
+106,P9-L2,"GRI 3: Material Topics 2021, to be used together with GRI 417: Marketing and Labeling 2016 Disclosure 3-3"
+107,P9-L4,GRI 417: Marketing and Labeling 2016 Disclosures 417-1-a-i-v; 417-1-b
+108,P9-L5,GRI 418: Customer Privacy 2016 Disclosure 418-1-a
+109,"PRINCIPLE1Businessesshouldconductandgovernthemselveswithintegrity,andinamannerthatisethical,transparentandaccountable.",
+110,PRINCIPLE2Businessesshouldprovidegoodsandservicesinamannerthatissustainableandsafe,
+111,"PRINCIPLE3Businessesshouldrespectandpromotethewell-beingofallemployees,includingthoseintheirvaluechains",
+112,PRINCIPLE4Businessesshouldrespecttheinterestsofandberesponsivetoallitsstakeholders,
+113,PRINCIPLE5Businessesshouldrespectandpromotehumanrights,
+114,PRINCIPLE6:Businessesshouldrespectandmakeeffortstoprotectandrestoretheenvironment,
+115,PRINCIPLE8Businessesshouldpromoteinclusivegrowthandequitabledevelopment,
+116,PRINCIPLE9Businessesshouldengagewithandprovidevaluetotheirconsumersinaresponsiblemanner,
