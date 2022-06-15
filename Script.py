@@ -399,24 +399,18 @@ class ExtractPDFTables:
 		df = df[df["GRI Standards and Disclosures"].str.contains("No direct linkage")==False]
 		df = df.drop(labels = 'SEBI - BRSR Framework',axis = 1).astype(str).groupby(df['SEBI - BRSR Framework'].mask(df['SEBI - BRSR Framework']=='').ffill()).agg(' '.join).reset_index()
 
-		year = input('Enter GRI year to filter data:')
-		if year == '2016':
-			df = df[df['GRI Standards and Disclosures'].str.contains(year)]
-			# df = df.replace(f' {year}','', regex=True)
-			# df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d+-\d+').str.join(' ')
-			return df
-		
-		elif year == '2021':
-			df = df[df['GRI Standards and Disclosures'].str.contains(year)]
-			# df = df.replace(f' {year}','', regex=True)
-			# df['GRI Code'] = df['DISCLOSURE'].str.findall(r'\d-\d').str.join(' ')
-			return df
-		
-		else:
-			return print("Type 2016 or 2021, there are not other options...")
+		# Extract gri 2021 codes
+		df['GRI Disclosures 2021'] = df['GRI Standards and Disclosures'].str.findall('( \d-\d+)').apply(set).str.join('')
+		df['GRI Disclosures 2021'] = df['GRI Disclosures 2021'].replace(' ','\n', regex=True)
+		df['GRI Standard 2021'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2021)').apply(set).str.join('\n')
 
+		# Extract gri 2016 codes
+		df['GRI Disclosures 2016'] = df['GRI Standards and Disclosures'].str.findall('(\d\d\d-\w+)').apply(set).str.join(' ')
+		df['GRI Disclosures 2016'] = df['GRI Disclosures 2016'].replace(' ','\n', regex=True)
+		df['GRI Standard 2016'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2016)').apply(set).str.join('\n')
+		df['GRI Standard 2018'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2018)').apply(set).str.join('\n')
 
-		# return df
+		return df
 
 
 	# Funtions needed in some of the extracted dataframes
@@ -541,7 +535,6 @@ class MapLinks2Excel:
 
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
-
 		rows = ws.max_row
 
 		for i in range(1, rows):
