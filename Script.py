@@ -401,7 +401,7 @@ class ExtractPDFTables:
 
 		# Extract gri 2021 codes
 		df['GRI Disclosures 2021'] = df['GRI Standards and Disclosures'].str.findall('( \d-\d+)').apply(set).str.join('')
-		df['GRI Disclosures 2021'] = df['GRI Disclosures 2021'].replace(' ','\n', regex=True)
+		# df['GRI Disclosures 2021'] = df['GRI Disclosures 2021'].replace(' ','\n', regex=True)
 		df['GRI Standard 2021'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2021)').apply(set).str.join('\n')
 
 		# Extract gri 2016 codes
@@ -409,6 +409,7 @@ class ExtractPDFTables:
 		df['GRI Disclosures 2016'] = df['GRI Disclosures 2016'].replace(' ','\n', regex=True)
 		df['GRI Standard 2016'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2016)').apply(set).str.join('\n')
 		df['GRI Standard 2018'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2018)').apply(set).str.join('\n')
+		df = df[df["GRI Standard 2018"].str.contains("2018")==False]
 
 		return df
 
@@ -940,7 +941,6 @@ class MapLinks2Excel:
 	def GRI_GRI_OIL_GAS_COAL(self):
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
-
 		rows = ws.max_row
 
 		# In depending on the option, it will mapp the data on the right columns on excel
@@ -1031,3 +1031,56 @@ class MapLinks2Excel:
 				r+=1
 		
 		wb.save(self.path_file)
+	
+	def mapGRI16_BESI(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).values
+
+				if target_cell != None:
+					
+					try:
+						disclosure_to_add = self.df.loc[self.df['GRI Disclosures 2016'] == target_cell]['SEBI - BRSR Framework'].values
+						
+						if len(disclosure_to_add) > 0:
+							ws.cell(row=i, column=24, value='\n'.join(disclosure_to_add))
+						
+					except:
+							pass
+
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
+
+	def mapGRI21_BESI(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=2).value
+
+				if target_cell != None:
+					
+					try:
+						disclosure_to_add = self.df.loc[self.df['GRI Disclosures 2021'] == target_cell]['SEBI - BRSR Framework'].values
+						
+						if len(disclosure_to_add) > 0:
+							print(disclosure_to_add)
+							# ws.cell(row=i, column=16, value='\n'.join(disclosure_to_add))
+						
+					except:
+							pass
+
+		# wb.save(self.path_file)
+		# print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
