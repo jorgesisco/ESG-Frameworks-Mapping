@@ -1,6 +1,7 @@
 from cmath import nan
+from distutils.filelist import findall
 import pandas as pd
-# import numpy as np
+import numpy as np
 import re
 
 import pdfplumber
@@ -12,10 +13,59 @@ import camelot.io as camelot
 class ExtractPDFTables:
 
 	# Initializing contructor variables
-	def __init__(self, file_path, page_range=False, area=False):
+	def __init__(self, file_path, page_range=False, area=False, flavor=None, strip_text=None):
 		self.file_path = file_path #string with file path
 		self.page_range = page_range # defined page range with tables
-		self.area = area # Table area
+		self.area = area # Table area, libraris like tabula allows to specify table area
+		
+		#Camelot parameters
+		self.flavor = flavor
+		self.strip_text = strip_text
+	
+	#Table Extrator with Camelot Library
+	def getTablesCamelot(self, flavor=None, strip_text=None):
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor=f'{flavor}', 
+								  strip_text=f'{strip_text}')
+
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		return df
+
+	def getCode(self, df,
+				column,
+				regex, delimiter, 
+				code_column='Code',
+				remove_char=None):
+
+			df[code_column] = df[column].str.findall(regex).apply(set).str.join(delimiter)
+
+			if remove_char != None:
+				df[code_column] = df[code_column].str.replace(remove_char, '', regex=False)
+
+			return df
+
+    # This metho will extract strings from designated column and add them to a new column
+	def separate_code(self, df, column, delimiter):
+		df = df.assign(Code=df[f'{column}'].str.split(delimiter)).explode(f'{column}')
+		
+		return df
+
+	#Merge codes that has similar code from other framework (this is good for mapping in the framework that is the code in common with the rest)
+	def merge_codes(self, df, ref_col, code_column):
+		array_agg = lambda x: '\n'.join(x.astype(str))
+		df = df.groupby([ref_col], as_index=False).agg({code_column: array_agg})
+		return df
+
+
 
 	# Getting tables from PDF SDG Linked to GRI
 	def getTablesSDG_GRI(self, sdg=None):
@@ -362,32 +412,41 @@ class ExtractPDFTables:
 
 		return df
 
-	def getTablesGRI_ADX(self, flavor=None, strip_text=None):
+	def getTablesGRI_ADX(self):
 
-		df = self.getTablesCamelot(flavor, strip_text)
-
+		df = self.getTablesCamelot(self.flavor, self.strip_text)
+		df = df.drop_duplicates(keep='first')
 		df.columns = df.iloc[0]
 		df = df[1:]
-		df= df.drop(['Category', 'CorrespondingSDG', 'Notes'], axis=1)
+		df= df[['Metric', 'Calculation', 'CorrespondingGRI Standard']]
+		df.replace('', np.nan, inplace=True)
+		df = df.dropna()
 
-		return df
+		df = self.getCode(df, code_column='ADX_Code',
+                     column='Calculation',
+                     regex='\w+.\d+\)', 
+                     delimiter='\n', 
+                     remove_char=')')
 
-	def getTablesCamelot(self, flavor=None, strip_text=None):
-		tables = camelot.read_pdf(self.file_path, 
-								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
-								  flavor=f'{flavor}', 
-								  strip_text=f'{strip_text}')
 
-		frames = []
-		for i in tables:
-			try:
-				table = i.df
-				frames.append(table)
-			except:
-				pass
+		df = self.getCode(df, code_column='GRI_Code',
+							column='CorrespondingGRI Standard',
+							regex='\d\d\d:', 
+							delimiter='\n', 
+							remove_char=':')
 
-		df =  pd.concat(frames)
-		return df
+		framework = input('Are you mapping on the GRI 2016 sheet? (yes or no):')
+
+		if framework == 'yes':
+			df = self.merge_codes(df, 'GRI_Code', 'ADX_Code')
+			return df
+		
+		elif framework == 'no':
+			return df
+		
+		else:
+			print("Enter 'yes' or 'no'")
+
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
