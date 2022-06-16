@@ -18,51 +18,6 @@ class ExtractPDFTables:
 		self.area = area # Table area
 
 	# Getting tables from PDF SDG Linked to GRI
-	def getTablesSDG_GRI_0_Deprecated(self):
-
-	# 	'''This method requires to add a nested list with 2 page ranges,
-	# 	   with this approach, we avoid scanning a non table on page 73
-	# 	'''
-	# 	if any(isinstance(i, list) for i in self.page_range) == False:
-	# 		return print("WARNING: page_range should be a nested list\n eg: page_range = [list(range(3, 73)), list(range(74, 99))]\n Why? the SDG-GRI pdf file has a page in the middle that is\n not a table, getTablesSDG_GRI method iterates the first\n range of pages an then the other one.")
-
-	# 	else:
-	# 		# Gets all the tables from first page range
-	# 		pdf = read_pdf(self.file_path, stream=True, pages = self.page_range[0],
-	# 					   area = self.area, multiple_tables=False)
-
-	# 		#renaming "sources" column to "source" (same column name in the reamining tables)
-	# 		pdf[0].rename(columns = {'Sources':'Source'}, inplace = True)
-			
-	# 		# Getting the remaining tables
-	# 		pdf_ = read_pdf(self.file_path, stream=True, pages = self.page_range[1],
-	# 						area = self.area, multiple_tables=False )
-
-	# 		#Merging all the tables in one pandas dataframe
-	# 		pdf[0] = pdf[0].append(pdf_[0])
-
-	# 		# Renaming variable name
-	# 		df = pdf[0]
-	# 		df = df[df.Target != 'Target']
-
-	# 		structuringApproach = input('Are you going to map GRI on SDG sheet? (yes or no): ')
-
-	# 		if structuringApproach == 'yes':
-	# 			print('Structured GRI for SDG sheet, this data can be mapped on SDG excel sheet with the GRI Disclosures')
-	# 			df = df.dropna()
-	# 			# df = df.drop(['Available Business Disclosures'], axis=1)
-	# 			df = df.drop(labels = 'Target',axis = 1).groupby(df['Target'].mask(df['Target']==' ').ffill()).agg(', '.join).reset_index()
-
-	# 		elif structuringApproach == 'no':
-	# 			print('Structured SDG to GRI, this data can be mapped on GRI excel sheet with the SDG Targets')
-	# 			df = df.drop(['Available Business Disclosures'], axis=1)
-	# 			df = df.dropna()
-
-	# 		else:
-	# 			print("WARNING: please run the script again and choose 'yes' or 'no' ") 
-
-			return df
-
 	def getTablesSDG_GRI(self, sdg=None):
 
 		if sdg != None:
@@ -400,13 +355,18 @@ class ExtractPDFTables:
 		df = df.drop(labels = 'SEBI - BRSR Framework',axis = 1).astype(str).groupby(df['SEBI - BRSR Framework'].mask(df['SEBI - BRSR Framework']=='').ffill()).agg(' '.join).reset_index()
 
 		# Extract gri 2021 codes
-		df['GRI Disclosures 2021'] = df['GRI Standards and Disclosures'].str.findall('( \d-\d+)').apply(set).str.join('')
+		df['GRI_Disclosures_2021'] = df['GRI Standards and Disclosures'].str.findall('(?<=\s)(\d-\d+)').apply(set).str.join(', ')
+		#The funciton with the explode method is to separate each code with all the data for that specific code
+		df = df.assign(GRI_Disclosures_2021=df['GRI_Disclosures_2021'].str.split(', ')).explode('GRI_Disclosures_2021')
 		# df['GRI Disclosures 2021'] = df['GRI Disclosures 2021'].replace(' ','\n', regex=True)
 		df['GRI Standard 2021'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2021)').apply(set).str.join('\n')
 
 		# Extract gri 2016 codes
-		df['GRI Disclosures 2016'] = df['GRI Standards and Disclosures'].str.findall('(\d\d\d-\w+)').apply(set).str.join(' ')
-		df['GRI Disclosures 2016'] = df['GRI Disclosures 2016'].replace(' ','\n', regex=True)
+		df['GRI_Disclosures_2016'] = df['GRI Standards and Disclosures'].str.findall('(\d\d\d-\w+)').apply(set).str.join(', ')
+		#The funciton with the explode method is to separate each code with all the data for that specific code
+		df = df.assign(GRI_Disclosures_2016=df['GRI_Disclosures_2016'].str.split(', ')).explode('GRI_Disclosures_2016')
+		# df['GRI Disclosures 2016'] = df['GRI Disclosures 2016'].replace(' ','\n', regex=True)
+
 		df['GRI Standard 2016'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2016)').apply(set).str.join('\n')
 		df['GRI Standard 2018'] = df['GRI Standards and Disclosures'].str.findall('(GRI \d+: [\w\s]+ 2018)').apply(set).str.join('\n')
 		df = df[df["GRI Standard 2018"].str.contains("2018")==False]
@@ -494,6 +454,7 @@ class ExtractPDFTables:
 
 	
 
+	
 class MapLinks2Excel:
 
 	def __init__(self, df, sheet, path_file):
@@ -1042,12 +1003,12 @@ class MapLinks2Excel:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).values
+				target_cell = ws.cell(row=i, column=2).value
 
 				if target_cell != None:
 					
 					try:
-						disclosure_to_add = self.df.loc[self.df['GRI Disclosures 2016'] == target_cell]['SEBI - BRSR Framework'].values
+						disclosure_to_add = self.df.loc[self.df['GRI_Disclosures_2016'] == target_cell]['SEBI - BRSR Framework'].values
 						
 						if len(disclosure_to_add) > 0:
 							ws.cell(row=i, column=24, value='\n'.join(disclosure_to_add))
@@ -1073,14 +1034,13 @@ class MapLinks2Excel:
 				if target_cell != None:
 					
 					try:
-						disclosure_to_add = self.df.loc[self.df['GRI Disclosures 2021'] == target_cell]['SEBI - BRSR Framework'].values
+						disclosure_to_add = self.df.loc[self.df['GRI_Disclosures_2021'] == target_cell]['SEBI - BRSR Framework'].values
 						
 						if len(disclosure_to_add) > 0:
-							print(disclosure_to_add)
-							# ws.cell(row=i, column=16, value='\n'.join(disclosure_to_add))
+							ws.cell(row=i, column=16, value='\n'.join(disclosure_to_add))
 						
 					except:
 							pass
 
-		# wb.save(self.path_file)
-		# print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
