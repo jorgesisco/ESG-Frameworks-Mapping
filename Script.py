@@ -331,22 +331,11 @@ class ExtractPDFTables:
 
 		return df
 	
-	def getTablesGRI_SEBI_GRI(self):
+	def getTablesGRI_SEBI_GRI(self, flavor=None, strip_text=None):
 		regex = '\w\d\-\w\d\d\w|\w\d\-\w\d\w|\w\d-\w\d|\w\d\w,\w,\w|\w\d\d\w|\w\d\d|\w\d|^$'
 
-		tables = camelot.read_pdf(self.file_path, 
-								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
-								  flavor='stream')
-
-		frames = []
-		for i in tables:
-			try:
-				table = i.df
-				frames.append(table)
-			except:
-				pass
-
-		df =  pd.concat(frames)
+		df = self.getTablesCamelot(flavor, strip_text)
+		
 		df = df.drop_duplicates(keep='first')
 		df.rename(columns = {0:'SEBI - BRSR Framework', 1:'GRI Standards and Disclosures'}, inplace = True)
 		df['SEBI - BRSR Framework'] = df['SEBI - BRSR Framework'].replace(' ', '', regex=True)
@@ -373,6 +362,32 @@ class ExtractPDFTables:
 
 		return df
 
+	def getTablesGRI_ADX(self, flavor=None, strip_text=None):
+
+		df = self.getTablesCamelot(flavor, strip_text)
+
+		df.columns = df.iloc[0]
+		df = df[1:]
+		df= df.drop(['Category', 'CorrespondingSDG', 'Notes'], axis=1)
+
+		return df
+
+	def getTablesCamelot(self, flavor=None, strip_text=None):
+		tables = camelot.read_pdf(self.file_path, 
+								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
+								  flavor=f'{flavor}', 
+								  strip_text=f'{strip_text}')
+
+		frames = []
+		for i in tables:
+			try:
+				table = i.df
+				frames.append(table)
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		return df
 
 	# Funtions needed in some of the extracted dataframes
 	def extractDisclosures1(self, df, column, newColumn, regex, method):
@@ -454,7 +469,7 @@ class ExtractPDFTables:
 
 	
 
-	
+
 class MapLinks2Excel:
 
 	def __init__(self, df, sheet, path_file):
