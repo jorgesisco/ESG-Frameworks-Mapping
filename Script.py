@@ -55,8 +55,9 @@ class ExtractPDFTables:
 
     # This metho will extract strings from designated column and add them to a new column
 	def separate_code(self, df, column, delimiter):
-		df = df.assign(Code=df[f'{column}'].str.split(delimiter)).explode(f'{column}')
 		
+		df = df.assign(GRI_Code=df[f'{column}'].str.split(delimiter)).explode(f'{column}')
+	
 		return df
 
 	#Merge codes that has similar code from other framework (this is good for mapping in the framework that is the code in common with the rest)
@@ -274,22 +275,6 @@ class ExtractPDFTables:
 			else:
 				return print("WARNING: Answer 'yes' or 'no' without any typos")
 				
-	def getTablesEV22(self):
-		
-		tables = camelot.read_pdf(self.file_path, 
-								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
-								  flavor='lattice')
-		
-		frames = []
-		for i in tables:
-			try:
-				table = i.df
-				frames.append(table)
-			except:
-				pass
-
-		df =  pd.concat(frames)
-		return df
 
 	def getTablesCDP_TCFD(self):
 
@@ -415,6 +400,7 @@ class ExtractPDFTables:
 	def getTablesGRI_ADX(self):
 
 		df = self.getTablesCamelot(self.flavor, self.strip_text)
+
 		df = df.drop_duplicates(keep='first')
 		df.columns = df.iloc[0]
 		df = df[1:]
@@ -531,10 +517,20 @@ class ExtractPDFTables:
 
 class MapLinks2Excel:
 
-	def __init__(self, df, sheet, path_file):
+	def __init__(self, df, sheet, path_file, 
+				first_row, excel_ref_column, 
+				df_ref_column_str, df_ref_column_to_add,
+				excel_column_to_add, ESG_to_add):
+
 		self.df = df
-		self.sheet = sheet
+		self.sheet = sheet 
 		self.path_file = path_file
+		self.first_row = first_row #From which row were ESG refs starts
+		self.excel_ref_colum = excel_ref_column # column with current esg data used as reference for mapping
+		self.df_ref_column_str = df_ref_column_str
+		self.df_ref_column_to_add = df_ref_column_to_add
+		self.excel_column_to_add = excel_column_to_add
+		self.ESG_to_add = ESG_to_add
 		
 	
 	def MapSDG_GRI(self):
@@ -1118,3 +1114,29 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
+
+	def mapESGs(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+		rows = ws.max_row
+
+		for i in range(self.first_row, rows):
+			if ws.cell(row=i, column=self.excel_ref_column).value == None:
+				pass
+
+			else:
+				target_cell = ws.cell(row=i, column=self.excel_ref_column).value
+
+				if target_cell != None:
+					
+					try:
+						disclosure_to_add = self.df.loc[self.df[self.df_ref_column_str] == target_cell][self.df_ref_column_to_add].values
+						
+						if len(disclosure_to_add) > 0:
+							ws.cell(row=i, column=self.excel_column_to_add, value='\n'.join(disclosure_to_add))
+						
+					except:
+							pass
+
+		wb.save(self.path_file)
+		print(f"{self.sheet} sheet from Excel file have bee mapped with it's {self.ESG_to_add} equivalent") 
