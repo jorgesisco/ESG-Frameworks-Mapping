@@ -428,6 +428,7 @@ class ExtractPDFTables:
 			return df
 		
 		elif framework == 'no':
+			df = df[['Metric', 'Calculation', 'CorrespondingGRI Standard']]
 			return df
 		
 		else:
@@ -518,15 +519,15 @@ class ExtractPDFTables:
 class MapLinks2Excel:
 
 	def __init__(self, df, sheet, path_file, 
-				first_row, excel_ref_column, 
-				df_ref_column_str, df_ref_column_to_add,
-				excel_column_to_add, ESG_to_add):
+				first_row=None, excel_ref_column=None, 
+				df_ref_column_str=None, df_ref_column_to_add=None,
+				excel_column_to_add=None, ESG_to_add=None):
 
 		self.df = df
-		self.sheet = sheet 
 		self.path_file = path_file
+		self.sheet = sheet
 		self.first_row = first_row #From which row were ESG refs starts
-		self.excel_ref_colum = excel_ref_column # column with current esg data used as reference for mapping
+		self.excel_ref_column = excel_ref_column # column with current esg data used as reference for mapping
 		self.df_ref_column_str = df_ref_column_str
 		self.df_ref_column_to_add = df_ref_column_to_add
 		self.excel_column_to_add = excel_column_to_add
@@ -1125,12 +1126,12 @@ class MapLinks2Excel:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=self.excel_ref_column).value
-
+				target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value[0:3])
+		
 				if target_cell != None:
-					
 					try:
 						disclosure_to_add = self.df.loc[self.df[self.df_ref_column_str] == target_cell][self.df_ref_column_to_add].values
+						
 						
 						if len(disclosure_to_add) > 0:
 							ws.cell(row=i, column=self.excel_column_to_add, value='\n'.join(disclosure_to_add))
