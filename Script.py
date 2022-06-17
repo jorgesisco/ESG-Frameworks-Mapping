@@ -26,8 +26,8 @@ class ExtractPDFTables:
 	def getTablesCamelot(self, flavor=None, strip_text=None):
 		tables = camelot.read_pdf(self.file_path, 
 								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
-								  flavor=f'{flavor}', 
-								  strip_text=f'{strip_text}')
+								  flavor=f'{self.flavor}', 
+								  strip_text=f'{self.strip_text}')
 
 		frames = []
 		for i in tables:
@@ -39,6 +39,26 @@ class ExtractPDFTables:
 
 		df =  pd.concat(frames)
 		return df
+
+	def getTablesPDFplumber(self):
+		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
+		frames = []
+
+		for i in range(0, len(self.page_range)):
+			try:
+				page = pdf.pages[i]
+				table = page.extract_table()
+				frames.append(pd.DataFrame(table))
+			
+			except:
+				pass
+
+		df =  pd.concat(frames)
+		df = df.drop_duplicates()
+
+		return df
+
+
 
 	def getCode(self, df,
 				column,
@@ -433,6 +453,14 @@ class ExtractPDFTables:
 		
 		else:
 			print("Enter 'yes' or 'no'")
+
+	def getTablesGRI_BAHRAIN(self):
+
+		df = self.getTablesCamelot()
+
+
+		return df
+
 
 
 	# Funtions needed in some of the extracted dataframes
@@ -1116,7 +1144,7 @@ class MapLinks2Excel:
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's BESI BRSB equivalent") 
 
-	def mapESGs(self):
+	def mapESGsRef(self):
 		wb = openpyxl.load_workbook(self.path_file)
 		ws = wb[self.sheet]
 		rows = ws.max_row
@@ -1141,3 +1169,24 @@ class MapLinks2Excel:
 
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's {self.ESG_to_add} equivalent") 
+
+
+	def mapESGs(self):
+		wb = openpyxl.load_workbook(self.path_file)
+		ws = wb[self.sheet]
+
+		
+		for i in self.df.columns:
+			r=self.first_row
+			for c in self.df[i]:
+				if c != None:
+					ws.cell(row=r, column=self.df.columns.get_loc(i)+1, value=c)
+					r+=1
+			
+		
+			
+		wb.save(self.path_file)
+
+
+
+
