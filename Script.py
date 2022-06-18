@@ -13,7 +13,7 @@ import camelot.io as camelot
 class ExtractPDFTables:
 
 	# Initializing contructor variables
-	def __init__(self, file_path, page_range=False, area=False, flavor=None, strip_text=None):
+	def __init__(self, file_path, page_range=None, area=None, flavor=None, strip_text=None):
 		self.file_path = file_path #string with file path
 		self.page_range = page_range # defined page range with tables
 		self.area = area # Table area, libraris like tabula allows to specify table area
@@ -22,8 +22,19 @@ class ExtractPDFTables:
 		self.flavor = flavor
 		self.strip_text = strip_text
 	
+	#Table Extrator with Tabula Library
+
+	def getTablesTabula(self):
+		pdf = read_pdf(self.file_path, lattice=True, pages=f'{self.page_range[0]}-{self.page_range[1]}')
+
+		df = pdf[0]
+
+		return df
+
+
 	#Table Extrator with Camelot Library
-	def getTablesCamelot(self, flavor=None, strip_text=None):
+	def getTablesCamelot(self):
+		
 		tables = camelot.read_pdf(self.file_path, 
 								  pages=f'{self.page_range[0]}-{self.page_range[1]}', 
 								  flavor=f'{self.flavor}', 
@@ -40,6 +51,7 @@ class ExtractPDFTables:
 		df =  pd.concat(frames)
 		return df
 
+	#Table Extrator with PDFPlumber Library
 	def getTablesPDFplumber(self):
 		pdf = pdfplumber.open(self.file_path, pages=self.page_range)
 		frames = []
@@ -1182,11 +1194,5 @@ class MapLinks2Excel:
 				if c != None:
 					ws.cell(row=r, column=self.df.columns.get_loc(i)+1, value=c)
 					r+=1
-			
-		
-			
+
 		wb.save(self.path_file)
-
-
-
-
