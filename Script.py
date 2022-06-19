@@ -74,7 +74,8 @@ class ExtractPDFTables:
 
 	def getCode(self, df,
 				column,
-				regex, delimiter, 
+				regex, 
+				delimiter, 
 				code_column='Code',
 				remove_char=None):
 
@@ -85,7 +86,7 @@ class ExtractPDFTables:
 
 			return df
 
-    # This metho will extract strings from designated column and add them to a new column
+    # This method will extract strings from designated column and add them to a new column
 	def separate_code(self, df, column, delimiter):
 		
 		df = df.assign(GRI_Code=df[f'{column}'].str.split(delimiter)).explode(f'{column}')
@@ -93,11 +94,11 @@ class ExtractPDFTables:
 		return df
 
 	#Merge codes that has similar code from other framework (this is good for mapping in the framework that is the code in common with the rest)
-	def merge_codes(self, df, ref_col, code_column):
-		array_agg = lambda x: '\n'.join(x.astype(str))
-		df = df.groupby([ref_col], as_index=False).agg({code_column: array_agg})
+	def merge_cells(self, df, ref_col_1):
+						  
+		df = df.drop(labels = ref_col_1,axis = 1).astype(str).groupby(df[ref_col_1].mask(df[ref_col_1]=='').ffill()).agg('\n'.join).reset_index()
+		
 		return df
-
 
 
 	# Getting tables from PDF SDG Linked to GRI
@@ -431,7 +432,7 @@ class ExtractPDFTables:
 
 	def getTablesGRI_ADX(self):
 
-		df = self.getTablesCamelot(self.flavor, self.strip_text)
+		df = self.getTablesCamelot()
 
 		df = df.drop_duplicates(keep='first')
 		df.columns = df.iloc[0]
@@ -469,9 +470,39 @@ class ExtractPDFTables:
 	def getTablesGRI_BAHRAIN(self):
 
 		df = self.getTablesCamelot()
+		df.columns = df.iloc[0]
+		df = df[1:]
+		df = df[['Metric', 'Calculation', 'Corresponding GRI Standards']]
+		df = df.replace('', np.nan, regex=True) # Fill empty columns with NaN
+		df = df.dropna(how='all') # Removes only rows with all columns with NaN
+		df = df.fillna(method='ffill')
+		df = df.fillna('')
 
+		df = self.merge_cells(df, 'Metric')
 
-		return df
+		df = self.getCode(df, code_column='BAHRAIN_code',
+						  column='Calculation',
+                          regex='\w+.\d+\)', 
+                          delimiter='\n', 
+                          remove_char=')')
+		
+		df = self.getCode(df, code_column='GRI_Code',
+						  column='Corresponding GRI Standards',
+                          regex='\d+:', 
+                          delimiter='\n', 
+                          remove_char=':')
+
+		input_framework = input('Are you going to mapp GRI 2016 sheet? (yes or no):')
+
+		if input_framework == 'yes':
+			df = self.separate_code(df, column='GRI_Code', delimiter="\n")
+			return df
+		
+		elif input_framework=='no':
+			return df
+		
+		else:
+			print("Re run the code and type 'yes' or 'no'")
 
 
 
