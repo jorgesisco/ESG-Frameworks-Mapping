@@ -1,5 +1,6 @@
 from cmath import nan
 from distutils.filelist import findall
+from tracemalloc import stop
 import pandas as pd
 import numpy as np
 import re
@@ -457,7 +458,8 @@ class ExtractPDFTables:
 		framework = input('Are you mapping on the GRI 2016 sheet? (yes or no):')
 
 		if framework == 'yes':
-			df = self.merge_codes(df, 'GRI_Code', 'ADX_Code')
+			df = self.merge_cells(df, 'GRI_Code')
+			df = self.separate_code(df, column='GRI_Code', delimiter="\n")
 			return df
 		
 		elif framework == 'no':
@@ -466,6 +468,7 @@ class ExtractPDFTables:
 		
 		else:
 			print("Enter 'yes' or 'no'")
+			return df
 
 	def getTablesGRI_BAHRAIN(self):
 
@@ -496,10 +499,11 @@ class ExtractPDFTables:
 
 		if input_framework == 'yes':
 			df = self.separate_code(df, column='GRI_Code', delimiter="\n")
+			df = self.merge_cells(df, 'GRI_Code')
 			return df
 		
 		elif input_framework=='no':
-			return df
+			return df[['BAHRAIN_code', 'Metric', 'Calculation', 'Corresponding GRI Standards']]
 		
 		else:
 			print("Re run the code and type 'yes' or 'no'")
@@ -1197,7 +1201,9 @@ class MapLinks2Excel:
 				pass
 
 			else:
+				#Target cell is the number eg 101 and not specific like 101-1 or 305-1...
 				target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value[0:3])
+				# target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value)
 		
 				if target_cell != None:
 					try:
