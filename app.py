@@ -49,9 +49,8 @@ Extract_Tables_button = st.button(label='Extract Tables', key=None, help=None, o
 
 
 
-if input_pdf != None and  Extract_Tables_button:
 
-    
+if input_pdf != None and  Extract_Tables_button:
 
     try:
         # byte object into a PDF file 
@@ -77,9 +76,6 @@ if input_pdf != None and  Extract_Tables_button:
         
          
         if len(df) > 0:
-
-            
-
             st.dataframe(df)
 
             def convert_df(df):
@@ -94,6 +90,7 @@ if input_pdf != None and  Extract_Tables_button:
                 mime='text/csv',
             )
 
+            st.markdown("### Map Data on Excel")
             map_to_excel = st.button(label='Map to excel', key=None, help=None, on_click=None, args=None, kwargs=None, disabled=False)
     except:
         pass

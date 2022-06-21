@@ -54,12 +54,21 @@ class ExtractPDFTables:
                             delimiter='\n',
                             code_column=f'{self.get_codes[1]}_code',
                             remove_char=')')
-			
-			
+
+			df = df.replace('', np.nan)
+			df = df.dropna(how='all')
+			df = df.fillna('')
 			return df
-        
+    
 		else:
+			df = df.replace('', np.nan)
+			df = df.dropna(how='all')
+			df = df.fillna('')
+ 
 			return df
+
+
+
     
 	def getCode(self, df,
                     column,
