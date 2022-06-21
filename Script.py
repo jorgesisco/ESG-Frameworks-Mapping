@@ -617,21 +617,22 @@ class MapLinks2Excel:
 
 		rows = ws.max_row
 
-		for i in range(1, rows):
-			if ws.cell(row=i, column=1).value != None:
-				target_cell = ws.cell(row=i, column=1).value
+		for i in range(3, rows):
+			if ws.cell(row=i, column=2).value != None:
+				target_cell = ws.cell(row=i, column=2).value
 				
 
 				if (re.search(regex, target_cell)):
 					target = re.search(regex, target_cell).group()
+					ws.cell(row=i, column=1, value=target)	
 
 					try:
 						disclosure_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI_Disclosure'].values
 						description_to_add = self.df.loc[self.df['SDG_Target'] == target]['GRI Available Business Disclosures'].values
 						
 						if str(disclosure_to_add[0]) != 'nan':
-							ws.cell(row=i, column=3, value='\n'.join(disclosure_to_add))	
-							ws.cell(row=i, column=4, value='\n'.join(description_to_add))
+							ws.cell(row=i, column=4, value='\n'.join(disclosure_to_add))	
+							ws.cell(row=i, column=5, value='\n'.join(description_to_add))
 					except:
 						pass
 
