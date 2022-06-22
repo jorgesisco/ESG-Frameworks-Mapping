@@ -648,8 +648,8 @@ class MapLinks2Excel:
 
 		for i in range(1, rows):
 
-			if ws.cell(row=i, column=2).value != None:
-				target_cell = ws.cell(row=i+1, column=2).value
+			if ws.cell(row=i, column=1).value != None:
+				target_cell = ws.cell(row=i, column=1).value
 
 				if target_cell != None:
 					try:
@@ -686,11 +686,11 @@ class MapLinks2Excel:
 		# pdf_tables['id'] = pdf_tables['id'].astype(str).apply(lambda x: x.replace('.0','.'))
 
 		for i in range(1, rows):
-			if ws.cell(row=i, column=1).value == None:
+			if ws.cell(row=i, column=2).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=1).value
+				target_cell = ws.cell(row=i, column=2).value
 
 				if (re.search(regex, target_cell)):
 					target = re.search(regex, target_cell).group()
@@ -699,8 +699,8 @@ class MapLinks2Excel:
 						value_to_add = [self.df.loc[self.df['id'] == target]['C. GRI \nStandards'].values,
 										self.df.loc[self.df['id'] == target]['D. GRI disclosures'].values]
 						
-						ws.cell(row=i, column=3, value=' '.join(value_to_add[0]))
-						ws.cell(row=i, column=4, value=' '.join(value_to_add[1]))
+						ws.cell(row=i, column=4, value=' '.join(value_to_add[0]))
+						ws.cell(row=i, column=5, value=' '.join(value_to_add[1]))
 
 					except:
 						pass
@@ -718,11 +718,11 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(1, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 				if(re.search(regex, target_cell)):
 					target = re.search(regex, target_cell).group()
 
@@ -750,8 +750,8 @@ class MapLinks2Excel:
 		count = 0
 
 		for i in range(1, rows):
-			if ws.cell(row=i, column=2).value != None and count <= len(self.df):
-				target_cell = ws.cell(row=i, column=2).value
+			if ws.cell(row=i, column=3).value != None and count <= len(self.df):
+				target_cell = ws.cell(row=i, column=3).value
 
 				if re.search(regex, target_cell):
 
@@ -765,9 +765,9 @@ class MapLinks2Excel:
 
 					value_to_add_2 = self.df.loc[self.df['id'] == target]['Description'].item()
 
-					ws.cell(row=i, column=4, value=value_to_add)
+					ws.cell(row=i, column=5, value=value_to_add)
 
-					ws.cell(row=i, column=5, value=value_to_add_2)
+					ws.cell(row=i, column=6, value=value_to_add_2)
 					
 					count += 1
 
@@ -780,8 +780,8 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(1, rows+1):
-			if ws.cell(row=i, column=2).value != None:
-				target_cell = ws.cell(row=i, column=2).value
+			if ws.cell(row=i, column=1).value != None:
+				target_cell = ws.cell(row=i, column=1).value
 
 				if target_cell != None:
 					value = self.df.loc[self.df['GRI_Standards'] == target_cell]['id'].values
@@ -810,11 +810,11 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
         
         
 				if target_cell != None:
@@ -840,11 +840,11 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 
         
 				if target_cell != None:
@@ -868,11 +868,11 @@ class MapLinks2Excel:
 		regex = '\w[+-]?[0-9]+\.+\d+'
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 				# print(target_cell)
 
 				
@@ -885,7 +885,7 @@ class MapLinks2Excel:
 						if len(disclosure_to_add) > 0:
 							disclosure_to_add_ = [i[re.search(regex, i).start():re.search(regex, i).end()] for i in disclosure_to_add]
 							# print(disclosure_to_add_)
-							ws.cell(row=i, column=12, value='\n'.join(disclosure_to_add_))
+							ws.cell(row=i, column=3, value='\n'.join(disclosure_to_add_))
 							
 						section_to_add = self.df.loc[self.df['ID_GRI'] == target_cell]['KPI \n(CASSCSR-4.0)'].values
 						
@@ -893,7 +893,7 @@ class MapLinks2Excel:
 						if len(section_to_add)>0:
 							
 							# print(section_to_add)
-							ws.cell(row=i, column=13, value='\n'.join(section_to_add))	
+							ws.cell(row=i, column=4, value='\n'.join(section_to_add))	
 
 					except:
 						pass
@@ -929,18 +929,18 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 		
 				if target_cell != None:
 					try:
 						disclosure_to_add = self.df.loc[self.df['GRI ID'] == target_cell]['CDP'].values
 						
 						if len(disclosure_to_add) > 0:
-							ws.cell(row=i, column=14, value='\n'.join(disclosure_to_add))
+							ws.cell(row=i, column=15, value='\n'.join(disclosure_to_add))
 					except:
 							pass
 
@@ -955,14 +955,15 @@ class MapLinks2Excel:
 		r = 3
 		for i in self.df['CDP']:
 			if re.search(regex, i):
-				ws.cell(row=r, column=1, value=i)
+				ws.cell(row=r, column=2, value=i)
+			   # aca puedes meter el regex para sacar el codigo de la esg al igual que en gri abajito!!
 				r+=1
 
 		regex_2 = 'GRI \w+\d:'
 		r = 3
 		for i in self.df['GRI']:
 			if i != None and re.search(regex_2, i):
-				ws.cell(row=r, column=2, value=i)
+				ws.cell(row=r, column=4, value=i)
 				r+=1
 
 				
