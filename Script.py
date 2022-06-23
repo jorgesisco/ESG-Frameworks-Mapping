@@ -350,6 +350,7 @@ class ExtractPDFTables:
 		df = df.fillna(method='ffill') # Filling rows below with same value as above 
 		df = df.replace(r'\n','', regex=True)
 
+
 		year = input("with GRI sheet would you like to map? 2016 or 2021?")
 
 		if year == '2016':
@@ -400,10 +401,10 @@ class ExtractPDFTables:
 
 		return df
 	
-	def getTablesGRI_SEBI_GRI(self, flavor=None, strip_text=None):
+	def getTablesGRI_SEBI_GRI(self):
 		regex = '\w\d\-\w\d\d\w|\w\d\-\w\d\w|\w\d-\w\d|\w\d\w,\w,\w|\w\d\d\w|\w\d\d|\w\d|^$'
 
-		df = self.getTablesCamelot(flavor, strip_text)
+		df = self.getTablesCamelot()
 		
 		df = df.drop_duplicates(keep='first')
 		df.rename(columns = {0:'SEBI - BRSR Framework', 1:'GRI Standards and Disclosures'}, inplace = True)
@@ -976,11 +977,11 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 
 				# print(target_cell)
 		
@@ -1005,22 +1006,26 @@ class MapLinks2Excel:
 		r = 3
 		for i in self.df['CDP Water Security Questions']:
 			if re.search(regex, i):
-				ws.cell(row=r, column=1, value=i)
+				ws.cell(row=r, column=2, value=i)
 				r+=1
 
 		regex_2 = 'GRI \w+\d:'
 		r = 3
 		for i in self.df['GRI Disclosures']:
 			if i != None and re.search(regex_2, i):
-				ws.cell(row=r, column=2, value=i)
+				ws.cell(row=r, column=4, value=i)
+				r+=1
+
+
+		r = 3
+		for i in self.df['GRI ID']:
+			if i != None:
+				ws.cell(row=r, column=3, value=i)
 				r+=1
 
 				
 
 		wb.save(self.path_file)
-
-	def mapEV22(self):
-		pass
 
 	def mapCDP_TCFD(self):
 		wb = openpyxl.load_workbook(self.path_file)
@@ -1041,7 +1046,7 @@ class MapLinks2Excel:
 		r=3
 		for i in self.df['TCFD recommendations']:
 			if i != None:
-				ws.cell(row=r, column=3, value=i)
+				ws.cell(row=r, column=10, value=i)
 				r+=1
 		
 		wb.save(self.path_file)
@@ -1059,18 +1064,20 @@ class MapLinks2Excel:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 
 		
 				if target_cell != None and framework=='oil & gas':
 					try:
 						value_to_add = self.df.loc[self.df['GRI Code'] == target_cell]['SECTOR \nSTANDARD \nREF #'].values
+						
+
 
 						if len(value_to_add) > 0 and self.sheet== 'GRI 2016':
 							ws.cell(row=i, column=18, value=' '.join(value_to_add))
 
 						elif len(value_to_add) > 0 and self.sheet== 'GRI 2021':
-							ws.cell(row=i, column=6, value='\n'.join(value_to_add))
+							ws.cell(row=i, column=18, value='\n'.join(value_to_add))
 
 					except:
 						pass
@@ -1083,7 +1090,7 @@ class MapLinks2Excel:
 							ws.cell(row=i, column=20, value='\n'.join(value_to_add))
 
 						elif len(value_to_add) > 0 and self.sheet== 'GRI 2021':
-							ws.cell(row=i, column=8, value='\n'.join(value_to_add))
+							ws.cell(row=i, column=20, value='\n'.join(value_to_add))
 
 					except:
 						pass
@@ -1098,18 +1105,18 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 		
 				if target_cell != None:
 					try:
 						disclosure_to_add = self.df.loc[self.df['GRI_Code'] == target_cell]['HKEX ESG Reporting Guide'].values
 						
 						if len(disclosure_to_add) > 0:
-							ws.cell(row=i, column=22, value='\n'.join(disclosure_to_add))
+							ws.cell(row=i, column=24, value='\n'.join(disclosure_to_add))
 						
 					except:
 							pass
@@ -1130,13 +1137,13 @@ class MapLinks2Excel:
 		r=3
 		for i in self.df['GRI Standards and Disclosures']:
 			if i != None:
-				ws.cell(row=r, column=2, value=i)
+				ws.cell(row=r, column=3, value=i)
 				r+=1
 
 		r=3
 		for i in self.df['GRI_Code']:
 			if i != None:
-				ws.cell(row=r, column=3, value=i)
+				ws.cell(row=r, column=2, value=i)
 				r+=1
 		
 		wb.save(self.path_file)
@@ -1147,11 +1154,11 @@ class MapLinks2Excel:
 		rows = ws.max_row
 
 		for i in range(3, rows):
-			if ws.cell(row=i, column=2).value == None:
+			if ws.cell(row=i, column=1).value == None:
 				pass
 
 			else:
-				target_cell = ws.cell(row=i, column=2).value
+				target_cell = ws.cell(row=i, column=1).value
 
 				if target_cell != None:
 					
@@ -1159,7 +1166,7 @@ class MapLinks2Excel:
 						disclosure_to_add = self.df.loc[self.df['GRI_Disclosures_2016'] == target_cell]['SEBI - BRSR Framework'].values
 						
 						if len(disclosure_to_add) > 0:
-							ws.cell(row=i, column=24, value='\n'.join(disclosure_to_add))
+							ws.cell(row=i, column=26, value='\n'.join(disclosure_to_add))
 						
 					except:
 							pass
@@ -1204,15 +1211,17 @@ class MapLinks2Excel:
 
 			else:
 				#Target cell is the number eg 101 and not specific like 101-1 or 305-1...
-				target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value[0:3])
+				target_cell = ws.cell(row=i, column=self.excel_ref_column).value[0:3]
 				# target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value)
 		
 				if target_cell != None:
 					try:
 						disclosure_to_add = self.df.loc[self.df[self.df_ref_column_str] == target_cell][self.df_ref_column_to_add].values
-						
+			
 						
 						if len(disclosure_to_add) > 0:
+
+							
 							ws.cell(row=i, column=self.excel_column_to_add, value='\n'.join(disclosure_to_add))
 						
 					except:
