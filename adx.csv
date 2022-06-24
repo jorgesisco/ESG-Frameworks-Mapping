@@ -1,0 +1,78 @@
+,GRI_Code,Metric,Calculation,CorrespondingGRI Standard,ADX_Code
+0,102,"E8. Environmental Oversight
+E9. EnvironmentalOversight
+S1. CEO Pay Ratio
+S5. Temporary Worker Ratio","Does your Management Team oversee and/or manage sustainability issues? Yes/No
+Does your Board oversee and/or manage sustainability issues? Yes/No
+S1.1) Ratio: CEO total compensation to median Full Time Equivalent (FTE) total compensation S1.2) Does your company report this metric in regulatory filings? Yes/No
+S5.1) Percentage: Total enterprise headcount held by part-time employees S5.2) Percentage: Total enterprise headcount held by contractors and/or consultants","GRI 102: General Disclosures 2016
+GRI 102: General Disclosures 2016
+GRI 102: General Disclosures 2016
+GRI 102: GeneralDisclosures 2016","
+
+S1.2
+S1.1
+S5.2
+S5.1"
+1,102,S4. Gender Diversity,S4.1) Percentage: Total enterprise headcount held by men and women S4.2) Percentage: Entry- and mid-level positions held by men and women  S4.3) Percentage: Senior- and executive-level positions held by men and women,GRI 102: General Disclosures 2016  GRI 405: Diversity and Equal Opportunity 2016,"S4.1
+S4.3
+S4.2"
+1,405,S4. Gender Diversity,S4.1) Percentage: Total enterprise headcount held by men and women S4.2) Percentage: Entry- and mid-level positions held by men and women  S4.3) Percentage: Senior- and executive-level positions held by men and women,GRI 102: General Disclosures 2016  GRI 405: Diversity and Equal Opportunity 2016,"S4.1
+S4.3
+S4.2"
+2,103,"E7. Environmental Operations
+S6. Non-Discrimination
+S8. Global Health & Safety
+S9. Child & Forced Labor
+S10. Human Rights
+G9. External Assurance","E7.1) Does your company follow a formal Environmental Policy? Yes/No E7.2) Does your company follow specific waste, water, energy, and/or recycling polices? Yes/No E7.3) Does your company use a recognized energy management system?
+Does your company follow non-discrimination policy? Yes/No
+Does your company follow an occupational health and/or global health & safety policy? Yes/No
+S9.1) Does your company follow a child and/or forced labor policy? Yes/No S9.2) If yes, does your child and/or forced labor policy also cover suppliers and vendors? Yes/No
+S10.1) Does your company follow a human rights policy? Yes/No S10.2) If yes, does your human rights policy also cover suppliers and vendors? Yes/No
+Are your sustainability disclosures assured or verified by a third-party audit firm? Yes/No","GRI 103: Management Approach 2016*
+GRI 103: Management Approach 2016*
+GRI 103: Management Approach 2016*
+GRI 103: Management Approach 2016*
+GRI 103: Management Approach 2016
+* GRI 103: Management Approach 2016 is to be used in combination with the topic specific Standards","E7.1
+E7.3
+E7.2
+
+
+S9.2
+S9.1
+S10.1
+S10.2
+"
+3,302,"E3. EnergyUsage
+E4. EnergyIntensity
+E5. Energy Mix","E3.1) Total amount of energy directlyconsumed  E3.2) Total amount of energy indirectlyconsumed
+Total direct energy usage per outputscaling factor
+Percentage: Energy usage by generationtype","GRI 302: Energy 2016
+GRI 302:Energy 2016
+GRI 302: Ener-gy 2016","E3.1
+E3.2
+
+"
+4,303,E6. WaterUsage,E6.1) Total amount of water consumed  E6.2) Total amountof water reclaimed,GRI 303: Water and Effluents2018,"E6.2
+E6.1"
+5,305,"E1. GHGEmissions
+E2. EmissionsIntensity","E1.1) Total amount in CO2 equivalents,for Scope 1 E1.2) Total amount, in CO2 equivalents, for Scope 2 (if(applicable  E1.3) Total amount, in CO2 equivalents, for Scope 3 (if(applicable
+E2.1) Total GHG emissions per outputscaling factor  E2.2) Total non-GHG emissions per outputscaling factor","GRI 305:Emissions 2016
+GRI 305:Emissions 2016","E1.1
+E1.2
+E1.3
+E2.2
+E2.1"
+6,401,S3. Employee Turnover,S3.1) Percentage: Year-over-year change for full-time employees  S3.2) Percentage: Year-over-year change for part-time employees S3.3) Percentage: Year-over-year change for contractors/consultants,GRI 401: Employment 2016,"S3.1
+S3.3
+S3.2"
+7,403,S7. Injury Rate,Percentage: Frequency of injury events relative to total workforce time,GRI 403: Occupational Health and Safety 2018,
+8,405,"S2. GenderPay Ratio
+G1. Board Diversity","Ratio: Median male compensation to median female compensation
+G1.1) Percentage: Total board seats occupied by men and women G1.2) Percentage: Committee chairs occupied by men and women","GRI 405: Diversity and Equal Opportunity 2016
+GRI 405: Diversity and Equal Opportunity 2016","
+G1.2
+G1.1"
+9,413,S12. Commu-nity Invest-ment,"Amount invested in the community, as a percentage of company revenues.",GRI 413: Local Communities 2016,

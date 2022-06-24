@@ -1211,22 +1211,20 @@ class MapLinks2Excel:
 
 			else:
 				#Target cell is the number eg 101 and not specific like 101-1 or 305-1...
-				target_cell = ws.cell(row=i, column=self.excel_ref_column).value[0:3]
+				target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value[0:3])
+				
 				# target_cell = int(ws.cell(row=i, column=self.excel_ref_column).value)
 		
 				if target_cell != None:
 					try:
-						disclosure_to_add = self.df.loc[self.df[self.df_ref_column_str] == target_cell][self.df_ref_column_to_add].values
-			
-						
+						disclosure_to_add = self.df.loc[self.df[self.df_ref_column_str] == target_cell][self.df_ref_column_to_add].values					
 						if len(disclosure_to_add) > 0:
-
-							
 							ws.cell(row=i, column=self.excel_column_to_add, value='\n'.join(disclosure_to_add))
+							
 						
 					except:
 							pass
-
+			
 		wb.save(self.path_file)
 		print(f"{self.sheet} sheet from Excel file have bee mapped with it's {self.ESG_to_add} equivalent") 
 
